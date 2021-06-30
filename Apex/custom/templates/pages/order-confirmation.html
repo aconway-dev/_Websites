@@ -1,0 +1,36 @@
+{{#partial "head"}}
+{{{ checkout.checkout_head }}}
+{{{ stylesheet '/assets/css/optimized-checkout.css' }}}
+{{ getFontsCollection }}
+<script type="text/javascript">
+    window.language = {{{langJson 'optimized_checkout'}}};
+</script>
+{{/partial}}
+{{#partial "page"}}
+{{{ checkout.order_confirmation_content }}}
+{{{ footer.scripts }}}
+
+<iframe frameborder="0" scrolling="no" height="1"width="20" id=”cj_conversion” /> </iframe>
+<script type="text/javascript">
+function readCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0) === ' ') {
+c = c.substring(1,c.length);
+}
+if (c.indexOf(nameEQ) === 0) {
+return c.substring(nameEQ.length,c.length);
+}
+}
+return null;
+}
+var src=
+'https://www.emjcd.com/tags/c?containerTagId=XXXXX&CID=XXXXX&TYPE=XXXX&CURRENCY=USD&OID='
++ %%ORDER_ID%% + '&AMOUNT=' + %%ORDER_SUBTOTAL_DISCOUNTED%% + '&CJEVENT=' + '&ITEMx=' + %%GLOBAL_SKU%% + '&QTYx=' + %%GLOBAL_ProductQuantity%%  + '&DCNTx' + %%GLOBAL_DiscountAmount%% + '&OID=' + %%GLOBAL_OrderNumber%% + '&DISCOUNT=' + %%GLOBAL_DiscountAmount%% + '&COUPON=' + %%GLOBAL_CouponCode%% + '&CJEVENT=' + 
+readCookie('cjevent');
+document.getElementById('cj_conversion').src = src;
+</script>
+{{/partial}}
+{{> layout/base}}

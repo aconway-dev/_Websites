@@ -1,0 +1,42 @@
+{{#partial "page"}}
+<section class="page-hero" style="background-image: url({{cdn 'webdav:/page/banner-return-policy.jpg'}});">
+    <h1>Gift Certificates<h1>
+    <h2>{{lang 'gift_certificate.balance.heading'}}</h2>
+</section>
+<main id="main-content">
+    <div class="container-inner {{dashcase page.title}}">
+        <div class="row grid-gutter-vertical">
+            <div class="content-container col-md-9">
+                <div class="page-content page-content--centered" style="padding-top: 2rem;">
+                    <div class="account">
+                        <p>
+                            <strong>{{lang 'gift_certificate.balance.intro' }}</strong>
+                        </p>
+                        {{#if gift_certificate}}
+                            {{#if gift_certificate.error}}
+                                {{> components/common/alert-error gift_certificate.error}}
+                            {{else}}
+                                <h2>{{gift_certificate.balance.formatted}}</h2>
+                                <h3>{{gift_certificate.code}}</h3>
+                            {{/if}}
+                        {{/if}}
+                        <form class="form form--oneField" id="gift-certificate-balance" method="get">
+                            <input type="hidden" name="action" value="balance">
+                            <div class="form-field">
+                                <label class="form-label" for="giftcertificatecode">{{lang 'forms.gift_certificate.balance.code' }}</label>
+                                <input class="form-input" id="giftcertificatecode" name="giftcertificatecode">
+                            </div>
+                            <div class="form-actions button-wrap">
+                                <button type="submit" class="button"><span><span><span>{{lang 'forms.gift_certificate.balance.submit_value' }}</span></span></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {{> components/gift-certificate/navigation gift_page='balance'}}
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,334 @@
+@-ms-viewport {
+    width: auto;
+}
+// =============================================================================
+// STENCIL
+// =============================================================================
+
+html {
+    font-size: 14px;
+    font-display: auto;
+    letter-spacing: 0.0125rem;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    &.menu-open {
+        height: 100vh;
+        overflow: hidden;
+        @media(min-width: 993px) {
+            height: auto;
+            overflow: auto;
+        }
+    }
+}
+body {
+    margin: 0 auto;
+    font-family: $roboto;
+    font-display: auto;
+    color: $darkgrey;
+    line-height: 1.5;
+    overflow-x: hidden;
+    padding-top: 82px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	-webkit-font-smoothing: antialiased;
+	font-family: $robotoBold;
+    font-weight: 700;
+    display: block;
+}
+h1 {
+	font-size: 6.5em;
+	line-height: 100%;
+    margin: 0;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: center;
+    @media screen and (max-width: 1500px) {
+        font-size: 6rem;
+    }
+    @media screen and (max-width: 1350px) {
+        font-size: 5.5rem;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 5rem;
+    }
+    @media screen and (max-width: 991px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 3rem;
+    }
+}
+h2 {
+	font-size: 2.5em;
+	line-height: 100%;
+    margin: 0 0 0.5rem;
+    @media screen and (max-width: 1350px) {
+        font-size: 2.2rem;
+    }
+    @media screen and (max-width: 991px) {
+        font-size: 1.8rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 1.6em;
+    }
+}
+h3 {
+	font-size: 1.8em;
+	line-height: 100%;
+    margin: 0 0 0.5rem;
+    @media screen and (max-width: 991px) {
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 1.4em;
+    }
+}
+h4 {
+	font-size: 1.6em;
+	line-height: 100%;
+    margin: 0 0 0.5rem;
+    @media screen and (max-width: 991px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 1.2em;
+    }
+}
+h5 {
+	font-size: 1.3em;
+	line-height: 100%;
+    margin: 0 0 0.5rem;
+    font-weight: bold;
+    @media screen and (max-width: 991px) {
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 767px) {
+        font-size: 1.1em;
+    }
+}
+p {
+	font-size: 1em;
+	margin: 0 0 1rem;
+	a {
+		color: $teal;
+		&:hover {
+			text-decoration: underline;
+		}
+    }
+    @media screen and (max-width: 767px) {
+        font-size: .9em;
+    }
+}
+a {
+	color: $darkgrey;
+    text-decoration: none;
+    cursor: pointer !important;
+	&:focus,
+	&:hover {
+		color: $teal;
+		outline: none;
+	}
+}
+.center {
+	* {
+		text-align: center;
+	}
+	img {
+		margin: 0 auto;
+	}
+}
+sub,
+sup {
+	vertical-align: super;
+	font-size: smaller;
+	bottom: -.2 !important;
+}
+img {
+	display: block;
+    width: 100%;
+    height: auto;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+ul, ol {
+	margin: 0 0 1rem;
+	padding: 0 0 0 1em;
+	li {
+        font-size: 1em;
+        @media screen and (max-width: 767px) {
+            font-size: .9em;
+        }
+	}
+}
+section {
+    padding: 4rem 0;
+    &.lightgrey {
+        background: $lightgrey;
+    }
+    &.darkgrey {
+        background: $darkgrey;
+        h1, h2, h3, h4, h5, h6, p, li {
+            color: $white;
+            a {
+                color: $white;
+                text-decoration: underline;
+                &:hover {
+                    color: $lightgrey;
+                    text-decoration: underline;
+                }
+            }
+            
+        }
+    }
+    &.teal {
+        background: $teal;
+        h1, h2, h3, h4, h5, h6, p, li {
+            color: $white;
+            a {
+                color: $white;
+                text-decoration: underline;
+                &:hover {
+                    color: $lightgrey;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &.bluegradient {
+        position: relative;
+        background: #142230;
+        background: -moz-linear-gradient(45deg, #142230 0%, #102844 67%, #102844 67%, #010101 100%);
+        background: -webkit-linear-gradient(45deg, #142230 0%, #102844 67%, #102844 67%, #010101 100%);
+        background: linear-gradient(45deg, #142230 0%, #102844 67%, #102844 67%, #010101 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#142230', endColorstr='#010101', GradientType=1);
+        h1, h2, h3, h4, h5, h6, p, li {
+            color: $white;
+            a {
+                color: $white;
+                text-decoration: underline;
+                &:hover {
+                    color: $lightgrey;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+       padding: 2rem 0;
+    }
+    &.page {
+        padding: 4rem 0;
+        .page-content {
+            margin: 0rem 4rem;
+            border: 2px solid $lightgrey;
+            padding: 2rem;
+            @media screen and (max-width: 767px) {
+                margin: 0rem;
+                padding: 0 1rem;
+                border: none;
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 100%;
+                clear: both;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            padding: 2rem 0;
+        }
+    }
+}
+.card-img-container {
+    position: relative;
+    &:hover {
+        .product-image-main.done {
+            opacity: 0;
+        }
+        .image-alt {
+            opacity: 1;
+        }
+    }
+    .product-image-main.done {
+        opacity: 1;
+    }
+    .image-alt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+    }
+}
+.sizes {
+    border-right: 1px solid $white;
+    &:last-of-type {
+        border-right: none;
+    }
+    h3 {
+        text-transform: uppercase;
+    }
+    ul {
+        margin: 0;
+    }
+    * {
+        color: $white;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+}
+.clear {
+    display: block;
+    clear: both;
+    width: 100%;
+}
+#main-content {
+    position: relative;
+    padding: 0;
+    background: $white;
+    z-index: 3;
+}
+#category-list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.container-inner {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &.full {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .wrapper {
+        display: flex;
+        padding: 0 1rem;
+        width: 100%;
+    }
+}
+.page-link:before {
+    content: "";
+    display: block;
+    height: 145px;
+    margin-top: -150px;
+}
+.navList-action--checkbox::before {
+    border-color: $grey;
+}
+select:-moz-focusring {
+    color: transparent !important;
+    text-shadow: 0 0 0 #000 !important;
+    box-shadow: none !important;
+}
+select:invalid {
+    box-shadow: none !important;
+}

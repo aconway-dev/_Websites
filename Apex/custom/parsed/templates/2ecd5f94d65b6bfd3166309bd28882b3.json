@@ -1,0 +1,1 @@
+{"components/products/productView-longdescription":"{{#eachIndex (split product.description '<!-- long -->')}}\r\n{{#if index '==' '1' }} \r\n<div class=\"col\">\r\n    <div class=\"block\">\r\n        {{{item}}}\r\n    </div>\r\n</div>\r\n{{/if}}\r\n{{/eachIndex}}\n"}

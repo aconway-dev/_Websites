@@ -1,0 +1,8 @@
+<a href="{{urls.account.index}}" class="customer">
+    <div class="icon-wrap">
+        <i class="sprite sprite-user-icon-black"></i>
+    </div>
+    {{#if customer}}
+    <span class="words">Hello {{first (split customer.name " ") }}</span>
+    {{/if}}
+</a>

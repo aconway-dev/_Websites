@@ -1,0 +1,238 @@
+#main-content {
+    &.the-diabetes-center,
+    &.diabetes-prevention,
+    &.about-us {
+        h1 {
+            text-transform: uppercase;
+            margin: 0;
+        }
+        h2 {
+            padding: 0.5em 1em;
+            position: relative;
+            display: inline-block;
+            margin: 0;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 60px;
+                height: 2px;
+                background: $darkgrey;
+                top: calc(50% - 1px);
+                left: -60px;
+            }
+            &:after {
+                position: absolute;
+                content: '';
+                width: 60px;
+                height: 2px;
+                background: $darkgrey;
+                top: calc(50% - 1px);
+                right: -60px;
+            }
+        }
+        .container-inner {
+            padding-top: 5rem;
+        }
+    }
+    .dots {
+        position: relative;
+        overflow: hidden;
+        .bar {
+            position: absolute;
+            height: 65vh;
+            width: 2px;
+            background: $darkgrey;
+            left: 27px;
+        }
+
+        ul {
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 65vh;
+
+            li {
+                height: 15px;
+                list-style: none;
+                padding-left: 2.5em;
+                color: $white;
+                position: relative;
+                line-height: 17px;
+                display: block;
+                cursor: pointer;
+                transform: scale(1);
+                transition: all 0.2s ease-in-out;
+                transform-origin: bottom left;
+                left: 0;
+                margin-left: .8em;
+
+                a {
+                    text-decoration: none !important;
+                }
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 7.2px;
+                    display: block;
+                    content: '';
+                    width: 15px;
+                    height: 15px;
+                    background: $darkgrey;
+                    border: 2px solid $darkgrey;
+                    border-radius: 100%;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &.active,
+                &:hover {
+                    left: -3px;
+                    transform-origin: bottom left;
+                    transform: scale(1.2);
+                    transition: all 0.2s ease-in-out;
+                }
+
+                &.active {
+                    &:before {
+                        background: $teal;
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .content-header {
+        text-align: center;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        .inner {
+            width: 100%;
+
+            h1,
+            h2,
+            h3,
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+.diabetes,
+.timeline {
+
+    * {
+        outline: none;
+    }
+
+    .slide {
+        min-height: 400px;
+        padding-top: 0;
+        margin-bottom: 2rem;
+
+        .inner {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            justify-content: space-around;
+
+            .inner-content {
+                display: block;
+                text-align: center;
+                position: relative;
+                padding: 0;
+                width: 100%;
+                max-width: 1170px;
+
+                .image {
+                    position: relative;
+                    width: 60%;
+                    height: 400px;
+                    display: block;
+                    margin: 0 auto 2rem auto;
+
+                    span {
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        bottom: -10px;
+                        left: 0;
+                        color: #fff;
+
+                        a {
+                            color: #fff;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        max-height: 400px;
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+
+                .text {
+                    position: relative;
+                }
+            }
+        }
+
+        &.active {
+            .inner {
+                .inner-content {}
+            }
+        }
+    }
+}
+
+
+
+
+.foot-conditions {
+    .navBar--sub {
+        display: none;
+    }
+
+    .image {
+        width: 100%;
+
+        &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .diabetes,
+    .timeline {
+        .slide {
+            .inner {
+                .inner-content {
+                    padding: 2rem 0;
+
+                    .image {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

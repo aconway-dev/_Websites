@@ -1,0 +1,16 @@
+{{#if page_type '===' 'default'}}
+{{#if banners.top}}
+<div class="banner-top">
+{{{limit banners.top 1}}}
+</div>
+{{/if}}
+{{#block "page"}} {{/block}}
+{{else}}
+
+{{#if banners.top}}
+<div class="banner-top">
+{{{limit banners.top 1}}}
+</div>
+{{/if}}
+{{#block "page"}} {{/block}}
+{{/if}}

@@ -1,0 +1,46 @@
+.left-right {
+  padding: 0;
+  .row-eq-height {
+    &:nth-last-of-type(even){
+      background: $white;
+    }
+  }
+  .text {
+    padding: 5rem;
+    text-align: left;
+    background: $lightgrey;
+    min-height: 600px;
+    ul {
+      margin-bottom: 0;
+    }
+    h2, h3, h4, p, li {
+      color: $darkgrey;
+    }
+    p:last-of-type {
+      margin: 0;
+    }
+    h2 {
+      text-transform: uppercase;
+      margin: 0 0 .5rem 0;
+    }
+    @media screen and (max-width: 1199px) {
+      padding: 5rem;
+    }
+    @media screen and (max-width: 991px) {
+      padding: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+      padding: 1rem;
+      min-height: 0;
+    }
+    blockquote {
+      float: none;
+    }
+  }
+  .image {
+    min-height: 600px;
+    @media screen and (max-width: 767px) {
+      min-height: 300px;
+    }
+  }
+}

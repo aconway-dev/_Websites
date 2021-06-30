@@ -1,0 +1,134 @@
+.product-mobile-title {
+	display: none;
+	z-index: 2;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	background: $darkgrey;
+	color: $white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.25px;
+	@media screen and (max-width: 769px) {
+		display: block;
+	}
+}
+.productView-details {
+	padding: 4rem 8rem;	
+	background: $lightgrey;
+
+	h1 {
+		font-size: 2.5em;
+		color: $teal;
+		text-align: left;
+		text-transform: none;
+		padding: 0 0.5rem;
+	}
+	h4 {
+		padding: 0 0.5rem;
+		margin-bottom: 1rem;
+	}
+	.short-description {
+		padding: 0 0.5rem;
+	}
+	@media screen and (max-width: 1500px) {
+		padding: 4rem 4rem 1rem;
+	}
+	@media screen and (max-width: 1000px) {
+		padding: 4rem 2rem 1rem;
+	}
+	@media screen and (max-width: 991px) {
+		padding: 2rem 1rem;
+	}
+}
+.productView-info {
+	padding: 2rem 0;
+	.col {
+		.block {
+			height: 100%;
+			background: $lightgrey;
+			padding: 2rem;
+			ul.tags {
+				display: inline;
+				flex-wrap: wrap;
+				margin: 0;
+				padding: 0;
+				li {
+					display: inline-block;
+					list-style: none;
+					margin: 0 5px 5px 0;
+					a {
+						display: block;
+						color: $white;
+						background: $teal;
+						padding: 5px 10px;
+						transition: 0.2s ease-in-out;
+						&:hover {
+							background: $darkteal;
+							transition: 0.2s ease-in-out;
+						}
+					}
+				}
+			}
+			@media screen and (max-width: 991px) {
+                padding: 0.5rem;
+                padding-top: 0;
+				flex: 100%;
+				background: $white;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			flex: 100%;
+		}
+	}
+	@media screen and (max-width: 991px) {		
+		padding: 0;
+	}
+}
+
+.condition-box {
+	padding: 0;
+	.conditions-list-box {
+		text-align: center;
+		padding-bottom: 0.5rem;
+		.conditions-list-title {
+			color: $teal;
+			font-size: 1.25em;
+			font-weight: 800;
+			padding-bottom: 0.15em;
+			@media screen and (max-width: 500px) {
+				font-size: 1em;
+				padding: 0.5em 0;
+			}
+		}
+		.conditions-list-list {
+			list-style: none;
+			padding: 0 15%;
+			margin: 0;
+			li {
+				display: inline-block;
+				padding: 0;
+				a {
+					text-transform: uppercase;
+					text-decoration: underline !important;
+					font-size: 1em;
+					margin-right: 1em;
+				}
+			}
+			@media screen and (max-width: 500px) {
+				padding: 0;
+			}
+		}
+	}
+
+	&.mobile {
+        display: none;
+		@media screen and (max-width: 500px) {
+            display: block;
+            margin: 1.5rem 0;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		display: none;
+	}
+}

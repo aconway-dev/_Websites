@@ -1,0 +1,12 @@
+
+// Footer
+// -----------------------------------------------------------------------------
+footer {
+    position: relative;
+    z-index: 2;
+    @import "trust";
+    @import 'menu';
+    @import 'copy';
+    @import 'payment-icons';
+}
+

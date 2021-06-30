@@ -1,0 +1,42 @@
+#new-product,
+#new-product1,
+#new-product2 {
+    display: block;
+    background: $white;
+    width: 100%;
+    box-sizing: border-box;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+   /* @media screen and (min-width: 1170px) { 
+        height: 250px;
+        background-size: contain;
+    }*/     
+}
+
+#new-product {
+    background-image: url(//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/new_arrival_small_section_banner_1920x250.jpg?t=145467);
+    /*@media screen and (max-width: 1170px) { 
+        background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/prodcut_section_banner_1200x200.png?t=1575511958');
+    } */
+    @media screen and (max-width: 768px) {
+        background-image: url(//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/new_arrival_small_section_banner_458x250_mobile.jpg?t=145467);
+    }
+}
+
+#new-product1 {
+    background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/hp_banner_ballet_sm.jpg?t=1575511958');
+    @media screen and (max-width: 768px) {
+        background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/hp_banner_ballet_sm.jpg?t=1575511958');
+        background-size: contain;        
+    }
+}
+
+#new-product2 {
+    background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/hp_banner_basis_awave.jpg?t=1575511957');
+    @media screen and (max-width: 768px) {
+        background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/home/hp_banner_basis_awave_768x400.jpg?t=1575511957');
+        background-size: contain;
+    }
+}

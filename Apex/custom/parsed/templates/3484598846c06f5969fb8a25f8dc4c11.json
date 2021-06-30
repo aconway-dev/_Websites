@@ -1,0 +1,1 @@
+{"components/common/alert-generic":"<div class=\"alertBox\">\n    <p><i class=\"sprite sprite-black-circle\"></i> <span>{{{this}}}</span></p>\n</div>\n"}

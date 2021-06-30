@@ -1,0 +1,289 @@
+@mixin button-border($color, $hoverColor, $borderWidth, $time) {
+    $easing: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: $borderWidth;
+        width: 100%;
+        background-color: $color;
+    }
+    &:before {
+        top: 0;
+    }
+    &:after {
+        bottom: 0;
+    }
+    &:hover {
+        &>* {
+            &>* {
+                &:before,
+                &:after {
+                    transform: translate3d(0, 0, 0);
+                }
+                &>* {
+
+                    &:before,
+                    &:after {
+                        transform: translate3d(0, 0, 0);
+                    }
+                }
+            }
+        }
+    }
+    &>* {
+        &:before,
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+
+            height: 100%;
+            width: $borderWidth;
+
+            background-color: $color;
+        }
+
+        &:before {
+            left: 0;
+        }
+
+        &:after {
+            right: 0;
+        }
+
+        &>* {
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                z-index: 9;
+
+                height: $borderWidth;
+                width: 100%;
+
+                background-color: $hoverColor;
+            }
+
+            &:before {
+                top: 0;
+
+                transform: translate3d(-105%, 0, 0);
+                transition: transform $time $easing;
+            }
+
+            &:after {
+                bottom: 0;
+
+                transform: translate3d(105%, 0, 0);
+                transition: transform $time $easing;
+            }
+
+            &>* {
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    z-index: 9;
+
+                    height: 100%;
+                    width: $borderWidth;
+
+                    background-color: $hoverColor;
+                }
+
+                &:before {
+                    left: 0;
+
+                    transform: translate3d(0, 105%, 0);
+                    transition: transform $time $easing;
+                }
+
+                &:after {
+                    right: 0;
+
+                    transform: translate3d(0, -105%, 0);
+                    transition: transform $time $easing;
+                }
+            }
+        }
+    }
+}
+.button-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    .button {
+        background-color: $darkgrey;
+        border: none;
+        border-radius: 0;
+        color: $white;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 700;
+        margin: 0 .5em;
+        max-width: 300px;
+        outline: none;
+        padding: 18px 1rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        user-select: none;
+        vertical-align: middle;
+        touch-action: manipulation;
+        transition: color 0.3s ease-in-out 0s, background 0.3s ease-in-out 0s, border 0.3s ease-in-out 0s;
+        width: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        @include button-border($darkgrey, $grey, 2px, .2s);
+        &.dark {
+            @include button-border($white, $darkgrey, 2px, .2s);
+            background: $white;
+            color: $darkgrey;
+            &:hover,
+            &:focus,
+            &.is-active,
+            &.active {
+                background: $darkgrey;
+                color: $white;
+                * {
+                    color: $white;
+                }
+            }
+        }
+        
+        &.callout {
+            //$callout: #cc0315;
+            $callout: #ED6D66;
+            @include button-border($callout, $darkgrey, 2px, .2s);
+            background:  $callout;
+            color: $white;
+            &:hover,
+            &.is-active,
+            &.active {
+                background: $darkgrey;
+                color: $white;
+                transition-delay: .2s;
+                * {
+                    color: $white;
+                }
+            }
+            &:focus {
+                @include button-border($callout, $darkgrey, 2px, .2s);
+            }
+            &.alt {
+                @include button-border($callout, $white, 2px, .2s);
+                &:hover,
+                &:focus,
+                &.is-active,
+                &.active {
+                    background: $white;
+                    color: $darkgrey;
+                    transition-delay: .2s;
+                    * {
+                        color: $darkgrey;
+                    }
+                }
+            }
+        }
+        &.max {
+            max-width: 400px;
+            padding: 18px 3rem;
+        }
+        &.teal {
+            @include button-border($teal, $darkteal, 2px, .2s);
+            background: $teal;
+            color: $white;
+            &:hover,
+            &.is-active,
+            &.active {
+                background: $darkteal;
+                color: $white;
+                transition-delay: .2s;
+                * {
+                    color: $white;
+                }
+            }
+            &:focus {
+                @include button-border($teal, $darkteal, 2px, .2s);
+            }
+        }
+        &:focus {
+            @include button-border($darkgrey, $grey, 2px, .2s);
+        }
+        &:hover {
+            background: $grey;
+            color: $white;
+        }
+
+        @media screen and (max-width: 1100px) {
+            display: block;
+            padding: 14px 0;
+            margin-bottom: 0;
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 14px 0;
+            margin: 0 auto 1rem 0;
+            max-width: 100%;
+            &:last-of-type {
+                margin: 0 auto;
+            }
+        }
+    }
+    @media screen and (max-width: 1350px) {
+
+    }
+    @media screen and (max-width: 1100px) {
+        
+    }
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (max-width: 480px) {
+        display: block;
+    }
+}
+a.down {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 30px;
+    transition: all .2s ease-in-out;
+    z-index: 20;
+    color: $white;
+    background: rgba($darkgrey, .8);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid $white;
+    text-align: center;
+    line-height: 51px;
+    outline: none;
+    &:focus,
+    &:active {
+        background: rgba($darkgrey, .8);
+        color: $white;
+    }
+    &:hover {
+        transition: all .2s ease-in-out;
+        background: $white;
+        color: $darkgrey;
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

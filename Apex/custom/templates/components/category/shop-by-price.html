@@ -1,0 +1,20 @@
+{{#if shop_by_price}}
+<div class="sidebar-section-container active">
+    <h5 class="sidebar-section-title">
+        <span>{{lang 'category.shop_by_price'}}</span>
+    </h5>
+    <div class="sidebar-section-content">
+        {{#each shop_by_price}}
+        <li class="list-item{{#if selected }} active {{/if}}">
+            <a href="{{url}}" alt="{{low.formatted}} - {{high.formatted}}" title="{{low.formatted}} - {{high.formatted}}">{{low.formatted}} - {{high.formatted}}</a>
+        </li>
+        {{/each}}
+
+        {{#any shop_by_price selected=true}}
+        <li class="list-item">
+            <a href="{{category_url}}">{{lang 'category.reset'}}</a>
+        </li>
+        {{/any}}
+    </div>
+</div>
+{{/if}}

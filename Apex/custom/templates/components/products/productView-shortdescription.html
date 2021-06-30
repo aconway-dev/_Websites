@@ -1,0 +1,7 @@
+{{#eachIndex (split product.description '<!-- short -->')}}
+{{#if index '==' '1' }} 
+<div class="short-description">
+{{{item}}}
+</div>
+{{/if}}
+{{/eachIndex}}

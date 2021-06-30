@@ -1,0 +1,26 @@
+.image-callout {
+    height: 70vh;
+    min-height: 700px;
+    background-size: cover;
+    .row,
+    .container,
+    .container-inner {
+        height: 100%;
+    }
+    .block {
+        background: #fff;
+        padding: 2rem;
+		box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+		.button-wrap {
+			margin: 1rem 0 0 0;
+		}
+        @media screen and(max-width: 767px) {
+            margin: 0 2rem;
+        }
+    }
+    @media screen and(max-width: 767px) {
+        height: 50vh;
+        min-height: 500px;
+    }
+}
+

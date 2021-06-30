@@ -1,0 +1,56 @@
+<div class="productView-stock">
+    {{#if product.out_of_stock}}
+        {{#if product.out_of_stock_message}}
+            {{> components/common/alert-error product.out_of_stock_message}}
+        {{else}}
+            {{> components/common/alert-error (lang 'products.sold_out')}}
+        {{/if}}
+    {{/if}}
+</div>
+{{#if product.call_for_price}}
+<div class="productView-options {{product.title}}">
+    <p style="padding: 0 .5rem;">Please contact customer service at <a href="tel:8002522739" style="display: inline">800.252.2739</a> to order this product.<br />Our support staff is happy to assist you.</p>
+</div>
+{{/if}}
+{{#unless product.call_for_price}}
+    <div class="productView-options {{product.title}}">
+        <form class="form hidden-print" method="post" action="{{product.cart_url}}" enctype="multipart/form-data"
+            data-cart-item-add>
+            <input type="hidden" name="action" value="add">
+            <input type="hidden" name="product_id" value="{{product.id}}" />
+            {{#each product.customizations}}
+            {{{dynamicComponent 'components/products/customizations'}}}
+            {{/each}}
+
+            {{#each product.custom_fields}} 
+                {{#eq name 'Fit'}}
+                <div class="fit-box">
+                    <span>Fit: </span>
+                    <span>{{value}}</span>
+                </div>
+                {{/eq}}
+            {{/each}}
+
+            <div class="product-option-list" data-product-option-change>
+
+                {{#each product.options}}
+                    {{#each product.custom_fields}}
+                    {{#eq name 'Shoe Size'}}
+                    {{this.chartRequired}}
+                    {{/eq}}
+                    {{/each}}
+                    {{{dynamicComponent 'components/products/options' custom=product.custom_fields}}}
+                {{/each}}   
+            </div>
+            <div class="action">
+                <div class="action-disclamer">PLEASE CHOOSE SIZE AND WIDTH</div>
+                {{> components/products/productView-addtocart}}
+                <div id="customAffirmPromoContainer"></div>
+            </div>
+        </form>
+        <div class="shipping-returns-box">
+            <div class="returns"><a href="/return-policy/"><img alt="Hassle-Free Returns" src="{{cdn 'webdav:/navigation/lory-return.svg'}}"><span>Hassle-Free Returns</span></a></div>
+            <div class="shipping"><a href="/shipping/"><img alt="Free Shipping to Continental US Addresses" src="{{cdn 'webdav:/navigation/lory-movement.svg'}}"><span>Free Shipping to Continental US Addresses</span></a></div>
+        </div>
+    </div>
+{{/unless}}

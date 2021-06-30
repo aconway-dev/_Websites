@@ -1,0 +1,6 @@
+<h3>FOOTWEAR RECOMMENDED FOR: {{category.name}}</h3>
+<form action="{{urls.compare}}" method='POST' data-product-compare>
+    {{> components/products/grid-category products=category.products show_compare=category.show_compare theme_settings=theme_settings}}
+</form>
+
+{{> components/common/paginator pagination.category}}

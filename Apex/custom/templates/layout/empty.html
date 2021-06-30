@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ head.title }}</title>
+    {{{ head.meta_tags }}}
+    {{{ head.config }}}
+
+    <link href="{{ head.favicon }}" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    {{#block "head"}}{{/block}}
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MMH33S');</script>
+    <script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"26010209"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+</head>
+<body class="empty">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMH33S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<iframe frameborder="0" scrolling="no" height="1" width="20" id="cj_conversion"  style="display:none;visibility:hidden"/> </iframe>
+<script type="text/javascript">
+function readCookie(name) {
+var nameEQ = name + "=";
+var ca = document.cookie.split(';');
+for(var i=0;i < ca.length;i++) {
+var c = ca[i];
+while (c.charAt(0) === ' ') {
+c = c.substring(1,c.length);
+}
+if (c.indexOf(nameEQ) === 0) {
+return c.substring(nameEQ.length,c.length);
+}
+}
+return null;
+}
+var src=
+'https://www.emjcd.com/tags/c?containerTagId=35086&CID=1557892&TYPE=417465&CURRENCY=USD&OID=' + '%%ORDER_ID%%' + '&AMOUNT=' + '%%ORDER_SUBTOTAL_DISCOUNTED%%' + '&ITEMx=' + '%%GLOBAL_SKU%%' + '&QTYx=' + '%%GLOBAL_ProductQuantity%%' + '&DCNTx' + '%%GLOBAL_DiscountAmount%%' + '&OID=' + '%%GLOBAL_OrderNumber%%' + '&DISCOUNT=' + '%%GLOBAL_DiscountAmount%%' + '&COUPON=' + '%%GLOBAL_CouponCode%%' + '&CJEVENT=' + 
+readCookie('cjevent');
+document.getElementById('cj_conversion').src = src;
+</script>
+    {{#block "page"}}{{/block}}
+    <style>
+    .header-logo img {
+       width: 100%;
+       max-width: 200px;
+     }
+    </style>
+</body>
+</html>

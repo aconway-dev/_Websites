@@ -1,0 +1,53 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: 48
+        top_sellers: 
+            limit: 6
+        new: 
+            limit: 6
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "page"}}
+
+<section class="page-hero" style="background-image: url('{{getImage category.image}}?imbypass=on');">
+    <h1>{{category.name}}</h1>
+    {{#if category.description}}{{{category.description}}}{{/if}}
+</section>
+<main id="main-content">
+    <div class="container-inner {{dashcase category.name}}">
+        <div class="row category-header">
+            <div class="col-lg-3">
+                <h4>{{category.name}}</h4>
+            </div>
+            <div class="col-lg-6">
+                <section class="condition-box">
+                    {{> components/products/conditions-list}}
+                </section>                    
+            </div>
+            <div class="col-lg-3">
+                <div class="sort-select-box">{{> components/products/filter sort=pagination.category.sort}}</div>
+            </div>
+        </div>
+        <div id="category-list" class="row grid-gutter-vertical">
+            <div id="faceted-search-container" class="sidebar-container col-lg-2">
+                {{> components/category/sidebar}}
+            </div>
+            <div id="product-listing-container" class="content-container col-lg-10">
+                {{{snippet 'categories'}}}
+                {{> components/category/product-listing}}
+            </div>
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+<script type="text/javascript">
+    var google_tag_params = {
+        ecomm_pagetype: 'category',
+        ecomm_prodid: '',
+        ecomm_totalvalue: 0
+    };
+</script>
+{{/partial}}
+{{> layout/base}}
