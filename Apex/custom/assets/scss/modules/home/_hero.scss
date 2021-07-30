@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/content/home/banner/boat_header_image.png');
+    background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/homepage-sneakers-jul21.jpg?t=1627580165');
     cursor:pointer;
     @media screen and (max-width: 1240px) {
         /*background-position: -320px center;*/
@@ -27,11 +27,11 @@
     }   
     
     @media screen and (max-width: 767px) {
-        height: 500px;
+        height: 400px;
         background-size: cover;
         background-position: -150px center;
         /*height: auto; */
-        background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/content/home/banner/boat_header_image.png');
+        background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/homepage-jul21-mobile.jpg?t=1626471207');
     }  
     .main-title {
         position: relative;
