@@ -1,0 +1,40 @@
+---
+blog:
+    posts:
+        limit: 6
+        pages: 3
+        summary: 200
+---
+{{#partial "page"}}
+<section class="page-hero" style="background-image: url({{cdn 'webdav:/page/banner-blog.jpg'}});">
+    <h1>Apex News and Resources</h1>
+</section>
+<main id="main-content" class="blogs">
+    <div class="container-inner">
+        <div class="row grid-gutter-vertical d-flex posts">
+            <div class="col-md-9">
+                <div class="row">
+                    {{#each (limit blog.posts 6) }}
+                    {{> components/blog/posts post=this settings=../settings show_tags=false show_social=false }}
+                    {{/each}}
+                </div>
+            </div>
+            <aside class="col-md-3">
+                <h2>Recent Blogs</h2>
+                <div class="recent-blogs">
+                    {{#each (limit blog.posts 25) }}
+                    {{> components/blog/recent-posts post=this settings=../settings show_tags=false show_social=false }}
+                    {{/each}}
+                    </ul>
+            </aside>
+        </div>
+        <div class="row">
+            <div class="col">
+                {{> components/common/paginator pagination.blog}}
+            </div>
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

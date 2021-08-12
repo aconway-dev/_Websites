@@ -1,0 +1,48 @@
+{{#if settings.add_this.buttons}}
+<div class="addthis-toolbox-wrapper hidden-print">
+    <a href="#" class="button button-addthis-toolbox"><span class="button-icon-left"><i class="entypo-share"></i></span>Share</a>
+    <div class="addthis_toolbox addthis_32x32_style" addthis:url="{{url}}"
+         addthis:title="{{title}}">
+        <ul class="socialLinks">
+            {{#each settings.add_this.buttons}}
+                {{#if service '!==' 'google_plusone'}}
+                    <li class="socialLinks-item socialLinks-item--{{service}}">
+                        <a class="addthis_button_{{service}} icon icon--{{service}}" {{{annotation}}} alt="{{service}}" title="{{service}}">
+                            {{#if service '===' 'facebook'}}
+                            <i class="facebook"></i>
+                            {{/if}}
+                            {{#if service '===' 'twitter'}}
+                            <i class="twitter"></i>
+                            {{/if}}
+                            {{#if service '===' 'linkedin'}}
+                            <i class="linkedin"></i>
+                            {{/if}}
+                            {{#if service '===' 'pinterest'}}
+                            <i class="pinterest"></i>
+                            {{/if}}
+                        </a>
+                    </li>
+                {{/if}}
+            {{/each}}
+            {{#each settings.add_this.buttons}}
+                {{#if service '===' 'google_plusone'}}
+                    <li class="socialLinks-item socialLinks-item--{{service}}">
+                        <a class="addthis_button_{{service}} icon icon--{{service}}" {{{annotation}}}>
+                            {{#if service '===' 'google_plusone'}}
+                                <!-- No custom icons allowed with g+ -->
+                            {{/if}}
+                        </a>
+                    </li>
+                {{/if}}
+            {{/each}}
+        </ul>
+        <script type="text/javascript"
+                src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e94ed470ee51e32"></script>
+        <script>
+            if (typeof(addthis) === "object") {
+                addthis.toolbox('.addthis_toolbox');
+            }
+        </script>
+    </div>
+</div>
+{{/if}}

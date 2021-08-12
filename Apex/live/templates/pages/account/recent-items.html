@@ -1,0 +1,22 @@
+{{#partial "page"}}
+{{> components/account/navigation account_page='recent_items'}}
+<main id="main-content">
+	<div class="container-inner">
+		<div class="row grid-gutter-vertical">
+			<section class="col-md-9 page">
+				<div class="page-content">
+					{{#unless customer.recently_viewed_products.items}}
+					{{> components/common/alert-info (lang 'account.recent_items.no_items')}}
+					{{/unless}}
+					<form action="{{urls.compare}}" method="post">
+						{{> components/products/grid products=customer.recently_viewed_products.items show_compare=customer.recently_viewed_products.show_compare}}
+					</form>
+				</div>
+			</secttion>
+			{{> components/account/subnav account_page='recent_items'}}
+		</div>
+	</div>
+</main>
+{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,101 @@
+// =============================================================================
+// BREADCRUMBS (CSS)
+// =============================================================================
+//
+//
+// 1. Hide breadcrumbs on mobile-sized screens to improve screen real estate.
+//
+// 2. Since our breadcrumbs are centred with a variable width, we need to use
+//    display: inline-block; on the breadcrumbs. Hence needing to remove the
+//    white-space with font-size: 0;
+//    The font-size is reset in the breadcrumb settings file.
+//
+// -----------------------------------------------------------------------------
+
+@mixin inline {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: top;
+}
+
+$teal: #63bab5;
+
+/*
+.breadcrumbs {
+    display: inline-block; // 1
+    font-size: 1em; // 2
+    text-align: center;
+    list-style: none;
+} */
+
+.breadcrumbs {
+	padding-top: 0.5rem;
+	margin-bottom: 0;
+    padding-bottom: 0;
+	font-size: 1rem;
+	@include inline;
+
+	li {
+		position: relative;
+		margin: 0px 0px;
+		padding: 0px;
+		list-style: none;
+		list-style-image: none;
+		@include inline;
+		transition: 0.3s ease;
+		&:first-child a:before {
+			content: "\f015";
+			font-family: FontAwesome;
+			font-size: 1.5em;
+			line-height: 0.75;
+		}
+		&:hover {
+			a {
+				color:$teal;
+			}
+		}
+
+		&.is-active {
+			a {
+				color: #000;
+				background: $teal;
+			}
+		}
+
+		&:last-child {
+			font-size: 1.75rem;
+			line-height: 1.5;
+			padding-left: 0.5rem;
+			color: $teal;
+
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: none;
+			}
+		}
+
+		a {
+			display: block;
+			color: #757575;
+			text-decoration: none;
+			white-space: nowrap;
+			overflow: hidden;
+			transition: 0.3s ease;
+			width: auto;
+			line-height: 3rem;
+			span {
+				margin-right: 0.5em;
+			}
+			&:after {
+				content: "\f0da";
+				color: $teal;
+				font-family: FontAwesome;
+				line-height: 1;
+				font-size: 1.25em;
+				margin: 0 0.1em;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.countdown {
+    text-align: center;
+    padding: 4em 0;
+    background: $darkgrey;
+
+    h2 {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+
+        span {
+            display: block;
+
+            &.teal {
+                color: $teal;
+                font-weight: 100;
+                font-size: 30px;
+                text-transform: none;
+            }
+
+            &.number {
+                font-size: 360px;
+                line-height: 320px;
+            }
+
+            &.years {
+                font-size: 56px;
+            }
+        }
+    }
+}

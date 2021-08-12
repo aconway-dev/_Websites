@@ -1,0 +1,36 @@
+---
+category:
+    shop_by_price: true
+    products:
+        limit: 12
+---
+{{inject "categoryProductsPerPage" theme_settings.categorypage_products_per_page}}
+{{#partial "page"}}
+<section class="page-hero" style="background-image: url({{cdn 'webdav:/page/apex-discontinued-bg.jpg'}});">
+    <img class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{cdn 'webdav:/page/apex-discontinued-icon.pn'}}g" alt="{{category.name}}" title="{{category.name}}" />
+    <h1>{{category.name}}</h1>
+    {{#if category.description}}{{{category.description}}}{{/if}}
+</section>
+<main id="main-content">
+    <div class="container-inner {{dashcase category.name}}">
+        <div id="category-list" class="row grid-gutter-vertical">
+            <div id="product-listing-container" class="content-container col-lg-9">
+                {{{snippet 'categories'}}}
+                {{> components/category/product-listing}}
+            </div>
+            <div id="faceted-search-container" class="sidebar-container col-lg-3">
+                {{> components/category/sidebar}}
+            </div>
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+<script type="text/javascript">
+    var google_tag_params = {
+        ecomm_pagetype: 'category',
+        ecomm_prodid: '',
+        ecomm_totalvalue: 0
+    };
+</script>
+{{/partial}}
+{{> layout/base}}

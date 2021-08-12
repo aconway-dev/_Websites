@@ -1,0 +1,11 @@
+{{#if product_results.products}}
+    <div class="row product-grid products-per-row-4">
+        {{#each product_results.products}}
+        {{>components/products/card show_compare=../show_compare show_rating=../settings.show_product_rating theme_settings=../theme_settings}}
+        {{/each}}
+    </div>
+{{else}}
+    <p class="quickSearchMessage">
+        {{lang 'search.results.quick_count' count=pagination.product_results.total search_query=forms.search.query}}
+    </p>
+{{/if}}

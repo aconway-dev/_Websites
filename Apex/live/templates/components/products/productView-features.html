@@ -1,0 +1,10 @@
+{{#eachIndex (split product.description '<!-- features -->')}}
+{{#if index '==' '1' }} 
+<div class="col">
+    <div class="block">
+        <h4>Features</h4>
+        {{{item}}}
+    </div>
+</div>
+{{/if}}
+{{/eachIndex}}

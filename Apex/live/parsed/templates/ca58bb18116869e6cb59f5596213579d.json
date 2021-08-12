@@ -1,0 +1,1 @@
+{"components/products/productView-price-saved":"{{#if price.saved}}\r\n<div class=\"productView-price-saved\">\r\n    <p class=\"original\">Original Price: \r\n        <span>{{price.rrp_without_tax.formatted}}</span> | \r\n        You Save (<span data-product-price-saved >{{price.saved.formatted}}</span>)\r\n    </p>\r\n</div>\r\n{{/if}}\r\n"}

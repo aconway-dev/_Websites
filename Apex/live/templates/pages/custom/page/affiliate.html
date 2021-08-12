@@ -1,0 +1,32 @@
+{{#partial "page"}}
+<div class="page-hero" style="background-image: url({{cdn 'webdav:/page/faqs.jpg'}});">
+    <h1 class="page-title">Affiliate Information</h1>
+</div>
+<main id="main-content" class="{{dashcase page.title}}">
+    <div class="container-inner {{dashcase page.title}}">
+        <div class="row grid-gutter-vertical">
+            <section class="col-lg-8 offset-md-2 page">
+                <article class="page-content">
+                    {{{page.content}}}
+                    <div class="row grid-gutter-vertical">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="button-wrap">
+                                <a href="https://signup.cj.com/member/signup/publisher/?cid=5299347" target="_blank" class="button callout"><span><span><span>Become an Affiliate Today</span></span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+<script type="text/javascript">
+    var google_tag_params = {
+        ecomm_pagetype: 'Page',
+        ecomm_prodid: '',
+        ecomm_totalvalue: 0
+    };
+</script>
+{{/partial}}
+{{> layout/base}}

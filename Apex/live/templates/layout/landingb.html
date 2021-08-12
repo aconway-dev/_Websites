@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}" >
+
+<head>
+    <!-- Anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-MMH33S':true});</script>
+  <title>{{ head.title }}</title>
+  {{{ head.meta_tags }}}
+  {{{ head.config }}}
+  {{#block "head"}} {{/block}}
+  <link href="{{ head.favicon }}" rel="shortcut icon">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+  <meta name="theme-color" content="{{theme_settings.general_site_color}}">
+  <!-- Apex google tracking -->
+  <meta name="google-site-verification" content="yisIlcxJ6S4Ra8z4vr7vtgpPF1eDBcCSY6UY7gGv7_I" />
+  {{{stylesheet '/assets/css/theme.css'}}}
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MMH33S');
+  </script>
+  <script>
+    window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";
+  </script>
+  {{{head.scripts}}}
+  {{{head.rsslinks}}}
+  {{{snippet 'htmlhead'}}}
+</head>
+
+<body class="landing">
+  {{> components/common/body }}
+  <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+  <script>
+    window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
+  </script>
+  {{{footer.scripts}}}
+  {{{snippet 'footer'}}}
+</body>
+
+</html>

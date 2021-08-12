@@ -1,0 +1,54 @@
+<div class="sidebar-section accordion {{ title }}">
+    <h5 class="title">
+        <span>{{ title }}</span>
+        <i class="sprite sprite-black-plus"></i>
+    </h5>
+    <div class="content">
+        <div id="facetedSearch-content--{{hyphenate facet }}">
+            <form id="facet-range-form" class="form" method="get" data-faceted-search-range novalidate>
+                {{#each current_selected_items}}
+                    <input type="hidden" name="{{ param_name }}[]" value="{{ param_value }}"/>
+                {{/each}}
+                <input type="hidden" name="search_query" value="{{search_query}}">
+                {{#if sort}}
+                    <input type="hidden" name="sort" value="{{sort}}">
+                {{/if}}
+                <fieldset class="form-fieldset">
+                    <div class="form-minMaxRow">
+                        <div class="form-field">
+                            <input
+                                name="min_price"
+                                placeholder="{{lang 'search.faceted.range.min-placeholder'}}"
+                                min="0"
+                                class="form-input form-input--small"
+                                required
+                                type="number"
+                                value="{{ min_price }}"
+                            />
+                        </div>
+
+                        <div class="form-field">
+                            <input
+                                name="max_price"
+                                placeholder="{{lang 'search.faceted.range.max-placeholder'}}"
+                                min="0"
+                                class="form-input form-input--small"
+                                required
+                                type="number"
+                                value="{{ max_price }}"
+                            />
+                        </div>
+
+                        <div class="form-field">
+                            <button class="button button-sm" type="submit">
+                                Refresh
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-inlineMessage"></div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+@import "ticker";
+@import "navigation";
+
+// ===========================
+//  Header
+// ===========================
+body.blog {
+	[data-id="blog"]{
+		.mega-sub {
+			display: none;
+		}
+	}
+}
+.main-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 1000;
+	background: $white;
+}

@@ -1,0 +1,1 @@
+{"components/common/body":"{{#if page_type '===' 'default'}}\n{{#if banners.top}}\n<div class=\"banner-top\">\n{{{limit banners.top 1}}}\n</div>\n{{/if}}\n{{#block \"page\"}} {{/block}}\n{{else}}\n\n{{#if banners.top}}\n<div class=\"banner-top\">\n{{{limit banners.top 1}}}\n</div>\n{{/if}}\n{{#block \"page\"}} {{/block}}\n{{/if}}\n"}
