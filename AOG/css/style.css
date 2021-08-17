@@ -517,7 +517,7 @@ width: 100%;
 table.schedule tr {border: none;}
 table.schedule td {border: solid 1px #aaa;}
     table.schedule tr:nth-child(odd) {background: #dedede;}
-    table.schedule td:first-child {color:#1e805a; font-weight: 600;}
+    table.schedule td:first-child {color:#087dc1; font-weight: 600;}
 
 
 
@@ -739,7 +739,7 @@ table.schedule td {border: solid 1px #aaa;}
 			width: 100%;
 			position: absolute;
 			background: #eee;
-			border: solid 1px #00704a;
+			border: solid 1px #087dc1;
 			box-shadow: 4px 6px 7px rgba(0,0,0,.2);
 		}
 		#main-header nav > ul > li > ul {
@@ -763,7 +763,7 @@ table.schedule td {border: solid 1px #aaa;}
         #main-header .phone-link {
             vertical-align: .5rem;
             text-decoration: none;
-            color: #1e805a;
+            color: #087dc1;
         }
 
 /* Banner */
@@ -818,11 +818,11 @@ table.schedule td {border: solid 1px #aaa;}
     text-align: center;
     font-size: 3vw;
 }
-#banner .ohi-gdpr > header.major span {font-size: 12vw; color: #1e805a;}
+#banner .ohi-gdpr > header.major span {font-size: 12vw; color: #087dc1;}
 #banner .ohi-gdpr > header.major h2:before {display: none;}
 #banner .hero-slider .slide.brexit img {margin: 2rem auto 2rem; width: 90%;}
 .brexit-page .container > div > h2 {margin-top: 4rem; font-weight: 700; color: #333;}
-.brexit-page .container h3 {font-weight: 600; color: #1e805a;}
+.brexit-page .container h3 {font-weight: 600; color: #087dc1;}
 .brexit-page .alert {color: #da0000; font-weight: 900;}
 .brexit-page:nth-of-type(3) {padding-top: 0;}
 
