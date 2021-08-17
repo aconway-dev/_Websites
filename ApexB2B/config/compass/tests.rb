@@ -1,0 +1,11 @@
+http_path = "/"
+css_dir = "tests/style_guide/styles"
+sass_dir = "assets/scss"
+images_dir = "tests/style_guide/images"
+http_images_path = "images/"
+sprite_load_path = "assets/images"
+javascripts_dir = "Site/wp-content/themes/sams/scripts"
+http_javascripts_dir = "../../Site/wp-content/themes/sams/scripts"
+relative_assets = true
+output_style = :nested
+line_comments = true

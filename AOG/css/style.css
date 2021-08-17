@@ -96,7 +96,7 @@
 		background: -moz-linear-gradient(top, rgba(104,178,69,0) 0%, rgba(104,178,69,0) 23%, rgba(104,178,69,0.5) 100%);
 		background: -webkit-linear-gradient(top, rgba(104,178,69,0) 0%,rgba(104,178,69,0) 23%,rgba(104,178,69,0.5) 100%);
 		background: linear-gradient(to bottom, rgba(104,178,69,0) 0%,rgba(104,178,69,0) 23%,rgba(104,178,69,0.5) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068b245', endColorstr='#8068b245',GradientType=0 );
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00087dc1', endColorstr='#80087dc1',GradientType=0 );
 	}
 	.page-link:before {
 		content: "";
@@ -104,7 +104,7 @@
 		height: 85px;
 		margin-top: -85px;
 	}
-.secondary {color: #1e805a;}
+.secondary {color: #087dc1;}
 
 .g-recaptcha {margin-top: 1rem;}
 .error {
@@ -120,7 +120,7 @@
 /* Section/Article */
 	section.special, article.special {text-align: center;}
 	article.special p {font-size: 1rem;}
-	article.special h2 {color: #68b245; font-size: 2rem;}
+	article.special h2 {color: #087dc1; font-size: 2rem;}
 	article.special.left {text-align: left;}
 	header p {
 		color: #bbb;
@@ -159,13 +159,13 @@
 		position: absolute;
 		top: 4%;
 		left: 0;
-		background: #68b245;
+		background: #087dc1;
 	}
 	header.major.no-bar h2 {padding-left: 0;}
 	header.major.no-bar h2:before {display: none;}
 	header.major h2 span {
 		display: block;
-		color: #68b245;
+		color: #087dc1;
 		font-size: 2.5rem;
 		font-weight: 600;
 		text-transform: uppercase;
@@ -327,8 +327,8 @@
 		padding: 3rem 2rem;
 	}
 	.box ul, .box li {color: #333!important;}
-	.box header.major h2 span {color: #68b245;}
-	.box header.major h2:before {background: #68b245!important;}
+	.box header.major h2 span {color: #087dc1;}
+	.box header.major h2:before {background: #087dc1!important;}
 		.box > :last-child,
 		.box > :last-child > :last-child,
 		.box > :last-child > :last-child > :last-child {margin-bottom: 0;}
@@ -499,7 +499,7 @@ width: 100%;
 		font-weight: 500;
 		padding: .25rem .75rem;
 		text-align: left;
-		background: #68b245;
+		background: #087dc1;
 	}
 	table thead {border-bottom: solid 2px rgba(144, 144, 144, 0.25);}
 	table tfoot {border-top: solid 2px rgba(144, 144, 144, 0.25);}
@@ -540,8 +540,8 @@ table.schedule td {border: solid 1px #aaa;}
         color: #333;
 		border: solid 2px #000;
 		*/
-        color: #68b245;
-        border: solid 2px #68b245;
+        color: #087dc1;
+        border: solid 2px #087dc1;
         cursor: pointer;
 		display: inline-block;
 		font-weight: 400;
@@ -577,12 +577,12 @@ table.schedule td {border: solid 1px #aaa;}
 	input[type="reset"]:hover,
 	input[type="button"]:hover,
 	/*.button:hover {background-color: #333; color: #fff;}*/
-    .button:hover {background-color: #68b245; color: #fff;}
+    .button:hover {background-color: #087dc1; color: #fff;}
 	input[type="submit"]:active,
 	input[type="reset"]:active,
 	input[type="button"]:active,
 	/*.button:active {background-color: #0f1315;}*/
-    .button:active {background-color: #68b245;}
+    .button:active {background-color: #087dc1;}
 	input[type="submit"].icon,
 	input[type="reset"].icon,
 	input[type="button"].icon,
@@ -730,7 +730,7 @@ table.schedule td {border: solid 1px #aaa;}
 		#main-header nav ul ul > li:hover,
 		#main-header > nav > ul > li > ul > li:hover {
 			color: #fff;
-			background: #68b245;
+			background: #087dc1;
 			width: 100%;
 		}
 		#main-header nav ul ul {
@@ -756,7 +756,7 @@ table.schedule td {border: solid 1px #aaa;}
 			min-width: 175px;
 			z-index: 999;
 		}
-		#main-header nav > ul > li:hover {background: #68b245;}
+		#main-header nav > ul > li:hover {background: #087dc1;}
 		#main-header nav ul li:hover > label > a,
 		#main-header nav ul li:hover > a {color: #fff;}
 		#main-header nav ul li ul li:hover ul {top: 0px;}
@@ -773,7 +773,7 @@ table.schedule td {border: solid 1px #aaa;}
 		position: relative;
 		background-image: url('../images/hero-bg.jpg');
 		background-size: cover;
-		border-bottom: solid 1.5rem #68b245;
+		border-bottom: solid 1.5rem #087dc1;
 		background-color: #fff;
 	}
 	#banner img.full {display: block; width: 100%;}
@@ -879,7 +879,7 @@ table.schedule td {border: solid 1px #aaa;}
 			display: block;
 			cursor: pointer;
 			text-align: center;
-			color: #68b245;
+			color: #087dc1;
 		}
 		.playlist--item h4:hover {text-decoration: underline;}
 		.playlist + .row .button {
@@ -905,14 +905,14 @@ table.schedule td {border: solid 1px #aaa;}
 	width: 94%;
 	border-bottom: solid 1px #fff;
 }
-.expandable input:checked ~label h4 {background: #68b245; color: #fff;}
+.expandable input:checked ~label h4 {background: #087dc1; color: #fff;}
 .expandable label i {
 	font-size: 1.75rem;
 	float: right;
 }
 .expandable div, .expandable label i {transition: all .5s ease;}
 .expandable input[type=checkbox] {display: none;}
-.expandable input:checked ~ label i {transform: rotateX(180deg); color: #68b245;}
+.expandable input:checked ~ label i {transform: rotateX(180deg); color: #087dc1;}
 .expandable div {
 	margin: 0 0 2rem;
 	padding: 0 0 0 1rem;
@@ -950,7 +950,7 @@ table.schedule td {border: solid 1px #aaa;}
 	.news-slider .button {
 		margin-top: 2rem;
 		padding: 0;
-		background: #68b245;
+		background: #087dc1;
 		color: #fff;
 		border: none;
 		font-size: 1.5rem;
@@ -978,7 +978,7 @@ table.schedule td {border: solid 1px #aaa;}
 /* Meet Staff */
 	.meet .row {margin: 0; padding: 4rem 0; border-bottom: dotted 4px #ccc;}
 	.meet .row:last-child {border-bottom: none;}
-	.meet img {border-radius: 100%; transition: border-radius .5s;  border: solid 4px #68b245;}
+	.meet img {border-radius: 100%; transition: border-radius .5s;  border: solid 4px #087dc1;}
 	.meet .row div {padding: 0 3rem; border-right: dotted 4px #ccc;}
 	.meet .row div:last-child {border-right: none;}
 	.meet .row div:hover img {border-radius: 10%;}
@@ -1000,11 +1000,11 @@ table.schedule td {border: solid 1px #aaa;}
 		text-transform: uppercase;
 	}
 	.product-grid h3 a:hover {color: #555;}
-	.product-grid h3.active a {color: #68b245;}
+	.product-grid h3.active a {color: #087dc1;}
 	.product-grid .container:last-child div {margin-bottom: 2rem; min-height: 300px;}
 	.product-grid .container:last-child div > img {margin-bottom: .5rem;}
 	.product-grid .container:last-child .row div a img:hover {box-shadow: 0 5px 12px rgba(0,0,0,.3);}
-	.product-grid .container:last-child .row div h4 a:hover {color: #68b245; text-decoration: underline;}
+	.product-grid .container:last-child .row div h4 a:hover {color: #087dc1; text-decoration: underline;}
 	section.wrapper.products .row div {position: relative;}
 	section.wrapper.products .container div img.product-hero {
 		margin: 0;
@@ -1019,7 +1019,7 @@ table.schedule td {border: solid 1px #aaa;}
 	.products .row h3 {
 		margin-bottom: 0;
 		font-weight: 500;
-		color: #68b245;
+		color: #087dc1;
 	}
 	.products .row p {margin: 0 0 1rem 0;}
 	.products header.major h2 {margin-bottom: 0;}
@@ -1035,7 +1035,7 @@ table.schedule td {border: solid 1px #aaa;}
 		content: '**';
 	}
 	section.wrapper.products h3 {margin: 0 0 4rem;}
-	.products .slide h2 {font-weight: bold; color: #68b245;}
+	.products .slide h2 {font-weight: bold; color: #087dc1;}
 	.products th {text-align: center;}
 
 /* Dynaflange */
@@ -1112,7 +1112,7 @@ table.schedule td {border: solid 1px #aaa;}
     margin: .3125rem;
     padding: 0;
     cursor: pointer;
-    background-color: #68b245;
+    background-color: #087dc1;
 	opacity: 1;
 }
 .scanning-slider .slick-dots li.slick-active {background-color: #bde6aa;}
@@ -1121,10 +1121,10 @@ table.schedule td {border: solid 1px #aaa;}
 .scancast article.special {
 	padding: 1rem;
 	color: #fff;
-	background: #68b245;
+	background: #087dc1;
 }
 .scancast article.special h2 span {font-size: 4rem; display: block;}
-.scancast article.special h2 {font-weight: 600; color: #68b245; text-align: center; color: #fff;}
+.scancast article.special h2 {font-weight: 600; color: #087dc1; text-align: center; color: #fff;}
 
 
 /* GaitScan */
@@ -1274,7 +1274,7 @@ table.schedule td {border: solid 1px #aaa;}
 	#main-header nav ul > li input[type=checkbox]:checked ~ ul{right: 0;}
 	#main-header nav ul li label {cursor: pointer;}
 	#main-header nav ul li label:hover,
-	#main-header nav ul li a:hover {background: #68b245;}
+	#main-header nav ul li a:hover {background: #087dc1;}
 	#main-header nav ul ul {background: #333;}
 	#main-header nav ul ul .nav-return {margin-top: 4rem;}
 	#main-header nav ul ul ul {background: #444;}

@@ -1,0 +1,21 @@
+{
+  "name": "SAMS Theme",
+  "version": "1.0.0",
+  "main": [
+    "./Site/wp-content/themes/sams/style.css",
+    "./Site/wp-content/themes/sams/scripts/main.js"
+  ],
+  "dependencies": {
+    "jquery": "~1.9.3",
+    "harvey": "git://github.com/harvesthq/harvey.git",
+    "almond": "~0.2.3",
+    "hammerjs": "~1.0.0",
+    "moment": "~1.7.2",
+    "bootstrap": null,
+    "jquery.validate": "git://github.com/jzaefferer/jquery-validation.git",
+    "jquery.transit": "git://github.com/rstacruz/jquery.transit.git",
+    "imagesloaded": "~2.1.1",
+    "backbone-amd": "~0.9.10",
+    "underscore-amd": "~1.4.4"
+  }
+}
