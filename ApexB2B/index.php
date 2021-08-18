@@ -83,7 +83,7 @@ echo "
                             <h2>Products &amp; Resources</h2>
                             <a href='http://apexfootmedia.ohi.net/apex/content/dealers/updates/ApexB2BPortalUsersManual.pdf' target='_blank'>Apex Quick Start Guide</a>
                             <a href='http://ohi.net/university/resources.html?Apex%20Foot%20Health$1' target='_blank'>Dealer Resources</a>
-                            <a href='http://www.apexfoot.com/catalog/' target='_blank'>Footwear Catalog</a>
+                            <a target='_blank' class='external' href='https://joom.ag/WFre'>Footwear Catalog</a>
                             <a href='http://www.apexfoot.com/dynaflange' target='_blank'>Prefab Orthotics</a>
                             <a href='http://www.apexfoot.com/coppercloud' target='_blank'>Copper Cloud&nbsp;Socks</a>
                             <a href='content/2017_Diabetes_and_Your_Feet_Brochure_Final.pdf' target='_blank'>Diabetic Footwear</a>
