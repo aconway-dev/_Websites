@@ -57,7 +57,7 @@ echo "
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordem1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."&Arg=MODIFY' target='_blank'>Modify Draft Order</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstoci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Check Item Availability</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordei1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Order Status</a>
-                            <a href='http://www.apexfoot.com/return-policy-b2b' target='_blank'>Return Policy</a>
+                            <a href='return-policy.php' target='_blank'>Return Policy</a>
                             
                             <!-- <a href='//api.ohi.net/FedEx?unit=APEX&src=2' target='_blank'>Shoe Return Shipping Labels (US)</a>
                             <a href='//api.ohi.net/FedEx?unit=APEX&src=4' target='_blank'>CDI Shipping Labels (US)</a>   -->
@@ -86,7 +86,7 @@ echo "
                             <a target='_blank' class='external' href='https://joom.ag/WFre'>Footwear Catalog</a>
                             <a href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' target='_blank'>Prefab Orthotics</a>
                             <a href='pdfs/Apex_Copper_Cloud_Socks_Sell_Sheet_Order_Form_2021.pdf' target='_blank'>Copper Cloud&nbsp;Socks</a>
-                            <a href='content/2017_Diabetes_and_Your_Feet_Brochure_Final.pdf' target='_blank'>Diabetic Footwear</a>
+                            <a href='pdfs/Apex_Diabetes_Your_Feet_Brochure.pdf' target='_blank'>Diabetic Footwear</a>
                         </div>
                     </div>
                 </div>
