@@ -1,0 +1,71 @@
+<?php
+
+require_once("header.php");
+
+if(isset($_POST['account-number']) && isset($_POST['first-name']) && isset($_POST['last-name']) && isset($_POST['email']) && isset($_POST['phone']) && isset($_POST['comments'])) {
+  $accountNumber = $_POST['account-number'];
+  $firstName = $_POST['first-name'];
+  $lastName = $_POST['last-name'];
+  $email = $_POST['email'];
+  $streetAddress = $_POST['street-address'];
+  $city = $_POST['city'];
+  $state = $_POST['state'];
+  $postalCode = $_POST['pc'];
+  $country = $_POST['country'];
+  $phone = $_POST['phone'];
+  $fax = $_POST['fax'];
+  $comments = $_POST['comments'];
+
+  $to  = 'noreply@apexfoot.com';
+  $subject = 'Aetrex Contact Form Submission';
+  $message = '<b>Account Number:</b> ' . $accountNumber . '<br>'.
+	      '<b>First Name:</b> ' . $firstName . '<br>'.
+              '<b>Last Name:</b>' . $lastName . '<br>'.
+              '<b>Email:</b>' . $email . '<br>'.
+              '<b>Street Address:</b>' . $streetAddress . '<br>'.
+              '<b>City:</b>' . $city . '<br>'.
+              '<b>State:</b>' . $state . '<br>'.
+              '<b>Postal Code:</b>' . $postalCode . '<br>'.
+              '<b>Country:</b>' . $country . '<br>'.
+              '<b>Phone:</b>' . $phone . '<br>'.
+              '<b>Fax:</b>' . $fax . '<br>'.
+              '<b>Comments:</b>' . $comments;
+  // To send HTML mail, the Content-type header must be set
+  $headers  = 'MIME-Version: 1.0' . "\r\n";
+  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+  $headers .= 'From: B2B Portal <noreply@aetrex.com>' . '\r\n';
+
+  mail($to, $subject, $message, $headers);
+  // removed image tagn from logo div
+	echo "
+	<body>
+	  <div class='containermail'>
+	    <div class='header'>
+	      <div class='logo'></div>
+	      
+	    </div>
+	    <div class='main3'>
+	      <h2>Contact form submitted successfully.</h2>
+	      <a href='index.php'>Continue</a>
+	    </div>
+	";
+  }
+  else
+  { 
+		echo "
+		<body>
+		  <div class='containermail'>
+		    <div class='header'>
+		      <div class='logo'><img src='images/logo.gif' alt='Aetrex'></div>
+		      <p><a href='http://www.aetrex.com/'>Back to Aetrex.com</a></p>
+		    </div>
+		    <div class='main'>
+		      <h2>Error submitting contact form.  Some of the required fields were not entered.</h2>
+		      <a href='contact.php'>Back to contact form</a>
+		    </div>
+		";
+  }
+  
+// require_once("footer.php");
+
+?>
