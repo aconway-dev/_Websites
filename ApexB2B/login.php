@@ -165,10 +165,8 @@ echo "
                 <div class='col-12 text-center'>
                 <h4>Introducing Jēba Compression Hosiery & Socks!</h4>
                 <p>12 Styles You Will Love. Quality You Can Trust. Amazing Low Prices!</p>
-                <ul>
-                    <li>Two Levels of Compression: Preventative 15-20 mmHg and Medical 20-30 mmHg</li>
-                    <li>Functional & Fashionable</li>
-                </ul>
+                <p>Two Levels of Compression: Preventative 15-20 mmHg and Medical 20-30 mmHg</p>
+                <p>Functional & Fashionable</p>
                     <a class='button slim' target='_blank' href='https://joom.ag/gKzI' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'Apex Orthotic Suite’,'');\">Click to View</a>
                 </div>
             </div>            

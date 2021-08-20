@@ -77,17 +77,13 @@ echo "
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxinvci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>View Invoice</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstmtr1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank' >View Statement</a>
                         </div>
-                        <div>
-                            <h2>Marketing</h2>
-                            <a href='https://safestep.infusionsoft.com/app/form/2019-apex-marketing-materials' target='_blank'>Submit Apex Marketing Materials Request</a>
-                        </div>
                     </div>
                     <div class='col-md-4 main-menu'>
                         <div>
                             <h2>Products &amp; Resources</h2>
                             <a href='http://apexfootmedia.ohi.net/apex/content/dealers/updates/ApexB2BPortalUsersManual.pdf' target='_blank'>Apex Quick Start Guide</a>
                             <a href='http://ohi.net/university/resources.html?Apex%20Foot%20Health$1' target='_blank'>Dealer Resources</a>
-                            <a href='http://www.apexfoot.com/catalog/' target='_blank'>Footwear Catalog</a>
+                            <a target='_blank' class='external' href='https://joom.ag/WFre'>Footwear Catalog</a>
                             <a href='http://www.apexfoot.com/dynaflange' target='_blank'>Prefab Orthotics</a>
                             <a href='http://www.apexfoot.com/coppercloud' target='_blank'>Copper Cloud&nbsp;Socks</a>
                             <a href='content/2017_Diabetes_and_Your_Feet_Brochure_Final.pdf' target='_blank'>Diabetic Footwear</a>
@@ -104,7 +100,7 @@ echo "
                     <a target='_blank' class='external' href='https://joom.ag/WFre'><img class='flex-img' src='images/apex-catalog.jpg' alt='2019 Apex Footwear Catalog' /></a>
                 </div>
                 <div class='col-12 text-center'>
-                    <h4>Browse &amp; Download the 2020 Apex Footwear Catalog</h4>
+                    <h4>Browse &amp; Download the 2021 Apex Footwear Catalog</h4>
                     <p>70+ Years and Growing! Apex Foot Health Industries is dedicated to
                     designing and manufacturing the finest foot health products available on the market today.Thank you for being a valued customer.</p>
                     <a class='button slim external' target='_blank' href='https://joom.ag/WFre'>Learn More</a>
