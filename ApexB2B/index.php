@@ -44,7 +44,7 @@ echo "
         <div class='grid justify-center'>
             <div class='col-12 col-sm-10 col-md-8 menu has-logo'>
                 <div class='grid justify-end'>
-                    <div class='col-2 col-bleed text-right'><a class='small' href='index.php'>Logout</a></div>
+                    <div class='col-2 col-bleed text-right'><a class='small' href='logout.php'>Logout</a></div>
                 </div>
                 <div class='logo'><a href='/index.php'><img src='images/logo.jpg' alt='Apex'></a></div>
                 <h1>Welcome back, $loggedInUser->displayname.</h1>
