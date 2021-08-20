@@ -44,7 +44,7 @@ echo "
         <div class='grid justify-center'>
             <div class='col-12 col-sm-10 col-md-8 menu has-logo'>
                 <div class='grid justify-end'>
-                    <div class='col-2 col-bleed text-right'><a class='small' href='logout.php'>Logout</a></div>
+                    <div class='col-2 col-bleed text-right'><a class='small' href='index.php'>Logout</a></div>
                 </div>
                 <div class='logo'><a href='/index.php'><img src='images/logo.jpg' alt='Apex'></a></div>
                 <h1>Welcome back, $loggedInUser->displayname.</h1>
@@ -57,7 +57,7 @@ echo "
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordem1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."&Arg=MODIFY' target='_blank'>Modify Draft Order</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstoci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Check Item Availability</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordei1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Order Status</a>
-                            <a href='return-policy.php' target='_blank'>Return Policy</a>
+                            <a href='return-policy.php'>Return Policy</a>
                             
                             <!-- <a href='//api.ohi.net/FedEx?unit=APEX&src=2' target='_blank'>Shoe Return Shipping Labels (US)</a>
                             <a href='//api.ohi.net/FedEx?unit=APEX&src=4' target='_blank'>CDI Shipping Labels (US)</a>   -->
