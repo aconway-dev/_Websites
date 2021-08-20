@@ -84,8 +84,8 @@ echo "
                             <a href='http://apexfootmedia.ohi.net/apex/content/dealers/updates/ApexB2BPortalUsersManual.pdf' target='_blank'>Apex Quick Start Guide</a>
                             <a href='http://ohi.net/university/resources.html?Apex%20Foot%20Health$1' target='_blank'>Dealer Resources</a>
                             <a target='_blank' class='external' href='https://joom.ag/WFre'>Footwear Catalog</a>
-                            <a href='http://www.apexfoot.com/dynaflange' target='_blank'>Prefab Orthotics</a>
-                            <a href='http://www.apexfoot.com/coppercloud' target='_blank'>Copper Cloud&nbsp;Socks</a>
+                            <a href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' target='_blank'>Prefab Orthotics</a>
+                            <a href='pdfs/Apex_Copper_Cloud_Socks_Sell_Sheet_Order_Form_2021.pdf' target='_blank'>Copper Cloud&nbsp;Socks</a>
                             <a href='content/2017_Diabetes_and_Your_Feet_Brochure_Final.pdf' target='_blank'>Diabetic Footwear</a>
                         </div>
                     </div>
@@ -97,7 +97,7 @@ echo "
         <div class='ad-banner grid'>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12 col-bleed'>
-                    <a target='_blank' class='external' href='https://joom.ag/WFre'><img class='flex-img' src='images/apex-catalog.jpg' alt='2019 Apex Footwear Catalog' /></a>
+                    <a target='_blank' class='external' href='https://joom.ag/WFre'><img class='flex-img' src='images/apex-catalog.jpg' alt='2021 Apex Footwear Catalog' /></a>
                 </div>
                 <div class='col-12 text-center'>
                     <h4>Browse &amp; Download the 2021 Apex Footwear Catalog</h4>
@@ -108,7 +108,7 @@ echo "
             </div>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12 col-bleed'>
-                    <a target='_blank' class='external' href='https://www.apexfoot.com/apex-custom-orthotics/'><img class='flex-img' src='images/apex-cdi.jpg' alt='2019 Apex Footwear Catalog' /></a>
+                    <a target='_blank' class='external' href='pdfs/Apex_CDI_Sell_Sheet.pdf'><img class='flex-img' src='images/apex-cdi.jpg' alt='2019 Apex Footwear Catalog' /></a>
                 </div>
                 <div class='col-12'>
                     <h4 class='text-center'>APEX<sup>&reg;</sup> CUSTOM DIABETIC INSERTS</h4>
@@ -122,11 +122,10 @@ echo "
                         </ul>
                         <ul class='col-12 col-sm-4 col-lg-12 col-bleed-y'>
                             <li>Medicare PDAC Code Verified</li>
-                            <li>Always shipped bundled with shoes</li>
                             <li>Unparalleled turn-around time</li>
                         </ul>
                     </div>
-                    <div  class='text-center'><a class='button slim external' target='_blank' href='https://www.apexfoot.com/apex-custom-orthotics/'>Learn More</a></div>
+                    <div  class='text-center'><a class='button slim external' target='_blank' href='pdfs/Apex_CDI_Sell_Sheet.pdf'>Learn More</a></div>
                 </div>
             </div>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
