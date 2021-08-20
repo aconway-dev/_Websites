@@ -130,12 +130,12 @@ echo "
             </div>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12 col-bleed'>
-                    <a target='_blank' href='images/apex_basis-slip-on_sell-sheet.pdf'><img class='flex-img' src='images/apex-basis.jpg' alt='2019 Apex Footwear Catalog' /></a>
+                    <a target='_blank' href='pdfs/Apex_Athletic_Performance_SellSheet.pdf'><img class='flex-img' src='images/apex-performance-sneakers.jpg' alt='Apex Performance Sneakers' /></a>
                 </div>
                 <div class='col-12 text-center'>
-                    <h4>Extend Orthotic Therapy by 30% with the Apex Basis&trade; Slip-On</h4>
-                    <p>Unisex four-way stretchable footwear product allowing for a supportive fit can be worn with most AFOs and foot orthotics.</p>
-                    <a class='button slim' target='_blank' href='images/apex_basis-slip-on_sell-sheet.pdf'>Click to View</a>
+                    <h4>Apex Performance Athletic Sneakers</h4>
+                    <p>Look & Feel Great With Every Step - The Apex Performance Athletic Sneaker, the newest addition to the Apex Active Collection, is equally comfortable and stylish. The traction-orientated, lightweight design makes it perfect for day-to-day wear; the breathable, open mesh upper supports cooling and moisture transfer and the rigid heel counter helps to keep your heel centered and stable.</p>
+                    <a class='button slim' target='_blank' href='pdfs/Apex_Athletic_Performance_SellSheet.pdf'>Click to View</a>
                 </div>
             </div>
         </div>
