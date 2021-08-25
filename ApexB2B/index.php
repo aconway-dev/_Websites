@@ -130,7 +130,7 @@ echo "
             </div>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12 col-bleed'>
-                    <a target='_blank' href='pdfs/Apex_Athletic_Performance_SellSheet.pdf'><img class='flex-img' src='images/apex-performance-sneakers.jpg' alt='Apex Performance Sneakers' /></a>
+                    <a target='_blank' href='pdfs/Apex_Athletic_Performance_SellSheet.pdf'><img class='flex-img' src='images/Apex-Performance-Athletic-Sneaker-Website-Graphic_960x618.jpg' alt='Apex Performance Sneakers' /></a>
                 </div>
                 <div class='col-12 text-center'>
                     <h4>Apex Performance Athletic Sneakers</h4>
