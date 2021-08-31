@@ -1,57 +1,43 @@
+
 <?php
-
-require_once("header.php");
-
-if(isset($_POST['account-number']) && isset($_POST['first-name']) && isset($_POST['last-name']) && isset($_POST['email'])) {
-  $accountNumber = $_POST['account-number'];
-  $firstName = $_POST['first-name'];
-  $lastName = $_POST['last-name'];
-  $email = $_POST['email'];
-  $to  =  'anna.conway@ohi.com';
-  $subject = 'Apex B2B Promo Form Submission';
-  $message = '<b>Account Number:</b> ' . $accountNumber . '<br>'.
-	      '<b>First Name:</b> ' . $firstName . '<br>'.
-              '<b>Last Name:</b>' . $lastName . '<br>'.
-              '<b>Email:</b>' . $email . '<br>';
-  // To send HTML mail, the Content-type header must be set
-  $headers  = 'MIME-Version: 1.0' . "\r\n";
-  $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-  $headers .= 'From: B2B Portal <anna.conway@ohi.com>' . '\r\n';
-
-  mail($to, $subject, $message, $headers);
-  // removed image tagn from logo div
-	echo "
-	<body>
-	  <section class='grid-container site-form contact'>
-            <div class='grid'>
-                <div action=\"mail.php\" class=\"form col-10 offset-1 col-lg-5 offset-7-lg has-logo\" method=\"post\">
-                    <div class='logo'><img src='/index.php' alt='Apex'></div>
-                    <div class='grid'>
-                       <h1 class='col-12'>Promo form submitted successfully.</h1>
-	                   <a href='/index.php' class='col-12'>Continue</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-	";
-  }
-  else
-  { 
-		echo "
-		<body>
-            <section class='grid-container site-form contact'>
-                <div class='grid'>
-                    <div action=\"thank-you.php\" class=\"form col-10 offset-1 col-lg-5 offset-7-lg has-logo\" method=\"post\">
-                        <div class='logo'><a href='/index.php'><img src='/images/logo.jpg' alt='Apex'></a></div>
-                        <div class='grid'>
-                           <h1 class='col-12'>Error submitting promo form. Some of the required fields were not entered.</h1>
-                           <a class='col-12' href='index.php'>Back to promo form</a>
-                        </div>
-                    </div>
-                </div>
-            </section>";
-  }
+ 
+ if($_POST) {
+     $promo-name = "";
+     $promo-email = "";
+      
+     if(isset($_POST['promo-name'])) {
+         $promo-name = filter_var($_POST['promo-name'], FILTER_SANITIZE_STRING);
+     }
+      
+     if(isset($_POST['promo-email'])) {
+         $promo-email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['promo-email']);
+         $promo-email = filter_var($promo-email, FILTER_VALIDATE_EMAIL); 
+     }
+      
   
-// require_once("footer.php");
+     $recipient = "anna.conway@ohi.net";
+      
+     $headers  = 'MIME-Version: 1.0' . "\r\n"
+     .'Content-type: text/html; charset=utf-8' . "\r\n"
+     .'From: ' . $promo-email . "\r\n";
+  
+     $email_content = "<html><body>";
+     $email_content .= "<table style='font-family: Arial;'><tbody><tr><td style='background: #eee; padding: 10px;'>Visitor Name</td><td style='background: #fda; padding: 10px;'>$promo-name</td></tr>";
+     $email_content .= "<tr><td style='background: #eee; padding: 10px;'>Visitor Email</td><td style='background: #fda; padding: 10px;'>$promo-email</td></tr>";
+     $email_content .= "<tr><td style='background: #eee; padding: 10px;'>Visitor Phone</td><td style='background: #fda; padding: 10px;'>$visitor_phone</td></tr></tbody></table>";
+     $email_content .= '</body></html>';
+  
+     echo $email_content;
+      
+     if(mail($recipient, "Apex B2B Promo Email", $email_content, $headers)) {
+         echo '<p>Thank you.</p>';
+     } else {
+         echo '<p>We are sorry but the promo form did not go through.</p>';
+     }
+      
+ } else {
+     echo '<p>Something went wrong</p>';
+ }
+  
+ ?>
 
-?>

@@ -23,21 +23,13 @@
             </div>
             <fieldset>
                 <div  class='grid'>
-                    <div class="col-12">
-                        <label for="account-number">APEX Account # *</label>
-                        <input type="text" name="account-number" id="account-number" class="field">
-                    </div>
                     <div class="col-md-6">	
-                        <label for="first-name">First Name *</label>
-                        <input type="text" name="first-name" id="first-name" class="field">
+                        <label for="promo-name">Name *</label>
+                        <input type="text" name="promo-name" id="promo-name" class="field">
                     </div>
-                    <div class="col-md-6">
-                        <label for="last-name">Last Name *</label>
-                        <input type="text" name="last-name" id="last-name" class="field">
-                  </div>
                     <div class="col-12">
-                        <label for="email">Email Address *</label>
-                        <input type="text" name="email" id="email" class="field">
+                        <label for="promo-email">Email Address *</label>
+                        <input type="text" name="promo-email" id="promo-email" class="field">
                     </div>
                     <div class="col-12">
                         <input type="submit" value="Submit" class="button">
