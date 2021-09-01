@@ -15,7 +15,9 @@
     
 <section class='grid-container site-form contact'>
     <div class='grid'>
-        <form action="http://b2b.apexfoot.com/promo/thank-you.php" id="contact-form" onsubmit="return validateForm(['account-number', 'first-name', 'last-name', 'email'])" class="form col-10 offset-1 col-lg-5 offset-7-lg has-logo" method="post">
+            <form action="https://liveformhq.com/form/35600cbd-56d8-4014-995c-4fd9984eeef9" method="POST" accept-charset="utf-8" class="form col-10 offset-1 col-lg-5 offset-7-lg has-logo">
+            <input type="hidden" name="_utf8" value="✓">
+            <input type="hidden" value="http://b2b.apexfoot.com/promo/thank-you.php" name="_redirect" />
             <div class='logo'><a href='/index.php'><img src='/images/logo.jpg' alt='Apex'></a></div>
             <div class="grid">
                 <h1 class='col-12 text-center'>Apex Foot Promo</h1>
