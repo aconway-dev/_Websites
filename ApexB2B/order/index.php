@@ -13,7 +13,7 @@
   <style>
 .site-form > .grid {background-size: cover; background-repeat: no-repeat;}
 .login .site-form > .grid, .main > .grid:first-child, .site-form.forgot > .grid {
-    background-image:url("/images/greybg.jpg");
+    background-image:url("/images/tealbg.jpg");
     background-size: cover;
 }
 /* mobile show and hide */
@@ -69,75 +69,75 @@
             <fieldset>
                 <div class="grid">
                     <div class="col-md-6">	
-                        <label for="promo-accountnumber">Apex Account Number*</label>
-                        <input type="text" name="promo-accountnumber" id="promo-accountnumber" class="field">
+                        <label for="orderaccountnumber">Apex Account Number*</label>
+                        <input type="text" name="orderaccountnumber" id="orderaccountnumber" class="field" required>
                     </div>
                     <div class="col-md-6">	
-                        <label for="promo-accountname">Company/Account Name *</label>
-                        <input type="text" name="promo-accountname" id="promo-accountname" class="field">
+                        <label for="orderaccountname">Company/Account Name *</label>
+                        <input type="text" name="orderaccountname" id="orderaccountname" class="field" required>
                     </div>    
                     <div class="col-md-6">	
-                        <label for="promo-practname">Practitioner Name *</label>
-                        <input type="text" name="promo-practname" id="promo-practname" class="field">
+                        <label for="orderpractname">Practitioner Name *</label>
+                        <input type="text" name="orderpractname" id="orderpractname" class="field" required>
                     </div>     
                     <div class="col-6">
-                        <label for="promo-phone">Phone *</label>
-                        <input type="text" name="promo-phone" id="promo-phone" class="field">
+                        <label for="orderphone">Phone *</label>
+                        <input type="text" name="orderphone" id="orderphone" class="field" required>
                     </div>                                                     
                     <div class="col-6">
-                        <label for="promo-email">Email *</label>
-                        <input type="text" name="promo-email" id="promo-email" class="field">
+                        <label for="orderemail">Email *</label>
+                        <input type="text" name="orderemail" id="orderemail" class="field" required>
                     </div>
                     <div class="col-6">
-                        <label for="promo-code">Promo Code</label>
-                        <input type="text" name="promo-code" id="promo-code" class="field">
+                        <label for="ordercode">Promo Code</label>
+                        <input type="text" name="ordercode" id="ordercode" class="field">
                     </div> 
                     <div class="col-6">
-                        <label for="promo-email">Shipping Address *</label>
-                        <input type="text" name="promo-address" id="promo-address" class="field">
+                        <label for="orderemail">Shipping Address *</label>
+                        <input type="text" name="orderaddress" id="orderaddress" class="field" required>
                     </div>
                     <div class="col-6">
-                        <label for="promo-code">Shipping City *</label>
-                        <input type="text" name="promo-city" id="promo-city" class="field">
+                        <label for="ordercode">Shipping City *</label>
+                        <input type="text" name="ordercity" id="ordercity" class="field" required>
                     </div>   
                     <div class="col-6">
-                        <label for="promo-email">Shipping State/Province *</label>
-                        <input type="text" name="promo-state" id="promo-state" class="field">
+                        <label for="orderemail">Shipping State/Province *</label>
+                        <input type="text" name="orderstate" id="orderstate" class="field" required>
                     </div>
                     <div class="col-6">
-                        <label for="promo-code">Shipping Zip *</label>
-                        <input type="text" name="promo-zip" id="promo-zip" class="field">
+                        <label for="ordercode">Shipping Zip *</label>
+                        <input type="text" name="orderzip" id="orderzip" class="field" required>
                     </div>                                                           
 
                     <!-- content-desktop -->
                     <span class="content-desktop">   
                     <div class="col-3">
-                        <label for="promo-patient1">Patient Name&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
-                        <input type="text" name="promo-patient1" id="promo-patient1" class="field">
+                        <label for="orderpatient1">Patient Name&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
+                        <input type="text" name="orderpatient1" id="orderpatient1" value="" class="field">
                     </div>
                     <div class="col-2">
-                        <label for="promo-po1">PO Number&nbsp;<div style="font-size: 10px">&nbsp;</div></label>    
-                        <input type="text" name="promo-po1" id="promo-po1" class="field">
+                        <label for="orderpo1">PO Number&nbsp;<div style="font-size: 10px">&nbsp;</div></label>    
+                        <input type="text" name="orderpo1" id="orderpo1" value="" class="field">
                     </div>
                     <div class="col-1">
-                        <label for="promo-qty1">Qty&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
-                        <input type="text" name="promo-qty1" id="promo-qty1" class="field">
+                        <label for="orderqty1">Qty&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
+                        <input type="text" name="orderqty1" id="orderqty1" value="" class="field">
                     </div>                    
                     <div class="col-3">
-                        <label for="promo-style1">Style/Item Number&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
-                        <input type="text" name="promo-style1" id="promo-style1" class="field">
+                        <label for="orderstyle1">Style/Item Number&nbsp;<div style="font-size: 10px">&nbsp;</div></label>
+                        <input type="text" name="orderstyle1" id="orderstyle1" value="" class="field">
                     </div>
                     <div class="col-1">
-                        <label for="promo-gender1">Gender&nbsp;<div style="font-size: 10px">(M/W)</div></label>    
-                        <input type="text" name="promo-gender1" id="promo-gender1" class="field">
+                        <label for="ordergender1">Gender&nbsp;<div style="font-size: 10px">(M/W)</div></label>    
+                        <input type="text" name="ordergender1" id="ordergender1" value="" class="field">
                     </div>
                     <div class="col-1">
-                        <label for="promo-width1">Width&nbsp;<div style="font-size: 10px">(M,W,XW)</div></label>    
-                     <input type="text" name="promo-width1" id="promo-width1" class="field">
+                        <label for="orderwidth1">Width&nbsp;<div style="font-size: 10px">(M,W,XW)</div></label>    
+                     <input type="text" name="orderwidth1" id="orderwidth1" value="" class="field">
                     </div>
                     <div class="col-1">
-                        <label for="promo-size1">Size&nbsp;<div style="font-size: 10px">&nbsp;</div></label>    
-                        <input type="text" name="promo-size1" id="promo-size1" class="field">
+                        <label for="ordersize1">Size&nbsp;<div style="font-size: 10px">&nbsp;</div></label>    
+                        <input type="text" name="ordersize1" id="ordersize1" value="" class="field">
                     </div> 
                     <?php 
 for($i=2;$i<9;$i++)
@@ -145,25 +145,25 @@ for($i=2;$i<9;$i++)
         echo"
         <!-- patient $i -->
         <div class='col-3'>
-        <input type='text' name='promo-patient$i' id='promo-patient$i' class='field'>
+        <input type='text' name='orderpatient$i' id='orderpatient$i' value='' class='field'>
     </div>
     <div class='col-2'>
-        <input type='text' name='promo-po$i' id='promo-po$i' class='field'>
+        <input type='text' name='orderpo$i' id='orderpo$i' value='' class='field'>
     </div>
     <div class='col-1'>
-        <input type='text' name='promo-qty$i' id='promo-qty$i' class='field'>
+        <input type='text' name='orderqty$i' id='orderqty$i' value='' value='' class='field'>
     </div>                    
     <div class='col-3'>
-        <input type='text' name='promo-style$i' id='promo-style$i' class='field'>
+        <input type='text' name='orderstyle$i' id='orderstyle$i' value='' class='field'>
     </div>
     <div class='col-1'>                        
-        <input type='text' name='promo-gender$i' id='promo-gender$i' class='field'>
+        <input type='text' name='ordergender$i' id='ordergender$i' value='' class='field'>
     </div>
     <div class='col-1'>
-        <input type='text' name='promo-width$i' id='promo-width$i' class='field'>
+        <input type='text' name='orderwidth$i' id='orderwidth$i' value='' class='field'>
     </div>
     <div class='col-1'>
-        <input type='text' name='promo-size$i' id='promo-size$i' class='field'>
+        <input type='text' name='ordersize$i' id='ordersize$i' value='' class='field'>
     </div> 
         ";
         }
@@ -171,8 +171,8 @@ for($i=2;$i<9;$i++)
                     </span>    
                     <!-- /content-desktop -->
 
-                    <!-- content-mobile -->
-                    <span class="content-mobile" style="font-size: 12px">   
+                   <!-- content-mobile -->
+                   <span class="content-mobile" style="font-size: 12px">   
                     <!-- patient 1 -->
                     <?php 
 for($i=1;$i<9;$i++)
@@ -180,34 +180,34 @@ for($i=1;$i<9;$i++)
         echo"
         <!-- patient $i -->
         <div class='col-4'>
-            <label for='promo-patient'>Patient Name $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
-            <input type='text' name='promo-patient$i' id='promo-patient$i' class='field'>
+            <label for='mobiorderpatient'>Patient Name $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
+            <input type='text' name='mobiorderpatient$i' id='mobiorderpatient$i' value='' class='field'>
         </div>
         <div class='col-4'>
-            <label for='promo-po'>PO Number $i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>    
-            <input type='text' name='promo-po$i' id='promo-po$i' class='field'>
+            <label for='mobiorderpo'>PO Number $i&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>    
+            <input type='text' name='mobiorderpo$i' id='mobiorderpo$i' value='' class='field'>
         </div>                 
         <div class='col-4'>
-            <label for='promo-style'>Style/Item # $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
-            <input type='text' name='promo-style$i' id='promo-style$i' class='field'>
+            <label for='mobiorderstyle'>Style/Item # $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
+            <input type='text' name='mobiorderstyle$i' id='mobiorderstyle$i' value='' class='field'>
         </div>
 
 
         <div class='col-3'>
-            <label for='promo-qty'>Qty $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
-            <input type='text' name='promo-qty$i' id='promo-qty$i' class='field'>
+            <label for='mobiorderqty'>Qty $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>
+            <input type='text' name='mobiorderqty$i' id='mobiorderqty$i' value='' class='field'>
         </div>   
         <div class='col-3'>
-            <label for='promo-gender'>Gender $i&nbsp;<div style='font-size: 10px'>(M/W)</div></label>    
-            <input type='text' name='promo-gender$i' id='promo-gender$i' class='field'>
+            <label for='mobiordergender'>Gender $i&nbsp;<div style='font-size: 10px'>(M/W)</div></label>    
+            <input type='text' name='mobiordergender$i' id='mobiordergender$i' value='' class='field'>
         </div>
         <div class='col-3'>
-            <label for='promo-width'>Width $i&nbsp;<div style='font-size: 10px'>(M,W,XW)</div></label>    
-         <input type='text' name='promo-width$i' id='promo-width$i' class='field'>
+            <label for='mobiorderwidth'>Width $i&nbsp;<div style='font-size: 10px'>(M,W,XW)</div></label>    
+         <input type='text' name='mobiorderwidth$i' id='mobiorderwidth$i' value='' class='field'>
         </div>
         <div class='col-3'>
-            <label for='promo-size'>Size $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>    
-            <input type='text' name='promo-size$i' id='promo-size$i' class='field'>
+            <label for='mobiordersize'>Size $i&nbsp;<div style='font-size: 10px'>&nbsp;</div></label>    
+            <input type='text' name='mobiordersize$i' id='mobiordersize$i' value='' class='field'>
         </div>   
         <div class='col-12'><hr></div>
         ";
@@ -218,8 +218,8 @@ for($i=1;$i<9;$i++)
                     <!-- /content-mobile -->
 
                     <div class="col-12">
-                        <label for="promo-notes">Notes</label>
-                        <textarea id="w3review" name="promo-notes" id="promo-notes" class="field"></textarea>
+                        <label for="ordernotes">Notes</label>
+                        <textarea id="w3review" name="ordernotes" id="ordernotes" class="field"></textarea>
                     </div>                         
                     <div class="col-12">
                         <input type="submit" value="Submit" class="button">

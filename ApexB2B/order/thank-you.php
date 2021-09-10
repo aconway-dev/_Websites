@@ -13,7 +13,7 @@
   <style>
 .site-form > .grid {background-size: cover; background-repeat: no-repeat;}
 .login .site-form > .grid, .main > .grid:first-child, .site-form.forgot > .grid {
-    background-image:url("/images/greybg.jpg");
+    background-image:url("/images/tealbg.jpg");
     background-size: cover;
 }
 /* mobile show and hide */
