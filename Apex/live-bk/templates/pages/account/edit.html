@@ -1,0 +1,24 @@
+{{inject 'passwordRequirements' settings.password_requirements}}
+{{#partial "page"}}
+{{> components/account/navigation account_page='settings'}}
+<main id="main-content">
+    <div class="container-inner">
+        <div class="row grid-gutter-vertical">
+            <section class="col-md-9 page">
+                <div class="page-content">
+                    {{#if forms.edit_account.error}}
+                    {{> components/common/alert-error forms.edit_account.error}}
+                    {{/if}}
+                    {{#if forms.edit_account.success}}
+                    {{> components/common/alert-success forms.edit_account.success}}
+                    {{/if}}
+                    {{> components/account/edit-account}}
+                </div>
+            </section>
+            {{> components/account/subnav account_page='settings'}}
+        </div>
+    </div>
+</main>
+{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

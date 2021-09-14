@@ -1,0 +1,29 @@
+<div class="productView-price">
+    <div id="price" data-product="{{product.title}}">
+        <div class="price-section price-section--withoutTax six" {{#if schema_org}}itemprop="offers" itemscope
+            itemtype="http://schema.org/Offer" {{/if}}>
+        {{#if price.sale_price_without_tax}}
+            <span class="sales-price price--withoutTax">{{price.sale_price_without_tax.formatted}}</span>
+            <span class="regular-price sale">{{price.non_sale_price_without_tax.formatted}}</span>
+        {{else}}
+            <span class="regular-price price--withoutTax">{{price.without_tax.formatted}}</span>
+        {{/if}}
+{{#if price.without_tax}}
+                {{#if schema_org}}
+                <meta itemprop="availability" itemtype="http://schema.org/ItemAvailability"
+                    content="http://schema.org/{{#if product.pre_order}}PreOrder{{else if product.out_of_stock}}OutOfStock{{else if product.can_purchase '===' false}}OutOfStock{{else}}InStock{{/if}}">
+                <meta itemprop="itemCondition" itemtype="http://schema.org/OfferItemCondition"
+                    content="http://schema.org/{{product.condition}}Condition">
+                <div itemprop="priceSpecification" itemscope itemtype="http://schema.org/PriceSpecification">
+                    <meta itemprop="price" content="{{price.without_tax.value}}">
+                    <meta itemprop="priceCurrency" content="{{currency_selector.active_currency_code}}">
+                    <meta itemprop="valueAddedTaxIncluded" content="false">
+                </div>
+                {{/if}}
+{{/if}}
+        </div>        
+    </div>
+    <p style="display: none;">
+        {{{json price}}}
+    </p>
+</div>

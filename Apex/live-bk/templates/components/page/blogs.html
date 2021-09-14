@@ -1,0 +1,27 @@
+<section class="home-blogs-container">
+    <h3>Recent Blogs (Page Template)</h3>
+    <div class="home-blogs">
+        {{#each blog.recent_posts}}
+        <article class="blog-item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+            <meta itemprop="url" content="{{url}}">
+            <meta itemprop="author" content="Apexfoot.com">
+            <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <meta itemprop="name" content="Apexfoot.com">
+                <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="url" content="{{cdn 'webdav:/theme/logo-original.png'}}">
+                    <meta itemprop="width" content="250">
+                    <meta itemprop="height" content="40">
+                </span>
+            </span>
+            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                <a href="{{url}}" itemprop="url">
+                    <img itemprop="image" class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{getImage thumbnail 'blog_size'}}" alt="{{title}}" title="{{title}}" width="350" height="350">
+                </a>
+            </figure>
+            <time datetime="{{date_published}}" itemprop="datePublished">{{date_published}}</time>
+            <meta itemprop="dateModified" content="{{date_published}}">
+            <h3 itemprop="name headline"><a itemprop="mainEntityOfPage" content="{{url}}" href="{{url}}">{{title}}</a></h3>
+    </article>
+        {{/each}}        
+    </div>
+</section>

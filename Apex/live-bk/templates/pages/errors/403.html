@@ -1,0 +1,18 @@
+{{#partial "page"}}
+	<main id="main-content">
+		<div class="container-inner">
+			<div class="row grid-gutter-vertical">
+				<div class="content-container col">
+					<p>
+						{{lang 'forbidden.if_you_were_signed_in'}}
+						<a href="{{urls.auth.login}}">{{lang 'forbidden.sign_in'}}</a>
+						{{lang 'forbidden.to_continue'}}
+					</p>
+					{{> components/common/search-box}}
+				</div>
+			</div>
+		</div>
+	</main>
+	{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

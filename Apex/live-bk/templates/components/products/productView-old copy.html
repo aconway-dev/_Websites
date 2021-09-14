@@ -1,0 +1,52 @@
+<div class="row">
+    <div class="col-md-12" style="text-align: left;">
+        {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}    
+    </div>
+</div>
+
+<article class="productView row" itemtype="http://schema.org/Product" itemscope>
+	{{> components/products/productView-meta}}
+	<div class="product-mobile-title">
+		{{product.title}}
+	</div>
+	<div class="col-md-6">
+		<div class="productView-images">
+			{{> components/products/productView-images}}
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="productView-details">
+			<h1 itemprop="name">{{product.title}}</h1>
+			{{> components/products/productView-sku}}
+			{{product.detail_messages}}
+			{{> components/products/productView-form}}
+			{{{snippet 'product_details'}}}
+		</div>
+	</div>
+</article>
+<div class="row row-eq-height productView-info">
+    <div class="col">
+        <div class="block">
+            {{{product.description}}}
+        </div>
+    </div>
+    {{#if product.custom_fields}}
+    <div class="col">
+        <div class="block">
+            <h4>Additional Details</h4>
+            <ul>
+			{{#each product.custom_fields}}
+			{{#if name '===' 'Shoe Size'}}         
+		
+			{{else}}
+				<li>{{name}}: {{{value}}}</li>
+			{{/if}}
+			{{/each}}
+            </ul>
+        </div>
+    </div>
+    {{/if}}
+</div>
+{{> components/products/related-products number_of_products_per_row='5'}}
+
+

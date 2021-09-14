@@ -1,0 +1,8 @@
+{{#if product.can_purchase}}
+<div class="cart-action">
+    <div class="form-action button-wrap">
+        <button id="form-action-addToCart" data="cart-update" data-cart-update data-wait-message="{{lang 'products.adding_to_cart'}}" class="button callout" type="submit"><span><span><span>{{#if product.pre_order}}{{lang 'products.pre_order'}}{{else}}{{lang 'products.add_to_cart'}}{{/if}}</span></span></span></button>
+    </div>
+</div>
+{{{snippet 'product_addtocart'}}}
+{{/if}}

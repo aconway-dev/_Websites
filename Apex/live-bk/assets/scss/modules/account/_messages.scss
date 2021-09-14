@@ -1,0 +1,10 @@
+article.message {
+    border: 1px solid $darkgrey;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    h5 {
+        background: $darkgrey;
+        color: $white;
+        padding: .5rem;
+    }
+}

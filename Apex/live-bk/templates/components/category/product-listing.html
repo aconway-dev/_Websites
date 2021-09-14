@@ -1,0 +1,8 @@
+<div class="row product-layout-container">    
+    <div class="col">
+        <form action="{{urls.compare}}" method='POST'>
+            {{> components/products/grid products=category.products}}
+        </form>
+    </div>
+</div>
+{{> components/common/paginator pagination.category}}

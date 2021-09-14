@@ -1,0 +1,22 @@
+<!-- Apex hide category list from filters in sidebar -->
+<!--{{#if category.subcategories}}
+<div class="sidebar-section-container active">
+    <h5 class="sidebar-section-title">
+        <span>{{category.name}}</span>
+        <span class="dropdown-toggle-button"><span class="dropdown-toggle-button-icon"></span></span>
+    </h5>
+    <div class="sidebar-section-content">
+        {{#each category.subcategories}}
+        <li class="list-item">
+            <a href="{{url}}" alt="{{name}}" title="{{name}}">{{name}}</a>
+        </li>
+        {{/each}}
+    </div>
+</div>
+{{/if}}-->
+
+{{#if category.faceted_search_enabled}}
+{{> components/faceted-search/index category}}
+{{else}}
+{{> components/category/shop-by-price shop_by_price=category.shop_by_price category_url=category.url}}
+{{/if}}

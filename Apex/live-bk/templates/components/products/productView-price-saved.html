@@ -1,0 +1,8 @@
+{{#if price.saved}}
+<div class="productView-price-saved">
+    <p class="original">Original Price: 
+        <span>{{price.rrp_without_tax.formatted}}</span> | 
+        You Save (<span data-product-price-saved >{{price.saved.formatted}}</span>)
+    </p>
+</div>
+{{/if}}

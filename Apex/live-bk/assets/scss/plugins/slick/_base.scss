@@ -1,0 +1,44 @@
+.slick-loading .slick-list {
+    background: #fff !important;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('') !important;
+    src: url('') format('embedded-opentype') !important, url('') format('woff') !important, url('') format('truetype') !important, url('') format('svg') !important;
+}
+.slick-prev, 
+.slick-next {
+    height: 3rem;
+    color: $teal;
+    font-size: 2rem;
+    line-height: 3rem;
+    &:before,
+    &:after {
+        display: none;
+    }
+    &:hover {
+        color: $darkgrey;
+    }
+    i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+.slick-prev {
+    left: 0;
+    i {
+        transform: translate(-50%, -50%)
+    }
+}
+.slick-next {
+    right: 0;
+    i {
+        transform: translate(-50%, -50%);
+    }
+}

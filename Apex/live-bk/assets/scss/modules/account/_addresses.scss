@@ -1,0 +1,10 @@
+.addresses {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .address {
+        flex: 0 0 calc(100% / 3 - 1rem);
+        border: 1px solid $darkgrey;
+        padding: 1rem;
+    }
+}

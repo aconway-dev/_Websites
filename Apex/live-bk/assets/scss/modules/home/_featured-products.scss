@@ -1,0 +1,19 @@
+#featured-products {
+	justify-content: center;
+	background: $white;
+	padding: 3rem 0 0;
+	position: relative;
+	h2 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 30px;
+	}
+	.product-grid {
+		padding: 0 2rem;
+		position: relative;
+		overflow: hidden;
+	}
+	.featured-products-title {
+		text-align: center;
+	}
+}

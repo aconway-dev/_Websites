@@ -1,0 +1,45 @@
+// ===========================
+// MBS
+// ===========================
+.moore-balance-shoe {
+	.detail {
+		ul {
+			li {
+				margin-bottom: .5rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.row.thumbnails {
+		border-top: 2px solid $lightgrey;
+		padding-top: 2rem;
+		margin-top: 2rem;
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.moore-balance-shoe {
+		.inside {
+			display: none;
+		}
+		.buttons.center {
+			.button {
+				width: 100%;
+				margin-bottom: 1rem;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

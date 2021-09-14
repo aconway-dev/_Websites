@@ -1,0 +1,24 @@
+#home-description {
+	padding: 3rem 2rem 2rem;
+	background-color: $teal; 
+	background-position: left center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	h2, p {
+		color: $white;
+		text-align: center;
+	}
+	h2 {
+		font-style:	italic;
+	}
+	p {
+		a {
+			color: $white;
+			text-decoration: underline;
+			&:hover {
+				color: $callout;
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+---
+customer:
+orders:
+limit: 10
+---
+{{#partial "page"}}
+{{> components/account/navigation account_page='orders'}}
+<main id="main-content">
+	<div class="container-inner">
+		<div class="row grid-gutter-vertical">
+			<section class="col-md-9 page">
+				<div class="page-content">
+					{{#if customer.store_credit.value '>' 0}}
+					<div class="account-head">
+						<div class="alertBox alertBox--storeCredit">
+							{{{lang 'common.store_credit' store_credit=customer.store_credit.formatted}}}
+						</div>
+					</div>
+					{{/if}}
+					{{#if customer.orders.length}}
+						{{> components/account/orders-list orders=customer.orders}}
+						{{> components/common/paginator pagination.orders}}
+					{{else}}
+						{{> components/common/alert-info (lang 'account.orders.none')}}
+					{{/if}}
+					{{{snippet 'account'}}}
+				</div>
+			</section>
+			{{> components/account/subnav account_page='orders'}}
+		</div>
+	</div>
+</main>
+{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}
