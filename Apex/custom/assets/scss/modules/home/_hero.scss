@@ -1,3 +1,5 @@
+
+/*
 // ===========================
 // Landing/Hero Pages
 // ===========================
@@ -13,10 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-image: url('//cdn11.bigcommerce.com/s-vp860a1bly/product_images/uploaded_images/apex-homepage-banner-1200x300-1-081921.jpg?t=1629901792');
+    background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/homepage-sneakers-jul21.jpg?t=1627580165');
     cursor:pointer;
     @media screen and (max-width: 1240px) {
-        /*background-position: -320px center;*/
+
     } 
     @media only screen 
     and (min-device-width : 375px) 
@@ -30,7 +32,6 @@
         height: 400px;
         background-size: cover;
         background-position: -150px center;
-        /*height: auto; */
         background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/homepage-jul21-mobile.jpg?t=1626471207');
     }  
     .main-title {
@@ -41,11 +42,9 @@
             display: block;
             text-shadow: 1px 1px 2px rgba(#000, .5);
             text-align: center;
-            /*color: $white;*/
             color: $teal;
             @media screen and (max-width: 1024px) {
                 text-shadow: 1px 1px 2px $darkgrey;
-                /*color: $white;*/
                 color: $teal;
             }
         }
@@ -107,3 +106,4 @@
         }
     }
 }
+*/

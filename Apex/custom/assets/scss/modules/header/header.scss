@@ -24,3 +24,7 @@ body.blog {
 @media only screen and (min-width: 768px) {
  .mobileshow {display: none;}
 }
+.desktopshow {display: none;}
+@media only screen and (min-width: 768px) {
+ .desktopshow {display: inline;}
+}
