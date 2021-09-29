@@ -1,14 +1,14 @@
 {{#if products.top_sellers}}
-<div id="top_sellers-products">
+<div id="featured-products">
     <div class="container-inner">
         <div class="row">
-            <div class="col-md-12 featured-products-title">
-                <h2 class="border">FEATURED PRODUCTS</h2>
+            <div class="col-md-12">
+                <h2 class="border">Most Popular</h2>
             </div>
         </div>
         <div class="row align-center">
             <div class="col-md-12">
-            {{> components/products/top-sellers products=products.top_sellers }}
+            {{> components/products/featured products=products.top_sellers }}
             </div>
         </div>
     </div>
