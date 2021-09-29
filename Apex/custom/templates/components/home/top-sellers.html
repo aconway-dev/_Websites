@@ -1,0 +1,16 @@
+{{#if products.top_sellers}}
+<div id="top_sellers-products">
+    <div class="container-inner">
+        <div class="row">
+            <div class="col-md-12 featured-products-title">
+                <h2 class="border">FEATURED PRODUCTS</h2>
+            </div>
+        </div>
+        <div class="row align-center">
+            <div class="col-md-12">
+            {{> components/products/top-sellers products=products.top_sellers }}
+            </div>
+        </div>
+    </div>
+</div>
+{{/if}}
