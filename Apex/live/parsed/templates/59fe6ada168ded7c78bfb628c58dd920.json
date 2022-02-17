@@ -1,1 +1,0 @@
-{"components/common/geotrust-ssl-seal":"<div class=\"geotrust\">\n    <img class=\"lazyload\" src=\"{{cdn 'webdav:/theme/loading.svg'}}\" data-sizes=\"auto\" data-src=\"{{cdn 'webdav:/theme/secureSSL.svg'}}\" />\n</div>\n"}

@@ -1,1 +1,0 @@
-{"components/products/productView-features":"{{#eachIndex (split product.description '<!-- features -->')}}\r\n{{#if index '==' '1' }} \r\n<div class=\"col\">\r\n    <div class=\"block\">\r\n        <h4>Features</h4>\r\n        {{{item}}}\r\n    </div>\r\n</div>\r\n{{/if}}\r\n{{/eachIndex}}\n"}

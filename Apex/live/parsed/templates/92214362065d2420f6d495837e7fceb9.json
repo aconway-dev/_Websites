@@ -1,1 +1,0 @@
-{"components/products/productView-shortdescription":"{{#eachIndex (split product.description '<!-- short -->')}}\r\n{{#if index '==' '1' }} \r\n<div class=\"short-description\">\r\n{{{item}}}\r\n</div>\r\n{{/if}}\r\n{{/eachIndex}}\n"}

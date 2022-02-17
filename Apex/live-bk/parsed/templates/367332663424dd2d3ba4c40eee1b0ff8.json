@@ -1,1 +1,0 @@
-{"components/cart/status-messages":"{{#each cart.status_messages}}\n    {{> components/common/alert-info message}}\n{{/each}}\n","components/common/alert-info":"<div class=\"alertBox alertBox--info\">\n    <p><i class=\"sprite sprite-white-check-circle\"></i> <span>{{{this}}}</span></p>\n</div>\n"}

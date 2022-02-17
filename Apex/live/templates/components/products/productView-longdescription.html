@@ -1,9 +1,0 @@
-{{#eachIndex (split product.description '<!-- long -->')}}
-{{#if index '==' '1' }} 
-<div class="col">
-    <div class="block">
-        {{{item}}}
-    </div>
-</div>
-{{/if}}
-{{/eachIndex}}

@@ -1,8 +1,0 @@
-<!-- Apex Set Coupon Box to Always Open, add Coupon Box ID -->
-<div class="cart-form coupon-code">
-    <form class="form form--hiddenLabels coupon-form" method="post" action="{{urls.cart}}">
-        <input class="form-input" data-error="{{lang 'cart.coupons.empty_error'}}"  id="couponcode" type="text" name="couponcode" value="" placeholder="{{lang 'cart.coupons.coupon_code'}}">
-        <input id="SideCouponCodeBox" class="button" type="submit" value="{{lang 'cart.coupons.button'}}">
-        <input type="hidden" name="action" value="applycoupon">
-    </form>
-</div>

@@ -1,1 +1,0 @@
-{"components/products/productView-sku":"{{#if product.sku}}\r\n    <h4>Model: <span class=\"productView-info-sku\" data-product-sku>{{product.sku}}</span></h4>\r\n{{/if}}\n"}
