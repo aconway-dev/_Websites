@@ -1,11 +1,9 @@
 {{#partial "page"}}
 <section class="page-hero" style="background-image: url({{cdn 'webdav:/apex-shoe-technology/last-styles-banner.jpg'}});">
     <h1>ORTHOPEDIC SHOES: FOOT MEASUREMENT INSTRUCTIONS</h1>
-    <div class="button-wrap">
-        <a href="#sizingchart">
-        <button class="button active" data-gender="women"><span><span><span>Women's Sizing Chart</span></span></span></button>
-        <button class="button" data-gender="men"><span><span><span>Men's Sizing Chart</span></span></span></button>
-        </a>
+    <div class="button-wrap">     
+        <button class="button active" data-gender="women"><span><span><span><a href="#sizingchart">Women's Sizing Chart</a></span></span></span></button>
+        <button class="button" data-gender="men"><span><span><span><a href="#sizingchart">Men's Sizing Chart</a></span></span></span></button>
     </div>
 </section>
 <main id="main-content" class="shoe-sizes">
@@ -14,42 +12,50 @@
             <div class="col-lg-10 offset-lg-1">
                 <div style="border: 8px solid #63bab5; padding: 2rem 2rem 0 2rem; margin-top: 2rem; margin-bottom: 2rem;">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-3">
                             <img src="{{cdn 'webdav:/shoe-sizes/Measure-length.jpg'}}" alt="Measure Width" title="Measure Width with Ruler" />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <h3>Step 1: Trace Foot</h3>
                             <p>Place a piece of paper on the ground. If your foot is bigger than a single sheet, tape two pieces together, one slightly overlapping another. Make sure you are wearing the sock you intend to wear with the shoe. Ensure you have your full weight on the foot for the most accurate measurement. Either have you or someone else slowly trace around your foot ensuring the pen or pencil is at a 90 degree angle.</p>
                         </div>   
+                        <div class="col-md-1">&nbsp;</div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-7">
                             <h3>Step 2: Measure Length</h3>
                             <p>Use a measuring tape, measure the outline from the back/central part of the heel to the end of the longest toe. You may want to try tracing your foot a few times for more accurate results.</p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{cdn 'webdav:/shoe-sizes/Measure-length-with-ruler.jpg'}}" alt="Measure Length" title="Measure Length" />
                         </div>   
+                        <div class="col-md-1">&nbsp;</div>
                     </div>                       
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-3">
                             <img class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{cdn 'webdav:/shoe-sizes/Measure-Width.jpg'}}" alt="Measure Width" title="Measure Width" />
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-7">
                             <h3>Step 3: Measure Width</h3>
                             <p>Use a measuring tape and wrap it around the widest part of your foot at your bunion joint. Ensure you have your full weight on the foot to ensure a more accurate measurement.</p>
                         </div>   
+                        <div class="col-md-1">&nbsp;</div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-7">
                             <h3>Step 4: Find your Perfect Fit</h3>
                             <p>In the first column, find your measured foot length. Once identified, the column to the right will determine your shoe size. In the next three columns, find your foot width to determine which width of shoe you may need.</p>
                             <p class="note"><b>Note:</b> <i> For foot length, if you are in between sizes, always move up to the next size. For foot width. choose the width that you are closest to.</i>
                             </p>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <img class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{cdn 'webdav:/shoe-sizes/Measure-length-with-ruler.jpg'}}" alt="Measure Length" title="Measure Length" />
                         </div>   
+                        <div class="col-md-1">&nbsp;</div>
                     </div>                    
                     <div id="foot-table">
                         <div class="row">
@@ -402,8 +408,8 @@
 </main>
             <!-- shoe buttons -->
             <div class="subnav-link">
-                <div class="inner button-wrap" style="background-color: #eb6e68;">
-                    <a class="button" href="/womens/all-womens-shoes/"><span><span><span>Shop Women’s Shoes</span></span></span></a> <a class="button" href="/all-mens-shoes/"><span><span><span>Shop Men’s Shoes</span></span></span></a>
+                <div class="inner button-wrap">
+                    <a class="button" href="/womens/all-womens-shoes/" style="background-color: #eb6e68;"><span><span><span>Shop Women’s Shoes</span></span></span></a> <a class="button" href="/all-mens-shoes/" style="background-color: #eb6e68;"><span><span><span>Shop Men’s Shoes</span></span></span></a>
                 </div>
             </div>
 {{> components/common/email-signup}}
