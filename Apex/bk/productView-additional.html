@@ -1,0 +1,16 @@
+{{#if product.custom_fields}}
+<div class="col">
+    <div class="block" style="font-size:1.1em;">
+        <h4>Additional Details</h4>
+        <ul>
+        {{#each product.custom_fields}}
+        {{#if name '===' 'Shoe Size'}}         
+    
+        {{else}}
+            <li>{{name}}: {{{value}}}</li>
+        {{/if}}
+        {{/each}}
+        </ul>
+    </div>
+</div>
+{{/if}}

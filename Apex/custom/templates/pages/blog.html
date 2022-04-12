@@ -7,32 +7,101 @@ blog:
 ---
 {{#partial "page"}}
 <section class="page-hero" style="background-image: url({{cdn 'webdav:/page/banner-blog.jpg'}});">
-    <h1>Apex News and Resources</h1>
+    <h1>Apex Foot Blog</h1>
+    <h2>The Peak of Living</h2>
 </section>
 <main id="main-content" class="blogs">
     <div class="container-inner">
-        <div class="row grid-gutter-vertical d-flex posts">
-            <div class="col-md-9">
+  
+  
+          <div class="row d-flex posts">
+            <div class="col-md-12">
+                <div class="row">
+                    {{#each (limit blog.posts 1) }}
+                    {{> components/blog/posts post=this settings=../settings show_tags=false show_social=false }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="row d-flex posts">
+            <div class="col-md-12">
                 <div class="row">
                     {{#each (limit blog.posts 6) }}
                     {{> components/blog/posts post=this settings=../settings show_tags=false show_social=false }}
                     {{/each}}
                 </div>
             </div>
-            <aside class="col-md-3">
-                <h2>Recent Blogs</h2>
-                <div class="recent-blogs">
-                    {{#each (limit blog.posts 25) }}
-                    {{> components/blog/recent-posts post=this settings=../settings show_tags=false show_social=false }}
-                    {{/each}}
-                    </ul>
-            </aside>
         </div>
+        
         <div class="row">
             <div class="col">
                 {{> components/common/paginator pagination.blog}}
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">&nbsp;</div>      
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><h2>MOST POPULAR POSTS</h2></div>
+            <div class="col-md-2"></div>
+        </div>   
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="https://cdn11.bigcommerce.com/s-vp860a1bly/images/stencil/1110x1110/uploaded_images/people-q-c-640-480-4.jpg?t=1554415731"></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><h3>What Are Shin Splints?</h3>Shin splints are a common lower extremity complaint, especially among runners and other athletes. They are characterized by pain in the front or inside aspect of the lower leg due to overexertion of the muscles. The pain usually develops gradually without a history of trauma, and might begin as a dull ache along the front or inside of the shin (Tibia) after running or even walking. </div>
+            <div class="col-md-2"></div>
+        </div>        
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><img src="https://cdn11.bigcommerce.com/s-vp860a1bly/images/stencil/1110x1110/uploaded_images/people-q-c-640-480-4.jpg?t=1554415731"></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><h3>What Are Shin Splints?</h3>Shin splints are a common lower extremity complaint, especially among runners and other athletes. They are characterized by pain in the front or inside aspect of the lower leg due to overexertion of the muscles. The pain usually develops gradually without a history of trauma, and might begin as a dull ache along the front or inside of the shin (Tibia) after running or even walking. </div>
+            <div class="col-md-2"></div>
+        </div> 
+        
+        <div class="row">&nbsp;</div> 
+        <div class="row">
+            <div class="col-md-12"></div>
+            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/Foot Conditions">Foot Conditions</a></div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Foot Conditions</a></div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>        
+        <div class="row">
+            <div class="col">&nbsp;</div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Foot Conditions</a></div>
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
+            <div class="col">&nbsp;</div>
+        </div>         
+        
     </div>
 </main>
 {{> components/common/email-signup}}

@@ -1,28 +1,41 @@
-<section class="home-blogs-container">
-    <h3>Recent Blogs</h3>
-    <div class="home-blogs" style="display: flex; justify-content: center; padding: 0px 50px 0px 50px;">
-        {{#each blog.recent_posts}}
-        <article class="blog-item" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-            <meta itemprop="url" content="{{url}}">
-            <meta itemprop="author" content="Apexfoot.com">
-            <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                <meta itemprop="name" content="Apexfoot.com">
-                <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                    <meta itemprop="url" content="{{cdn 'webdav:/theme/logo-original.png'}}">
-                    <meta itemprop="width" content="250">
-                    <meta itemprop="height" content="40">
-                </span>
-            </span>
-            <figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-                <a href="{{url}}" itemprop="url">
-                    <img itemprop="image" class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{getImage thumbnail 'blog_size'}}" alt="{{title}}" title="{{title}}" width="350" height="350">
-                </a>
-            </figure>
-            <time datetime="{{date_published}}" itemprop="datePublished">{{date_published}}</time>
-            <meta itemprop="dateModified" content="{{date_published}}">
-            <h3 itemprop="name headline"><a itemprop="mainEntityOfPage" content="{{url}}" href="{{url}}">{{title}}</a></h3>
-    </article>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {{/each}}        
-    </div>
+<section class="home-boxes-container desktopshow">
+<div class="home-boxes" style="display: flex; justify-content: center; padding: 0px 50px 0px 50px;">
+<!-- start box -->
+<span class="boxes-item">
+<a href="top-reasons-to-consider-apex-shoes/"><img src="https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/boxtext1.jpg?t=1649183736" alt="TOP Reasons to Consider APEX" title="TOP Reasons to Consider APEX"></a>
+<h3 style="background-color:#571473;"><a content="TOP Reasons to Consider APEX" href="top-reasons-to-consider-apex-shoes/" style="color: #ffffff;">TOP Reasons to Consider APEX</a></h3>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--end box --> 
+<!-- start box -->
+<span class="boxes-item">
+<a href="//vimeo.com/693300224" class="video is-active" data-video-item data-video-id="693300224" data-lity><img src="https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/boxtext4.jpg?t=1649183734" alt="Video: APEX Shoe Technology" title="Video: APEX Shoe Technology"></a>
+<h3 style="background-color:#571473;"><a content="Video: APEX Shoe Technology" href="//vimeo.com/693300224" class="video is-active" data-video-item data-video-id="693300224" data-lity style="color: #ffffff;" target="_blank">Video: APEX Shoe Technology</a></h3>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--end box --> 
+<!-- start box -->
+<span class="boxes-item">
+<a href="shoe-sizing-chart/"><img src="https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/boxtext2.jpg?t=1649183736" alt="Shoe Sizing Chart" title="Shoe Sizing Chart"></a>
+<h3 style="background-color:#571473;"><a content="Shoe Sizing Chart" href="shoe-sizing-chart/" style="color: #ffffff;">Shoe Sizing Chart</a></h3>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--end box --> 
+<!-- start box -->
+<span class="boxes-item">
+<a href="shipping/"><img src="https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/boxtext3.jpg?t=1649183735" alt="Free Shipping and Returns" title="Free Shipping and Returns"></a>
+<h3 style="background-color:#571473;"><a content="Free Shipping and Returns" href="shipping/" style="color: #ffffff;">Free Shipping and Returns</a></h3>
+</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--end box --> 
+</div>
 </section>
+
+<section class="home-boxes-container mobileshow">
+<h3 style="background-color:#571473; padding: 20px 0px 20px 0px;"><a content="TOP Reasons to Consider APEX" href="womens/all-womens-shoes/" style="color: #ffffff;">Shop Women's Best Sellers</a></h3>
+<h3 style="background-color:#571473; padding: 20px 0px 20px 0px;"><a content="Shop Men's Best Sellers" href="all-mens-shoes/" style="color: #ffffff;">Shop Men's Best Sellers</a></h3>
+<h3 style="background-color:#571473; padding: 20px 0px 20px 0px;"><a content="Shoe Sizing Chart" href="shoe-sizing-chart/" style="color: #ffffff;">Shoe Sizing Chart</a></h3>
+<h3 style="background-color:#571473; padding: 20px 0px 20px 0px;"><a content="Free Shipping and Returns" href="shipping/" style="color: #ffffff;">Free Shipping and Returns</a></h3>
+</section>
+
+<!-- put back lazy load -->

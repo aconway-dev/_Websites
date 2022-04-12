@@ -17,10 +17,15 @@
         text-decoration: none;
     }
 }
+.blog-date {
+    text-align: center;
+    color: $white;
+}
 .posts {
     padding-top: 2rem;
 }
 .blog-post {
+        display: inline-block;
     text-align: left;
     margin-bottom: 2rem;
     .post-image {
@@ -85,3 +90,16 @@ aside {
         }
     }
 }
+.blog-tags {
+    display: inline-block;
+    background-color: $grey;
+    color: $white;
+    text-align: center ;
+    width: 150px ;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px ;
+    margin: 13px;
+    justify-content: center;
+}
+
