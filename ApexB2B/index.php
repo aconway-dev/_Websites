@@ -63,7 +63,7 @@ echo "
                             <a href='//api.ohi.net/FedEx?unit=APEX&src=4' target='_blank'>CDI Shipping Labels (US)</a>   -->
 
                             <a href='//returnsportal.ohi.net?unit=1&carrier=1&type=2' target='_blank'>Shoe Return Shipping Labels (US)</a>
-                            <a href='//returnsportal.ohi.net?unit=1&carrier=1&type=4' target='_blank'>CDI Shipping Labels (US)</a>   
+                            <a href='//returnsportal.ohi.net?unit=1&carrier=1&type=17' target='_blank'>CDI Shipping Labels (US)</a>   
                             
                             <form id='guest' action='https://row.ups.com/GuestAccess/Guest/Access' method='post' target='_blank'>
                                 <input type='hidden' name='Company' value='QXBleA==' />                            

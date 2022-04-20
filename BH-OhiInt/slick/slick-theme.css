@@ -1,0 +1,102 @@
+    @charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list {background: #fff url('./ajax-loader.gif') center center no-repeat;}
+
+/* Arrows */
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 1rem;
+	height: 33.3333%;
+    padding: 0;
+    transform: translate(0, -50%);
+	transform: scaleY(2);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover, .slick-next:hover {color: #68b245;}
+.slick-prev:hover:before, .slick-next:hover:before {color: #68b245;}
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover, .slick-next:focus {color: transparent; outline: none;}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before, .slick-next:focus:before {opacity: 1;}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {opacity: .25;}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 2.75rem;
+    color: #323031;
+	font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	transition: color .5s;
+}
+.slick-prev {left: 3rem;}
+[dir='rtl'] .slick-prev {right: -5%; left: auto;}
+
+.slick-prev:before {content: '\25C0';}
+[dir='rtl'] .slick-prev:before {content: '\25C0';}
+
+.slick-next {right: -1rem;}
+[dir='rtl'] .slick-next {right: auto; left: -5%;}
+
+.slick-next:before {content: '\25b6';}
+[dir='rtl'] .slick-next:before {content: '\25b6';}
+
+/* Dots */
+.slick-dots {
+    position: absolute;
+    bottom: 1rem;
+	right: 2rem;
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li {
+    position: relative;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    margin: .3125rem;
+    padding: 0;
+    cursor: pointer;
+	background-color: #ccc;
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover, .slick-dots li button:focus {outline: none;}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {opacity: 1;}
+.slick-dots li button:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active {opacity: .75; background-color: #68b245;}
