@@ -199,7 +199,7 @@ a:hover {color: #333; text-decoration: none;}
 }
 .site-form > .grid {background-size: cover; background-repeat: no-repeat;}
 .login .site-form > .grid, .main > .grid:first-child, .site-form.forgot > .grid {
-    background-image:url("../images/doctors.jpg");
+    background-image:url("../images/ApexB2BSiteGraphicV3.jpg");
     background-size: cover;
 }
 .main.no-bg > .grid:first-child {background: teal;} 
