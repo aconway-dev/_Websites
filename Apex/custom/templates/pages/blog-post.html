@@ -7,12 +7,12 @@ blog:
 ---
 {{#partial "page"}}
 <section class="page-hero" style="background-image: url('{{getImage blog.post.thumbnail}}?imbypass=on');">
-    <span class="blog-meta blog-meta-date blog-date">{{blog.post.date_published}}</span>
     <h1>{{blog.post.title}}</h1>
     <div class="blog-info">
         {{#if blog.post.author}}
         <span class="blog-meta blog-meta-author">{{lang 'blog.posted_by' name=blog.post.author}}</span>
         {{/if}}
+        <span class="blog-meta blog-meta-date"> On {{blog.post.date_published}}</span>
         {{#if show_tags}}
         {{#if blog.post.tags}}
         <span class="blog-meta blog-meta-category"> In {{#each blog.post.tags}}{{#if @first}}<a
@@ -22,55 +22,23 @@ blog:
         {{/if}}
     </div>
 </section>
-
-
-
 <main id="main-content" class="single-post">
     <div class="container-inner">
         <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+            <div class="col-md-9">
                 {{> components/blog/post post=blog.post show_tags=false}}
             </div>
-            <div class="col-md-2"></div>
+            <aside class="col-md-3">
+                <h2>Recent Blogs</h2>
+                <div class="recent-blogs">
+                    {{#each blog.recent_posts}}
+                    {{> components/blog/recent-posts post=this settings=../settings show_tags=false show_social=false }}
+                    {{/each}}
+                    </ul>
+            </aside>
         </div>
-
-
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
-            <div class="col-md-2"></div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/Foot Conditions">Foot Conditions</a></div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col-md-2">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>
-        <div class="row">
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/Foot Conditions">Foot Conditions</a></div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col-md-2">&nbsp;</div>
-        </div>
-        <div class="row">&nbsp;</div>        
-        <div class="row">
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/Foot Conditions">Foot Conditions</a></div>
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Lifestyle</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col"><a class="blog-tags" href="/blog/tag/news">Health</a></div>  
-            <div class="col-md-2">&nbsp;</div>
-        </div>      
     </div>
 </main>
-
 {{> components/common/email-signup}}
 {{/partial}}
 {{> layout/base}}
