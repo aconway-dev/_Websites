@@ -1,0 +1,87 @@
+// =============================================================================
+// BLOG
+// =============================================================================
+.blog {
+    .tags {
+        text-align: center;
+    }
+
+    .socialLinks {
+        text-align: center;
+    }
+
+}
+
+.blog-title {
+    a {
+        text-decoration: none;
+    }
+}
+.posts {
+    padding-top: 2rem;
+}
+.blog-post {
+    text-align: left;
+    margin-bottom: 2rem;
+    .post-image {
+        height: 20vh !important;
+        background: $teal;
+        margin-bottom: 1rem;
+        background-size: cover;
+        background-position: center center;
+    }
+    .blog-body {
+        margin-bottom: 1rem;
+        color: $darkgrey;
+    }
+}
+
+.single-post {
+    .blog-post {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        @media screen and (max-width: 969px) {
+            width: 100%;
+        }
+    }
+}
+aside {
+    padding-top: 2rem;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .blog-post {
+        flex: 100% 0 0 !important;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 1rem;
+        padding: 1rem;
+        border: 2px solid $lightgrey;
+        .post-image {
+            height: 100px;
+            width: 200px;
+            float: left;
+            margin-right: 1rem;
+        }
+        .blog-title {
+            margin: 0;
+        }
+        .blog-info {
+            margin: 0 0 .5rem;
+            time {
+                border: 1px solid $darkgrey;
+                padding: .25rem;
+                font-size: .8em;
+            }
+        }
+        &.active {
+            display: none;
+        }
+        .blog-body {
+            font-size: .9em;
+        }
+    }
+}
