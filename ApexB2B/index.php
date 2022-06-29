@@ -33,6 +33,11 @@ echo "
     })(window,document,'script','dataLayer','GTM-KK5WJQZ');</script>
     <!-- End Google Tag Manager -->
     
+    <script type='text/javascript'>
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>    
 </head>
 
 <body class='index'>
@@ -89,6 +94,23 @@ echo "
                             <a href='pdfs/Apex_Diabetes_Your_Feet_Brochure.pdf' target='_blank'>Diabetic Footwear</a>
                         </div>
                     </div>
+
+                    <div class='col-md-12 alertmenu'>
+                        <div style='padding: 1em;'>
+                        <h2>Important Update from Apex Foot Health</h2>   
+                        <p>We are excited to announce Apex is moving to a new warehouse starting April 25th. Make sure to update our location in your records to the following address:</p>
+                        <p>&nbsp;</p>
+                        OIA Global<br>
+                        c/o Apex Foot Health<br>
+                        2475 Wright Blvd. Suite 101<br>
+                        Hebron, KY 41048<br>
+                        <p>&nbsp;</p>
+                        <p>Please be sure to print new shipping return labels for footwear-only returns (USA customers only). Please Note: CDI Foam Impression return labels will not be affected by this change.</p> 
+                        <p>You may experience slightly delayed shipments as we make this transition, but we appreciate your patience during this time and we thank you for your continued business.</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
