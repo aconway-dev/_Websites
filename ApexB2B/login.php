@@ -172,12 +172,12 @@ echo "
             </div>            
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12'>
-                    <a href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' target='_blank' onclick='ga(‘send’, ‘event’, [PDF], [Download], [Apex Orthotic Suite]);'><img class='flex-img' src='images/orthotic-suite.jpg' alt='Orthotic Suite - A-Wave and SelectFlex' /></a>
+                    <a href='https://b2b.apexfoot.com/ohi1scan/' onclick='ga(‘send’, ‘event’, [PDF], [Download], [Apex Orthotic Suite]);'><img class='flex-img' src='images/Ohi1ScanBanner.png' alt='OHI1Scan' /></a>
                 </div>
                 <div class='col-12 text-center'>
-                    <h4>Apex A-Wave Prefabricated Orthotics</h4>
-                    <p>Developed by a team of top experts in the field of foot and ankle biomechanics, the Apex Orthotic Suite offers three of the most innovative prefabricated orthotic inserts available.</p>
-                    <a class='button slim' target='_blank' href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'Apex Orthotic Suite’,'');\">Click to View</a>
+                    <h4>OHI1Scan: Scan for Custom Diabetic Inserts & Shoes</h4>
+                    <p>Use OHI1Scan to scan your patients for Custom Diabetic Inserts and footwear with our easy to use iPad App. Order on the app and get your orders quicker!</p>
+                    <a class='button slim' href='https://b2b.apexfoot.com/ohi1scan/' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'OHI1Scan’,'');\">Click to View</a>
                 </div>
             </div>
         </div>

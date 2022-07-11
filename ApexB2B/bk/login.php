@@ -150,37 +150,34 @@ echo "
         <div class='ad-banner grid'>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid direction-row banner-card style1'>
                 <div class='col-6 col-bleed'>
-                    <a class='background-link' target='_blank' href='images/apex_footwear-program_practitioner_sell-sheet.pdf'></a>
+                    <a class='background-link' target='_blank' href='pdfs/Apex_Merchandising_Display_Program_Sell_Sheet_2021.pdf'></a>
                 </div>
                 <div class='col-6'>
-                    <h4>Extend Patient Therapy with the Therapeutic Shoe Bill Program</h4>
+                    <h4>Extend Patient Therapy with the Apex Merchandising Display Program</h4>
                     <p>Every year the Apex footwear program is a solution to help thousands of customers like you care for many more thousands of patients. Everything You Need in One Display Center!</p>
-                    <a class='button slim' target='_blank' href='images/apex_footwear-program_practitioner_sell-sheet.pdf'>Click to View</a>
-                </div>
-            </div>
-            <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid direction-row banner-card style2'>
-                <div class='col-6'>
-                    <a class='background-link' target='_blank' href='images/apex_jeba-starter-kit_sell-sheet.pdf'></a>
-                </div>
-                <div class='col-6'>
-                    <h4>Introducing Jēba Compression Hosiery & Socks!</h4>
-                    <h4>SAVE UP TO 35% ON STARTER PACKAGES</h4>
-                    <p>12 Styles You Will Love. Quality You Can Trust. Amazing Low Prices!</p>
-                    <ul>
-                        <li>Two Levels of Compression: Preventative 15-20 mmHg and Medical 20-30 mmHg</li>
-                        <li>Functional & Fashionable</li>
-                    </ul>
-                    <a class='button slim ' target='_blank' href='images/apex_jeba-starter-kit_sell-sheet.pdf'>Click to View</a>
+                    <a class='button slim' target='_blank' href='pdfs/Apex_Merchandising_Display_Program_Sell_Sheet_2021.pdf'>Click to View</a>
                 </div>
             </div>
             <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
                 <div class='col-12'>
-                    <a href='images/apex_orthotic-suite-promo_flyer.pdf' target='_blank' onclick='ga(‘send’, ‘event’, [PDF], [Download], [Apex Orthotic Suite]);'><img class='flex-img' src='images/orthotic-suite.jpg' alt='Orthotic Suite - A-Wave and SelectFlex' /></a>
+                    <a href='https://joom.ag/gKzI' target='_blank' onclick='ga(‘send’, ‘event’, [PDF], [Download], [Apex Orthotic Suite]);'><img class='flex-img' src='images/Jeba-Display-on-Countertop-New-updated_190710.jpg' alt='Jēba Compression Hosiery & Socks' /></a>
                 </div>
                 <div class='col-12 text-center'>
-                    <h4>Save Up to 25% - Apex Prefabricated Orthotic Suite Assortment Pack</h4>
+                <h4>Introducing Jēba Compression Hosiery & Socks!</h4>
+                <p>12 Styles You Will Love. Quality You Can Trust. Amazing Low Prices!</p>
+                <p>Two Levels of Compression: Preventative 15-20 mmHg and Medical 20-30 mmHg</p>
+                <p>Functional & Fashionable</p>
+                    <a class='button slim' target='_blank' href='https://joom.ag/gKzI' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'Apex Orthotic Suite’,'');\">Click to View</a>
+                </div>
+            </div>            
+            <div class='col-12 offset-0 col-sm-10 offset-1-sm col-lg-4 offset-0-lg col-grid banner-card style3'>
+                <div class='col-12'>
+                    <a href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' target='_blank' onclick='ga(‘send’, ‘event’, [PDF], [Download], [Apex Orthotic Suite]);'><img class='flex-img' src='images/orthotic-suite.jpg' alt='Orthotic Suite - A-Wave and SelectFlex' /></a>
+                </div>
+                <div class='col-12 text-center'>
+                    <h4>Apex A-Wave Prefabricated Orthotics</h4>
                     <p>Developed by a team of top experts in the field of foot and ankle biomechanics, the Apex Orthotic Suite offers three of the most innovative prefabricated orthotic inserts available.</p>
-                    <a class='button slim' target='_blank' href='images/apex_orthotic-suite-promo_flyer.pdf' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'Apex Orthotic Suite’,'');\">Click to View</a>
+                    <a class='button slim' target='_blank' href='pdfs/Apex_A-Wave_Prefab_Sell_Sheet_Order_Form_USA.pdf' onclick=\"ga(‘send’, ‘event’, 'PDF', 'Downloads', 'Apex Orthotic Suite’,'');\">Click to View</a>
                 </div>
             </div>
         </div>

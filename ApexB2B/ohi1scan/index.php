@@ -54,6 +54,7 @@
             <div class="col-12 col-sm-10 col-md-8 menu has-logo">
                 <div class="logo"><a href="/index.php"><img src="/images/logo.jpg" alt="Apex"></a></div>
                 <!-- content-->
+                <p><img src="/images/Ohi1ScanBanner.png" alt="Ohi1Scan"></p>
                 <p class="subheads" style="margin:10px;font-weight:bold;text-align:center;font-size: 1.5rem;">Cloud-Based Scanning 
 Technology at its Best!<br><br>
                 <iframe style="text-align:center" title="OHI1Scan Video" style="border:solid 1px #000000;" src="https://player.vimeo.com/video/346229601?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=false" 
