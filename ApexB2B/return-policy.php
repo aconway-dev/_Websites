@@ -52,7 +52,7 @@ echo "
 				<p>&nbsp;</p>
 				<p><strong>90 DAYS, NO HASSLE RETURNS</strong></p>
 				<p>&nbsp;</p>
-				<p>If for any reason you are not completely satisfied with your Apexfoot.com order, you may return your merchandise within 90 days from the date of purchase.</p>
+				<p>If for any reason you are not completely satisfied with your Apex order, you may return your merchandise within 90 days from the date of purchase.</p>
 				<p>&nbsp;</p>
 				<p>To place an online return go here.</br>
 				Using your return authorization number and shipping label, please return merchandise in its original box, if possible, and include the provided return slip with returns instructions. Unfortunately, we cannot refund your original shipping charge.</p>

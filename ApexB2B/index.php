@@ -54,6 +54,7 @@ echo "
                 <div class='logo'><a href='/index.php'><img src='images/logo.jpg' alt='Apex'></a></div>
                 <h1>Welcome back, $loggedInUser->displayname.</h1>
                 <p>Have questions? <a href='contact.php'>Please contact us</a>.</p>
+                <p style='text-align:center;'><h2 class='col-12' style='text-align:center;'>Our website will be down for a scheduled maintenance<br>Saturday, July 23, 2022, from Noon EST to 11:5PM Saturday night.<br>We apologize for the inconvenience.</h2></p>
                 <div class='grid justify-center'>
                     <div class='col-md-4 main-menu'>
                         <div>
@@ -63,7 +64,8 @@ echo "
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstoci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Check Item Availability</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordei1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Order Status</a>
                             <a href='return-policy.php'>Return Policy</a>
-                            
+                            <a href='https://b2b.apexfoot.com/pdfs/Apex_Return_Authorization_Form_Final.pdf' target='_blank'>Return Authorization Form</a>
+
                             <!-- <a href='//api.ohi.net/FedEx?unit=APEX&src=2' target='_blank'>Shoe Return Shipping Labels (US)</a>
                             <a href='//api.ohi.net/FedEx?unit=APEX&src=4' target='_blank'>CDI Shipping Labels (US)</a>   -->
 
