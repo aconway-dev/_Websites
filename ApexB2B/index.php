@@ -54,7 +54,6 @@ echo "
                 <div class='logo'><a href='/index.php'><img src='images/logo.jpg' alt='Apex'></a></div>
                 <h1>Welcome back, $loggedInUser->displayname.</h1>
                 <p>Have questions? <a href='contact.php'>Please contact us</a>.</p>
-                <p style='text-align:center;'><h2 class='col-12' style='text-align:center;'>Our website will be down for a scheduled maintenance<br>Saturday, July 23, 2022, from Noon EST to 11:5PM Saturday night.<br>We apologize for the inconvenience.</h2></p>
                 <div class='grid justify-center'>
                     <div class='col-md-4 main-menu'>
                         <div>

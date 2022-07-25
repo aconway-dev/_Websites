@@ -142,10 +142,6 @@ echo "
                           echo "
                         </fieldset>
                     </div>
-                    
-                    <div class='col-md-12'><h2 class='col-12'>Our website will be down for a scheduled maintenance Saturday, July 23, 2022, from Noon EST to 11:5PM Saturday night. We apologize for the inconvenience.</h2></div>
-
-
                 </div>
             </form>
         </div>
