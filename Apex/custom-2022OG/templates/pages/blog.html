@@ -1,0 +1,141 @@
+---
+blog:
+    posts:
+        limit: 8
+        pages: 3
+        summary: 300
+---
+{{#partial "page"}}
+<section class="page-hero" style="background-image: url('https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/hpbannerblue1.jpg?t=1650922446);">
+    <h1>Apex Foot Blog</h1>
+    <h2>The Peak of Living</h2>
+</section>
+
+<main id="main-content" class="blogs">
+    <div class="container-inner">
+        
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">{{> components/common/email-signup-blog-top}}</div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">&nbsp;</div>      
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><h2 class="blog-headline">{{{blog.tag}}} RECENT POSTS</h2></div>
+            <div class="col-md-2"></div>
+        </div>   
+        <div class="row">&nbsp;</div> 
+        
+                    {{#each (limit blog.posts 6) }}
+                    {{> components/blog/posts post=this settings=../settings show_tags=true show_social=false }}
+                    {{/each}}
+        
+        <div class="row">
+            <div class="col">
+                {{> components/common/paginator pagination.blog}}
+            </div>
+        </div>      
+        
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">&nbsp;</div>      
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><h2 class="blog-headline">MOST POPULAR POSTS</h2></div>
+            <div class="col-md-2"></div>
+        </div>   
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><a href="https://www.apexfoot.com/blog/6-common-causes-of-foot-cramps-and-how-to-avoid-them/"><img src="https://store-dhod3a8.mybigcommerce.com/product_images/uploaded_images/6-common-causes-of-foot-cramps-and-how-to-avoid-them.png"></a></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><a href="https://www.apexfoot.com/blog/6-common-causes-of-foot-cramps-and-how-to-avoid-them/"><h3>6 Common Causes of Foot Cramps and How to Avoid Them</h3>It is estimated that about 95% of people will experience a muscle cramp at some point in their lives. As we age, such cramps become increasingly common. Cramps happen when a muscle involuntarily contracts. Though cramps usually only last between a few seconds and a few minutes, they can be very painful. So what causes foot cramps, and how can we fend them off? read more</a> </div>
+            <div class="col-md-2"></div>
+        </div>        
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><a href="https://www.apexfoot.com/blog/mythbusting-does-tea-tree-oil-really-cure-toenail-fungus/"><img src="https://store-dhod3a8.mybigcommerce.com/product_images/uploaded_images/mythbusting-does-tea-tree-oil-really-cure-toenail-fungus-blog-image.png"></a></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><a href="https://www.apexfoot.com/blog/mythbusting-does-tea-tree-oil-really-cure-toenail-fungus/"><h3>Mythbusting: Does Tea Tree Oil Really Cure Toenail Fungus?</h3>Toenail fungus is not a pleasant condition to experience. Once you have it, it can be hard to get rid of. If you're especially prone to wearing tight shoes, hosiery, and having damp feet due to being an athlete, the condition only grows worse. Older people and those with weakened immune systems are more likely to get toenail fungus. If you have symptoms, you're probably here to cure toenail fungus. Keep reading to find out how to get rid of toenail fungus and if using tea tree oil for toenail fungus is effective. read more</a> </div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><a href="https://www.apexfoot.com/blog/how-you-can-fight-bunion-pain-/"><img src="https://cdn11.bigcommerce.com/s-dhod3a8/images/stencil/original/uploaded_images/top-view-of-bare-feet-of-older-woman-suffering-fro-2021-08-27-16-22-43-utc.jpg?t=1651071125"></a></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><a href="https://www.apexfoot.com/blog/how-you-can-fight-bunion-pain-/"><h3>How You Can Fight Bunion Pain</h3>Bunions are no fun, that's for sure. What can start as a mild annoyance with minor foot pain can, over time, turn into a painful condition that has a major impact on your lifestyle and quality of life. In fact, about 33% of people over the age of 65 have a bunion. In fact, bunions are one of the most common foot maladies out there. And even though dealing with the pain isn't fun, there's actually a lot you can about it. read more</a> </div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><a href="https://www.apexfoot.com/blog/the-5-most-common-causes-of-foot-arch-pain/"><img src="https://store-dhod3a8.mybigcommerce.com/product_images/uploaded_images/the-5-most-common-causes-of-foot-arch-pain-blog-image.png"></a></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><a href="https://www.apexfoot.com/blog/the-5-most-common-causes-of-foot-arch-pain/"><h3>The 5 Most Common Causes of Foot Arch Pain</h3>Arch pain is more common than you think and can affect anyone, not just athletes. The foot has three arches: the medial, lateral, and traverse arches. The arches in your feet bear weight, absorb shock, and help you to balance. They also stabilize movement and adapt to changing terrain when you walk or run. Given the important function of your feet, it is inevitable that you will feel pains sometimes. read more</a> </div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">&nbsp;</div>         
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"><a href="https://www.apexfoot.com/blog/3-reasons-to-consider-diabetic-footwear-over-regular-shoes/"><img src="https://store-dhod3a8.mybigcommerce.com/product_images/uploaded_images/diabetic-footwear.jpeg"></a></div>
+            <div class="col-md-6" style="display: inline-flex; justify-content: center; flex-direction: column;"><a href="https://www.apexfoot.com/blog/3-reasons-to-consider-diabetic-footwear-over-regular-shoes/"><h3>3 Reasons to Consider Diabetic Footwear Over Regular Shoes</h3>Diabetic footwear can help people with diabetes, plantar fasciitis, bunions, arthritis, and more. When you have one of these conditions, standing and walking indiabetic shoes is more comfortable since they: Improve Blood Circulation for Better Mobility. Diabetic footwear offers extra room and features breathable materials for a custom fit and ultimate comfort. That's why diabetic footwear is an excellent choice for people with neuropathy. read more</a> </div>
+            <div class="col-md-2"></div>
+        </div>         
+        <div class="row">&nbsp;</div> 
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>      
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><h2 class="blog-headline">BLOG CATEGORIES</h2></div>
+            <div class="col-md-2"></div>
+        </div>   
+        <div class="row">&nbsp;</div>  
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/APEX%20Shoes">APEX Shoes</a></div> 
+            <div class="col blog-category"><a href="/blog/tag/Shoe%20Insoles">Shoe Insoles</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Socks%20and%20Compression">Socks and Compression</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Style%20Guides">Style Guides</a></div>  
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/Shoe%20Sizing">Shoe Sizing</a></div>
+            <div class="col blog-category"><a href="/blog/tag/How%20to%20Shop%20for%20Shoes">How to Shop for Shoes</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Healthy%20Living">Healthy Living</a></div>
+            <div class="col blog-category"><a href="/blog/tag/Exercise%20and%20Fitness">Exercise and Fitness</a></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>        
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/Foot%20Health">Foot Health</a></div>
+            <div class="col blog-category"><a href="/blog/tag/Tips%20on%20Living%20with%20Diabetesnews">Tips on Living with Diabetes</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Work%20Shoe%20Tips">Work Shoe Tips</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Seasonal%20Activities">Seasonal Activities</a></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>   
+        <div class="row">&nbsp;</div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">{{> components/common/email-signup-blog-bottom}}</div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="text-align: right;"><a href="https://twitter.com/ApexFootHealth" class="fa fa-twitter" target="_blank"></a> <a href="https://www.facebook.com/apexfoot" class="fa fa-facebook" target="_blank"></a>  <a href="https://www.instagram.com/apexfoothealth" class="fa fa-instagram" target="_blank"></a>  <a href="https://www.pinterest.com/ApexFoot/" class="fa fa-pinterest" target="_blank"></a></div>
+            <div class="col-md-2"></div>
+        </div>         
+
+    </div>
+</main>
+
+{{/partial}}
+{{> layout/base}}

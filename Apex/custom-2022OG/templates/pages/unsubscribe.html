@@ -1,0 +1,13 @@
+{{#partial "page"}}
+	<main id="main-content">
+		<div class="container-inner">
+			<div class="row grid-gutter-vertical">
+				<div class="content-container col">
+					{{> components/common/alert-success (lang 'newsletter.unsubscribed_message' store_name=settings.store_name)}}
+				</div>
+			</div>
+		</div>
+	</main>
+	{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

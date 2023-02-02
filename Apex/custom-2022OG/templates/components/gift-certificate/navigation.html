@@ -1,0 +1,43 @@
+<aside class="subnav info col-md-3">
+    <div class="subnav-links">
+        {{#if gift_page '===' 'purchase'}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <button href="{{urls.gift_certificate.purchase}}" class="button callout"><span><span><span>{{lang 'gift_certificate.purchase.heading'}}</span></span></span></button>
+            </div>
+        </div>
+        {{else}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <a href="{{urls.gift_certificate.purchase}}" class="button"><span><span><span>{{lang 'gift_certificate.purchase.heading'}}</span></span></span></a>
+            </div>
+        </div>
+        {{/if}}
+        {{#if gift_page '===' 'redeem'}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <button href="{{urls.gift_certificate.redeem}}" class="button callout"><span><span><span>{{lang 'gift_certificate.redeem.heading'}}</span></span></span></button>
+            </div>
+        </div>
+        {{else}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <a href="{{urls.gift_certificate.redeem}}" class="button"><span><span><span>{{lang 'gift_certificate.redeem.heading'}}</span></span></span></a>
+            </div>
+        </div>
+        {{/if}}
+        {{#if gift_page '===' 'balance'}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <button href="{{urls.gift_certificate.balance}}" class="button callout"><span><span><span>{{lang 'gift_certificate.balance.heading'}}</span></span></span></button>
+            </div>
+        </div>
+        {{else}}
+        <div class="subnav-link">
+            <div class="inner button-wrap">
+                <a href="{{urls.gift_certificate.balance}}" class="button"><span><span><span>{{lang 'gift_certificate.balance.heading'}}</span></span></span></a>
+            </div>
+        </div>
+        {{/if}}
+    </div>
+</aside>

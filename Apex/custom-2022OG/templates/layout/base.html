@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ locale_name }}">
+<head>
+  <title>{{ head.title }}</title>
+  {{{ resourceHints }}}
+  {{{ head.meta_tags }}}
+  {{{ head.config }}}
+  {{#block "head"}} {{/block}}
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="{{ head.favicon }}" rel="shortcut icon">
+  <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+  <script>window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
+  <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js'}}"></script>
+  <style type="text/css" media="screen, print">
+           @font-face {
+               font-family: "FontAwesome";
+				src: url("{{cdn 'webdav:Font Awesome 5 Free-Regular-400.otf'}}"),
+				url("{{cdn 'webdav:Font Awesome 5 Free-Solid-900.otf'}}")
+           }
+</style>
+  {{{stylesheet '/assets/css/theme.css'}}}
+  <!-- Apex google tracking  -->
+  <meta name="google-site-verification" content="yisIlcxJ6S4Ra8z4vr7vtgpPF1eDBcCSY6UY7gGv7_I" />
+  <meta name="p:domain_verify" content="3c9cb34b27bf0ac6ca5bd7e63ac1ae0e"/>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MMH33S');
+  </script>
+  {{{head.scripts}}}
+  {{{head.rsslinks}}}
+  {{{snippet 'htmlhead'}}}
+</head>
+<body class="{{#if page_type '===' 'default'}}template-home{{else if page_type '===' 'blog'}}blog{{else if page_type '===' 'blog_post'}}blog{{else}}template-page{{/if}}" itemscope="" itemtype="http://schema.org/WebPage">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMH33S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <iframe frameborder="0" scrolling="no" height="1" width="20" id="cj_conversion"  style="display:none;visibility:hidden"/> </iframe>
+  <script type="text/javascript">
+  function readCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+  var c = ca[i];
+  while (c.charAt(0) === ' ') {
+  c = c.substring(1,c.length);
+  }
+  if (c.indexOf(nameEQ) === 0) {
+  return c.substring(nameEQ.length,c.length);
+  }
+  }
+  return null;
+  }
+  var src=
+  'https://www.emjcd.com/tags/c?containerTagId=35086&CID=1557892&TYPE=417465&CURRENCY=USD&OID=' + '%%ORDER_ID%%' + '&AMOUNT=' + '%%ORDER_SUBTOTAL_DISCOUNTED%%' + '&ITEMx=' + '%%GLOBAL_SKU%%' + '&QTYx=' + '%%GLOBAL_ProductQuantity%%' + '&DCNTx' + '%%GLOBAL_DiscountAmount%%' + '&OID=' + '%%GLOBAL_OrderNumber%%' + '&DISCOUNT=' + '%%GLOBAL_DiscountAmount%%' + '&COUPON=' + '%%GLOBAL_CouponCode%%' + '&CJEVENT=' + 
+  readCookie('cjevent');
+  document.getElementById('cj_conversion').src = src;
+  </script>
+  {{{snippet 'header'}}}
+  {{> components/header/header }}
+  {{> components/common/body }}
+  {{> components/footer/footer }}
+  <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
+  <script src="{{cdn 'assets/dist/theme-bundle.main.js'}}"></script>
+  <script>
+    window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
+  </script>
+  {{{footer.scripts}}}
+  <!-- End of footer.scripts -->
+  {{{snippet 'footer'}}}
+</body>
+</html>

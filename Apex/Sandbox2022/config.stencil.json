@@ -1,0 +1,10 @@
+{
+  "customLayouts": {
+    "brand": {},
+    "category": {},
+    "page": {},
+    "product": {}
+  },
+  "normalStoreUrl": "https://apex-2022.mybigcommerce.com",
+  "port": 3000
+}

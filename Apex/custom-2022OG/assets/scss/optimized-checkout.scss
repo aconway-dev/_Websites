@@ -1,0 +1,383 @@
+@import "modules/fonts/fonts";
+/** COLORS **/
+$white: #fff;
+$lightgrey: #f1f1f1;
+$grey: #7A878C;
+$darkgrey: #333;
+$black: #000;
+$teal: #63bab5;
+$darkteal: #398F9A;
+$callout: #ED6D66;
+$darkcallout: #BE516D;
+$fuscha: #871473;
+$darkfuscha: #571473;
+$blue: #1F7FA8;
+$darkblue: #134F69;
+
+/** FONTS **/
+$roboto: 'Roboto', sans-serif;
+$robotoBold: 'Roboto Condensed', sans-serif;
+
+$gutter: 1rem;
+// =============================================================================
+// Stencil Checkout - Customize the Optimized Single-Page Checkout experience
+// =============================================================================
+
+// =============================================================================
+//
+// IMPORTANT DISCLAIMER
+// Please do not nest elements within class selectors, and do not use class selectors other than those given below.
+// Future support is guaranteed only if class selectors' structure and naming are left unchanged.
+//
+// =============================================================================
+
+
+// Apex Logo Image Control
+#logoImage {max-width: 200px;}
+.checkoutHeader-heading {text-align: center;}
+
+//-------------------------------------------------------------
+.header-logo {
+ img {
+   width: 100%;
+   max-width: 200px;
+ }
+}
+.optimizedCheckout-header {
+    background-color: #fff;
+    background-size: cover;
+    @media (min-width: 801px) {
+        text-align: left;
+    }
+}
+
+//
+// Primary and Secondary Headings
+// Text Color & Typography
+// .optimizedCheckout-headingPrimary styles top-level headings.
+// .optimizedCheckout-headingSecondary styles certain lower-level elements, such as descriptions of cart items.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-headingPrimary,
+.optimizedCheckout-headingSecondary  {
+    color: #333;
+    font-family: $robotoBold;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-transform: none;
+    margin-bottom: 2rem;
+}
+.ng-checkout-container {
+    padding-top: 5rem;
+}
+//
+// Body
+// Background & Shipping Method Overlay
+// -----------------------------------------------------------------------------
+
+
+.optimizedCheckout-overlay {
+    background-color: #fff;
+    color: #A2A2A2;
+}
+
+//
+// Primary & Secondary Content
+// Text Color & Typography
+// .optimizedCheckout-contentPrimary styles body text in the Order Summary/Order Confirmation; drop-down-list items; and text that summarizes completed steps.
+// .optimizedCheckout-contentSecondary styles check boxes' text labels, and lower-level text in the Order Summary.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-contentPrimary {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.optimizedCheckout-contentSecondary {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+//
+// Primary Button
+// Background & Border & Text Color & Typography
+// Styles the CONTINUE button for each step, & the final confirmation button.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-buttonPrimary {
+    background-color: $callout;
+    border-color: #f1f1f1;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    &:focus,
+    &:hover {
+        background-color: #333;
+        border-color: #f1f1f1;
+        color: #fff;
+    }
+
+    &:focus {
+        background-color: #333;
+        border-color: #f1f1f1;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: #333;
+        border-color: #f1f1f1;
+        color: #fff;
+    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus,
+    &[disabled].is-active,
+    &[disabled].is-loading,
+    &[disabled].active {
+        background-color: #A2A2A2;
+        border-color: #f1f1f1;
+        color: #fff
+    }
+}
+a#checkout-customer-login{
+    background-color: $callout;
+    border-color: #f1f1f1;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1rem;
+}
+//
+// Secondary Button
+// Background & Border & Text Color & Typography
+// Styles the EDIT button for each step.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-buttonSecondary {
+    background-color: #63bab5;
+    border-color: #f1f1f1;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    &:focus,
+    &:hover {
+        background-color: $callout;
+        border-color: #f1f1f1;
+        color: #fff;
+    }
+
+    &:focus {
+        border-color: #f1f1f1;
+    }
+
+    &:active {
+        border-color: #f1f1f1;    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:focus,
+    &[disabled].is-active,
+    &[disabled].is-loading,
+    &[disabled].active {
+        border-color: #f1f1f1;
+    }
+}
+
+//
+// Links
+// Text Color & Typography
+// -----------------------------------------------------------------------------
+
+a {
+    color: #63bab5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    &:focus,
+    &:hover {
+        color: $callout;
+    }
+}
+
+//
+// Order Summary (Mobile Drawer & Modal)
+// Background Color
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-orderSummary {
+    border-color: #f1f1f1;
+}
+
+.optimizedCheckout-orderSummary-cartSection {
+    border-color: #f1f1f1;
+}
+
+.optimizedCheckout-checkoutStep {
+    border-color: #f1f1f1;
+}
+
+//
+// Checkout Steps
+// Background & Text Color
+// Styles the large step-number indicators on the page's left side.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-step {
+    background-color: #63bab5;
+
+    &::before {
+        color: #fff;
+    }
+}
+
+//
+// Form Labels
+// Text Color
+// Styles text labels on form fields.
+// -----------------------------------------------------------------------------
+
+.form-field--error {
+    .optimizedCheckout-form-label,
+    .form-inlineMessage {
+        color: red;
+    }
+}
+//
+// Form Input
+// Background, Border, Shadow and Text Color
+// Styles form fields.
+// -----------------------------------------------------------------------------
+
+
+.optimizedCheckout-form-input,
+.optimizedCheckout-form-select {
+    background-color: #fff;
+
+    &::placeholder {
+        color: #000;
+    }
+
+    .form-field--error & {
+        background-color: #fff;
+        border-color: #f1f1f1;
+    }
+}
+
+
+.optimizedCheckout-form-label::before {
+    .optimizedCheckout-form-radio + &,
+    .optimizedCheckout-form-checkbox + & {
+        background-color: #fff;
+        border-color: #fff;
+        opacity: 1;
+    }
+
+    .optimizedCheckout-form-radio:checked + &,
+    .optimizedCheckout-form-checkbox:checked + & {
+        border-color: #333;
+    }
+
+    .optimizedCheckout-form-radio:focus + &,
+    .optimizedCheckout-form-checkbox:focus + & {
+        border-color: #333;
+    }
+
+    .optimizedCheckout-form-radio:focus:checked + &,
+    .optimizedCheckout-form-checkbox:focus:checked + & {
+
+    }
+}
+
+//
+// Discount Banners
+// Background & Text & Icon Color
+// Styles discount banners.
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-discountBanner {
+    background-color: $callout;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+//
+// Form Checklist (Shipping / Payment methods)
+// Background & Border & Text Color
+// Styles form checklists
+// -----------------------------------------------------------------------------
+
+.optimizedCheckout-form-checklist {
+    border-color: #f1f1f1;
+}
+
+.optimizedCheckout-form-checklist-item {
+    border-color: #f1f1f1;
+}
+
+.optimizedCheckout-form-checklist-item:hover,
+.optimizedCheckout-form-checklist-item--selected {
+    border-color: #f1f1f1;
+}
+
+.optimizedCheckout-form-checklist-checkbox {
+    ~ .form-label::after,
+    ~ .form-label::before {
+        border-color: #333;
+    }
+
+    &:focus ~ .form-label {
+
+    }
+
+    &:checked ~ .form-label::before {
+        border-color: #333;
+    }
+
+    &:checked ~ .form-label::after {
+        border-color: #333;
+    }
+}
+
+//=============================
+//  Apex Coupon Code Optimizations
+//=============================
+
+.cart-section redeemable .ng-hide,
+.checkout-form redeemable .ng-hide{display: block!important;}
+.optimizedCheckout-buttonSecondary {
+    background-color: #63bab5;
+    border: none;
+    color: #fff;
+}
+.optimizedCheckout-buttonSecondary:hover {background-color: #1e5c58;color: #fff;}
+a.redeemable-label:after {
+    content: "Coupon Code";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    color: #63bab5;
+}
+a.redeemable-label {
+    color: #333;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    pointer-events: none;
+}
+.cartDrawer {bottom: 80px;}
+
+#checkout-shipping-options {display: block;}
+.cartDrawer.optimizedCheckout-orderSummary {
+    position: relative !important;
+    bottom: inherit !important;
+    margin: 0 !important;
+}
+//--------------------------------------------------------------------------

@@ -1,0 +1,69 @@
+<div class="cart" data-cart-quantity="{{cart.quantity}}">
+	<!-- Apex remove cart headers -->
+	<div class="cart-list">
+		{{#each cart.items}}
+			<div class="row grid-gutter-vertical align-items-center">
+				<div class="content-container cart-item-thumb col-lg-2">
+					{{#if type '==' 'GiftCertificate'}}
+						<i class="sprite sprite-black-gift"></i>
+					{{else}}
+						<img class="cart-item-image" src="{{getImage image 'productthumb_size' (cdn ../../theme_settings.default_image_product)}}" alt="{{image.alt}}" title="{{image.alt}}">
+					{{/if}}
+				</div>
+				<div class="content-container cart-item-block cart-item-title col-lg-7">
+					<h3 class="cart-item-name"><a href="{{url}}">{{name}}</a></h3>
+					<dl class="definitionList">
+						<dt class="definitionList-key">Price:</dt>
+						<dd class="definitionList-value"><b>{{price.formatted}}</b></dd>
+						<dt class="definitionList-key">SKU:</dt>
+						<dd class="definitionList-value">{{sku}}</dd>
+						{{#if configurable_fields}}
+							{{#each configurable_fields}}
+								<dt class="definitionList-key">{{name}}:</dt>
+								<dd class="definitionList-value">
+									{{#if is_file}}
+										<a href="/viewfile.php?prodfield={{../id}}&cartitem={{../../id}}">{{{value}}}</a>
+									{{else}}
+										{{{value}}}
+									{{/if}}
+								</dd>
+							{{/each}}
+						{{/if}}
+						{{#if options}}
+							{{#each options}}
+								<dt class="definitionList-key">{{name}}:</dt>
+								<dd class="definitionList-value">
+									{{#if is_file}}
+										<a href="/viewfile.php?attributeId={{../id}}&cartitem={{../../id}}">{{{value}}}</a>
+									{{else}}
+										{{{value}}}
+									{{/if}}
+								</dd>
+							{{/each}}
+						{{/if}}
+					</dl>
+					{{> components/cart/item-giftwrap this}}
+				</div>
+				<div class="content-container cart-item-block cart-item-info col-lg-3">
+					<div class="form-field">
+						<label class="form-label cart-item-label" for="qty-{{id}}" style="text-align: center; display: block;">{{lang 'products.quantity'}}</label>
+						<div class="form-increment">
+							{{# if can_modify}}
+								<button class="button button--icon" data-cart-update data-cart-itemid="{{id}}" data-action="dec">
+										<i class="sprite sprite-black-minus"></i>
+								</button>
+								{{/if}}
+								<input class="form-input form-input--incrementTotal" id="qty-{{id}}" name="qty-{{id}}" type="tel" value="{{quantity}}" data-quantity-min="{{min_purchase_quantity}}" data-quantity-max="{{max_purchase_quantity}}" data-quantity-min-error="{{lang 'products.quantity_min' quantity=min_purchase_quantity}}" data-quantity-max-error="{{lang 'products.quantity_max' quantity=max_purchase_quantity}}" min="1" pattern="[0-9]*" aria-live="polite" {{#unless can_modify}} disabled{{/unless}}> {{# if can_modify}} 
+								
+								<button class="button button--icon" data-cart-update data-cart-itemid="{{id}}" data-action="inc">
+										<i class="sprite sprite-black-plus"></i>
+								</button>
+								{{/if}}
+						</div>
+						<a class="cart-remove icon" data-cart-itemid="{{id}}" href="#" data-confirm-delete="{{lang 'cart.confirm_delete'}}" title="Remove from cart" style="text-align: center; display: block;">Remove from cart.</a>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</div>

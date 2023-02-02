@@ -1,9 +1,9 @@
-<div class="product-grid featured">
-    {{#each products}} 
-    {{#if id '!=' '344'}}
-    {{#if id '!=' '343'}}
-    {{>components/products/card}} 
-    {{/if}}
-    {{/if}}
+<h2 class="page-heading" style="color:#1F7FA8;"><strong>{{lang 'products.featured' }}</strong></h2>
+
+<ul class="productGrid productGrid--maxCol{{ columns }}" data-product-type="featured" {{#if settings.data_tag_enabled}} data-list-name="Featured Products" {{/if}}>
+    {{#each products}}
+        <li class="product">
+                {{>components/products/card settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+        </li>
     {{/each}}
-</div>
+</ul>

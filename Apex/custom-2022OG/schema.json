@@ -1,0 +1,117 @@
+[
+  {
+    "name": "Global",
+    "settings": [
+      {
+        "type": "select",
+        "label": "Price Ranges",
+        "id": "price_ranges",
+        "options": [
+          {
+            "value": "true",
+            "label": "True"
+          },
+          {
+            "value": "false",
+            "label": "False"
+          }
+        ],
+        "force_reload": true
+      }
+    ]
+  },
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Ticker Promotion Text",
+        "force_reload": true,
+        "id": "ticker_promotion_text"
+      },
+      {
+        "type": "text",
+        "label": "Ticker Promotion Link",
+        "force_reload": true,
+        "id": "ticker_promotion_link"
+      },
+      {
+        "type": "text",
+        "label": "Ticker Promotion Expiration",
+        "force_reload": true,
+        "id": "ticker_promotion_exp"
+      }
+    ]
+  },
+  {
+    "name": "Home Trust Boxes",
+    "settings": [
+      {
+        "type": "heading",
+        "content": "Box #1"
+      },
+      {
+        "type": "text",
+        "label": "Box #1 Title",
+        "force_reload": true,
+        "id": "home_trust_box_1_title"
+      },
+      {
+        "type": "text",
+        "label": "Box #1 Copy",
+        "force_reload": true,
+        "id": "home_trust_box_1_copy"
+      },
+      {
+        "type": "text",
+        "label": "Box #1 Link",
+        "force_reload": true,
+        "id": "home_trust_box_1_link"
+      },
+      {
+        "type": "heading",
+        "content": "Box #2"
+      },
+      {
+        "type": "text",
+        "label": "Box #2 Title",
+        "force_reload": true,
+        "id": "home_trust_box_2_title"
+      },
+      {
+        "type": "text",
+        "label": "Box #2 Copy",
+        "force_reload": true,
+        "id": "home_trust_box_2_copy"
+      },
+      {
+        "type": "text",
+        "label": "Box #2 Link",
+        "force_reload": true,
+        "id": "home_trust_box_2_link"
+      },
+      {
+        "type": "heading",
+        "content": "Box #3"
+      },
+      {
+        "type": "text",
+        "label": "Box #3 Title",
+        "force_reload": true,
+        "id": "home_trust_box_3_title"
+      },
+      {
+        "type": "text",
+        "label": "Box #3 Copy",
+        "force_reload": true,
+        "id": "home_trust_box_3_copy"
+      },
+      {
+        "type": "text",
+        "label": "Box #3 Link",
+        "force_reload": true,
+        "id": "home_trust_box_3_link"
+      }
+    ]
+  }
+]

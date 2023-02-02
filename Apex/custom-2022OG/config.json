@@ -1,0 +1,129 @@
+{
+  "name": "Apex Foot 5.0.4 (May0222)",
+  "version": "5.0.2",
+  "meta": {
+    "price": 19500,
+    "documentation_url": "https://apexfoot.com",
+    "author_name": "Alex Jigalov",
+    "author_email": "alexandr.jigalov@ohi.net",
+    "author_support_url": "https://apexfoot.com",
+    "composed_image": "composed_image.png",
+    "features": [
+      "fully_responsive",
+      "mega_navigation",
+      "multi_tiered_sidebar_menu",
+      "masonry_design",
+      "frontpage_slideshow",
+      "quick_add_to_cart",
+      "switchable_product_view",
+      "product_comparison_table",
+      "complex_search_filtering",
+      "customizable_product_selector",
+      "cart_suggested_products",
+      "free_customer_support",
+      "free_theme_upgrades",
+      "high_res_product_images",
+      "product_filtering",
+      "advanced_quick_view",
+      "product_showcase",
+      "persistent_cart",
+      "one_page_check_out",
+      "product_videos",
+      "google_amp",
+      "customized_checkout",
+      "enhanced ecommerce"
+    ]
+  },
+  "css_compiler": "scss",
+  "autoprefixer_cascade": true,
+  "autoprefixer_browsers": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR"
+  ],
+  "settings": {
+    "logo_size": "250x100",
+    "gallery_size": "300x300",
+    "productgallery_size": "300x300",
+    "product_size": "600x600",
+    "productview_thumb_size": "600x600",
+    "productthumb_size": "600x600",
+    "thumb_size": "1920x820",
+    "zoom_size": "1280x1280",
+    "blog_size": "1110x1110",
+    "blog_thumb": "350x350",
+    "restrict_to_login": false,
+    "swatch_option_size": "128x128",
+    "geotrust_ssl_common_name": "",
+    "geotrust_ssl_seal_size": "M",
+    "price_ranges": true,
+    "ticker_promotion_link": "/mens-bolt-athletic-knit-a7000m-black/",
+    "ticker_promotion_text": "On Sale! 30% Off Men's Bolt Athletic Knit.",
+    "ticker_promotion_exp": "Promotion expires 9/1/19",
+    "home_trust_box_1_title": "30% Off",
+    "home_trust_box_1_copy": "Women's Pink Breeze Athletic Knit",
+    "home_trust_box_1_link": "/breeze-athletic-knit-a-last-pink/",
+    "home_trust_box_2_title": "Free Shipping",
+    "home_trust_box_2_copy": "Anywhere in the continental United States",
+    "home_trust_box_2_link": "/shipping/",
+    "home_trust_box_3_title": "Hassle-Free Returns",
+    "home_trust_box_3_copy": "No questions asked",
+    "home_trust_box_3_link": "/return-policy/"
+  },
+  "resources": {
+    "cart": true,
+    "bulk_discount_rates": false,
+    "shop_by_brand": {
+      "limit": 10
+    }
+  },
+  "variations": [
+    {
+      "name": "Main",
+      "id": "classic",
+      "meta": {
+        "desktop_screenshot": "desktop_screenshot.png",
+        "mobile_screenshot": "mobile_screenshot.png",
+        "description": "Custom theme developed for Apexfoot.com by Jonathan Stalnaker",
+        "demo_url": "https://www.apexfoot.com/",
+        "optimized_for": [
+          "large_catalog",
+          "multi_purpose",
+          "mobile",
+          "mobile_tablet_desktop",
+          "sales_discounts",
+          "chrome_firefox_safari_ie_10"
+        ]
+      },
+      "settings": {
+        "logo_size": "250x100",
+        "gallery_size": "300x300",
+        "productgallery_size": "300x300",
+        "product_size": "600x600",
+        "productview_thumb_size": "600x600",
+        "productthumb_size": "600x600",
+        "thumb_size": "1920x820",
+        "zoom_size": "1280x1280",
+        "blog_size": "1110x1110",
+        "blog_thumb": "350x350",
+        "restrict_to_login": false,
+        "swatch_option_size": "128x128",
+        "geotrust_ssl_common_name": "",
+        "geotrust_ssl_seal_size": "M",
+        "price_ranges": true,
+        "ticker_promotion_link": "/shipping/",
+        "ticker_promotion_text": "Please be advised that we’re experiencing shipment delays",
+        "ticker_promotion_exp": "associated with Covid-19. Learn more",
+        "home_trust_box_1_title": "Shop New Shoes",
+        "home_trust_box_1_copy": "Shop 2021 New Releases",
+        "home_trust_box_1_link": "/newest-arrivals/",
+        "home_trust_box_2_title": "3 Reasons to Consider",
+        "home_trust_box_2_copy": "Diabetic Shoes Over Regular Shoes ",
+        "home_trust_box_2_link": "blog/3-reasons-to-consider-diabetic-footwear-over-regular-shoes",
+        "home_trust_box_3_title": "Free Shipping & Returns",
+        "home_trust_box_3_copy": "No Questions Asked",
+        "home_trust_box_3_link": "/shipping/"
+      }
+    }
+  ]
+}

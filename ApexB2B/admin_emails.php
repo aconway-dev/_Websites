@@ -1,0 +1,87 @@
+<?php
+/*
+UserCake Version: 2.0.2
+http://usercake.com
+*/
+
+require_once("models/config.php");
+if (!securePage($_SERVER['PHP_SELF'])){die();}
+
+//Forms posted
+if(!empty($_POST))
+{
+	$deletions = $_POST['delete'];
+	if ($deletion_count = deleteUsers($deletions)){
+		$successes[] = lang("ACCOUNT_DELETIONS_SUCCESSFUL", array($deletion_count));
+	}
+	else {
+		$errors[] = lang("SQL_ERROR");
+	}
+}
+
+$userData = fetchAllUsers(); //Fetch information for all users
+
+require_once("models/header.php");
+echo "
+<body>
+<section class='grid-container main account no-bg'>
+        <div class='grid justify-space-around align-start'>
+            <div class='col-10 col-md-3 menu has-logo'>
+                <div class='logo'><a href='/index.php'><img src='images/logo.jpg' alt='Apex'></a></div>
+                <div class='main-menu'>
+                    <div>";
+                    include('left-nav.php');
+
+                echo "
+                </div>
+                </div>
+</div>
+<div class='col-10 col-md-8 menu'>
+    <a href='register.php' class='button'>Add User</a>
+                <div id='regbox' class='grid'>
+                    <h1 class='col-12'>Admin Configuration</h1>
+                    <div class='col-12'>";
+                        echo resultBlock($errors,$successes);
+                    echo "
+                    </div>
+<form name='adminUsers' action='".$_SERVER['PHP_SELF']."' method='post' class='col-12 form'>
+<table class='admin'>
+<tr>
+<th>Display Name</th><th>Email</th><th>Last Sign In</th>
+</tr>";
+
+//Cycle through users
+foreach ($userData as $v1) {
+	echo "
+	<tr>
+	<td>".$v1['display_name']."</td>
+	<td>".$v1['email']."</td>
+	<td>
+	";
+	
+	//Interprety last login
+	if ($v1['last_sign_in_stamp'] == '0'){
+		echo "Never";	
+	}
+	else {
+		echo date("j M, Y", $v1['last_sign_in_stamp']);
+	}
+	echo "
+	</td>
+	</tr>";
+}
+
+echo "
+</table>
+<input type='submit' name='Submit' value='Delete' class='button' />
+</form>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>";
+
+?>
+
+<link rel='stylesheet' href='css/main.css?v=2.0'>

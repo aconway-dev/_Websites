@@ -1,0 +1,61 @@
+<ul class="top-menu">
+    <li class="search">
+        {{> components/header/search}}
+    </li>
+    <li class="home">
+        <a href="/"><i class="sprite sprite-black-home"></i><span> &nbsp;Home&nbsp; </span></a>
+    </li>
+    
+    <li data-id="allshoes" class="top">
+        <a href="/all-shoes/"><i class="sprite sprite-black-home"></i><span> &nbsp;Shop ALL&nbsp; </span></a>
+    </li>     
+    <li data-id="womens" class="top">
+        <a href="/womens/all-womens-shoes/"><i class="sprite sprite-black-home"></i><span> &nbsp;Women&nbsp; </span></a>
+    </li> 
+    <li data-id="mens" class="top">
+        <a href="/all-mens-shoes/"><i class="sprite sprite-black-home"></i><span> &nbsp;Men&nbsp; </span></a>
+    </li>
+    <li data-id="foot-conditions" class="top">
+        <a href="/foot-conditions/"><i class="sprite sprite-black-home"></i><span> &nbsp;Condition&nbsp; </span></a>
+    </li>    
+    <li data-id="accessories" class="top">
+        <a class="top"> &nbsp;Socks&nbsp; <span class="toggle"><i class="sprite sprite-black-plus"></i></span></a>
+        {{> components/header/submenu/shop-socks}}
+    </li>
+    <li data-id="accessories" class="top">
+        <a class="top"> &nbsp;Insoles&nbsp; <span class="toggle"><i class="sprite sprite-black-plus"></i></span></a>
+        {{> components/header/submenu/shop-insoles}}
+    </li>
+    <!--<li data-id="sale" class="top">
+        <a href="/sale"><i class="sprite sprite-black-home"></i><span> &nbsp;Sale&nbsp; </span></a>
+    </li>   --> 
+    <li data-id="accessories" class="top">
+        <a class="top"> &nbsp;Technology&nbsp; <span class="toggle"><i class="sprite sprite-black-plus"></i></span></a>
+        {{> components/header/submenu/technology}}
+    </li>    
+    
+    {{#if customer}}
+    <li class="customer" class="top">
+        <a class="top">{{lang 'common.account'}} <span class="toggle"><i class="sprite sprite-black-plus"></i></span></a>
+        <ul class="submenu">
+            <li>
+                <ul>
+                    <li>
+                        <a href="{{urls.account.orders.all}}" rel="noindex">{{lang 'account.nav.orders'}}</a>
+                    </li>
+                    <li>
+                        <a href="{{urls.account.details}}" rel="noindex">{{lang 'account.nav.settings'}}</a>
+                    </li>
+                    <li>
+                        <a  href="{{urls.auth.logout}}" rel="noindex">{{lang 'common.logout'}}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    {{else}}
+    <li class="customer">
+        <a href="{{urls.auth.login}}" rel="noindex">{{lang 'common.login'}}</a>
+    </li>
+    {{/if}}
+</ul>

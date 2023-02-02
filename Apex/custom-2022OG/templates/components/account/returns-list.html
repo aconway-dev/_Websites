@@ -1,0 +1,71 @@
+<h3 class="account-heading">{{lang 'account.returns.heading' }}</h3>
+
+<ul class="account-list">
+    {{#each returns}}
+    <li class="account-listItem">
+        <div class="account-product">
+            <div class="account-product-figure">
+                <img src="{{getImage product.image 'productthumb_size'}}" alt="{{product.image.alt}}" title="{{product.image.alt}}">
+            </div>
+            <div class="account-product-body">
+                <div class="account-orderStatus">
+                    {{#if status '===' 'ReturnStatusPending'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.pending'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusReceived'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.received'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusAuthorized'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.authorized'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusRepaired'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.repaired'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusRefunded'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.refunded'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusRejected'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.rejected'}}</h5>
+                    {{/if}}
+                    {{#if status '===' 'ReturnStatusCancelled'}}
+                        <h5 class="account-orderStatus-label">{{lang 'account.returns.status.cancelled'}}</h5>
+                    {{/if}}
+                </div>
+
+                <h4 class="account-product-title">{{lang 'account.returns.list.return_number' id=id}}</h4>
+                <p class="account-product-description">{{lang 'account.returns.list.product_details' num_products=quantity}} <a href="{{product.url}}">{{product.name}}</a></p>
+
+                {{#if product.options}}
+                    <dl class="definitionList">
+                        {{#each product.options}}
+                            <dt class="definitionList-key">{{name}}:</dt>
+                            <dd class="definitionList-value">{{value}}</dd>
+                        {{/each}}
+                    </dl>
+                {{/if}}
+
+                <div class="account-product-details">
+                    <div class="account-product-detail">
+                        <h5 class="account-product-detail-heading">{{lang 'account.returns.date_requested' }}</h5>
+                        <span>{{date_requested}}</span>
+                    </div>
+                    <div class="account-product-detail">
+                        <h5 class="account-product-detail-heading">{{lang 'account.returns.action' }}</h5>
+                        <span>{{action}}</span>
+                    </div>
+                    <div class="account-product-detail account-product-detail--large">
+                        <h5 class="account-product-detail-heading">{{lang 'account.returns.reason' }}</h5>
+                        <span>{{reason}}</span>
+                    </div>
+                    {{#if comments}}
+                    <div class="account-product-detail account-product-detail--full">
+                        <h5 class="account-product-detail-heading">{{lang 'account.returns.comments' }}</h5>
+                        <span>{{comments}}</span>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>

@@ -1,0 +1,26 @@
+---
+products:
+    new:
+        limit: 8
+    featured:
+        limit: 12
+    top_sellers:
+        limit: 8
+blog:
+    recent_posts:
+        limit: 4
+---
+{{#partial "page"}}
+{{> components/home/hero}}
+<main id="main-content">
+  {{{snippet 'home_content'}}}<p>&nbsp;</p>
+  {{> components/home/boxes}}<p>&nbsp;</p>
+  {{> components/home/featured-products}}<p>&nbsp;</p>
+  {{> components/home/top-sellers}}<p>&nbsp;</p>
+  {{> components/common/yotpo}}<p>&nbsp;</p>
+  {{> components/common/email-signup}}
+  {{> components/home/description}}<p>&nbsp;</p>
+  {{> components/home/blogs}}
+</main>
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,169 @@
+{{#if banners.bottom}}
+    {{#if settings.data_tag_enabled}}
+        <div class="banners" data-banner-location="bottom">
+            {{#each (limit banners.bottom_metadata 1)}}
+                <div class="banner" data-event-type="promotion" data-entity-id="{{this.id}}" data-name="{{this.banner-name}}" data-position="{{this.location}}" data-name="{{this.banner-name}}">
+                    <div data-event-type="promotion-click">
+                        {{{this.content}}}
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    {{else}}
+        <div class="banners" data-banner-location="bottom">
+            <div class="banner">
+                {{{limit banners.bottom 1}}}
+            </div>
+        </div>
+    {{/if}}
+{{/if}}
+
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        
+                    
+            <article class="footer-info-col footer-info-col--social" data-section-type="newsletterSubscription">
+                {{#if settings.show_newsletter_box}}
+                    {{> components/common/subscription-form}}
+                {{/if}}
+            </article>
+        
+        <section class="footer-info">
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h3 class="footer-info-heading">SHOP APEX</h3>
+                <ul class="footer-info-list">
+                        <li><a href="/most-popular-shoes/">Popular Shoes</a></li>
+                        <li><a href="/womens/">Women's Shoes</a></li>
+                        <li><a href="/mens/">Men's Shoes</a></li>
+                        <li><a href="/shoe-sizing-chart/">Shoe Sizing Chart</a></li>
+                </ul>
+            </article>
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h3 class="footer-info-heading">CUSTOMER CARE</h3>
+                <ul class="footer-info-list">
+                        <li><a href="/account.php">My Account</a></li>
+                        <li><a href="/contact-us/">Contact Us</a></li>
+                        <li><a href="/faqs/">FAQs</a></li>
+                        <li><a href="/shipping/">Shipping</a></li>
+                        <li><a href="/returns/">Returns</a></li>
+                </ul>
+            </article>
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-webPages">
+                <h3 class="footer-info-heading">INFO</h3>
+                <ul class="footer-info-list">
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/why-apex/">Why Apex</a></li>
+                        <li><a href="/about-us/">About Apex</a></li>
+                        <li><a href="/sitemap/">Sitemap</a></li>
+                        <li><a href="/terms-and-conditions/">Terms & Conditions</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="/affiliate/">Become an Affiliate</a></li>
+                </ul>
+            </article>
+            
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-conditions">
+                <h3 class="footer-info-heading">CONDITIONS</h3>
+                <ul class="footer-info-list">
+                        <li><a href="/conditions/mortons-neuroma/">Morton's Neuroma</a></li>
+                        <li><a href="/conditions/neuropathy/">Neuropathy</a></li>
+                        <li><a href="/conditions/plantar-fasciitis/">Plantar Fasciitis</a></li>
+                        <li><a href="/conditions/diabetic-foot/">Diabetic Foot</a></li>
+                        <li><a href="/conditions/arthritis/">Arthritis</a></li>
+                        <li><a href="/conditions/bunions/">Bunions</a></li>
+                        <li><a href="/conditions/heel-pain/">Heel Pain</a></li>
+                </ul>
+            </article>
+
+             <article class="footer-info-col footer-info-col--small" data-section-type="footer-conditions2">
+                <h3 class="footer-info-heading">STYLES</h3>
+                  <ul class="footer-info-list">
+                        <li><a href="/afo-accomodating/">Afo Accommodating</a></li>
+                        <li><a href="/walking-shoes/">Walking</a></li>
+                        <li><a href="/work-shoes/">Work</a></li>
+                        <li><a href="/casual-shoes/">Casual</a></li>
+                        <li><a href="/athletic-shoes-and-sneakers/">Athletic & Active</a></li>
+                        <li><a href="/arch-support-shoes/">Arch Support</a></li>
+                        <li><a href="/extra-depth-shoes/">Extra Depth </a></li>
+                </ul>
+            </article>   
+
+            <article class="footer-info-col footer-info-col--small" data-section-type="footer-conditions3">
+                <h3 class="footer-info-heading">&nbsp;</h3>
+                <ul class="footer-info-list">
+                        <li><a href="/slip-resistant-shoes/">Slip Resistance</a></li>
+                        <li><a href="/apex-balance-shoes/">Balance and Stability</a></li>
+                        <li><a href="/dress-shoes/">Dress Shoes</a></li>
+                        <li><a href="/orthopedic-shoes/">Orthopedic Shoes</a></li>
+                        <li><a href="/conditions/diabetic-foot/">Diabetic Shoes</a></li>
+                </ul>                
+            </article>  
+            
+        </section>
+
+
+        {{#if theme_settings.social_icon_placement_bottom '!==' 'bottom_none'}}
+            <article class="footer-info-col
+                footer-info-col--social
+                footer-info-col--{{#if theme_settings.social_icon_placement_bottom '===' 'bottom_left'}}left{{else}}right{{/if}}"
+                data-section-type="footer-webPages">
+                    <h3 class="footer-info-heading">{{lang 'social.connect'}}</h3>
+                    {{> components/common/social-links}}
+            </article>
+        {{/if}}
+    </div>
+</footer>
+
+
+    <div class="footerdisclaimer">
+        <div class="page-content page-content--centered footerdisclaimer" data-section-type="footer-webPages">
+            <p>&nbsp;</p>
+            <p>&copy; {{moment format="YYYY"}} Copyright &copy; {{moment format="YYYY"}} Apexfoot.com All Rights Reserved. | 4825 East Ingram Street Mesa, Arizona 85205-3212, USA</p>
+            <p>The purpose of this website is to promote broad consumer understanding and knowledge of various health conditions. This website is not intended to diagnose, treat, cure or prevent any disease nor should statements be construed as medical advice. Please consult your healthcare provider should you have specific questions regarding the diagnosis or treatment of any medical condition.</p>
+            <p>Apex Foot strives to make our website accessible. We are committed to diversity, inclusion, and meeting the needs of all of our customers, including those with disabilities. We are continually improving the accessibility of our website to conform with Guidance from the United States Department of Justice, including existing technical standards such as WCAG 2.1 Levels A and AA. Further accessibility efforts are under way and we continue to update our website to improve accessibility. In the meantime, if the format of any material on our web pages interferes with your ability to access the information, please contact us to request assistance or if you have questions or comments about our web site’s accessibility. Please call 800-252-2739, e-mail myorder@apexfoot.com, or submit an inquiry.</p>
+            <p>&nbsp;</p>
+    </div>
+    </div>
+    
+<style>
+  .live-chat {
+    background-color: #fff;
+    padding: 15px 15px 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.24);
+    border-radius: 150px;
+  }
+  .live-chat img {
+    width:48px;
+  }
+  .live-chat p {
+    position: absolute;
+    background-color: #006341;
+    padding: 5px 10px;
+    display: block;
+    top: -40px;
+    left: -13px;
+    color: #fff;
+    width: 100px;
+    border-radius: 5px;
+    opacity: 0; 
+    transition:opacity .8s;
+  }
+  .live-chat:hover p {
+    opacity: 1;
+  }
+</style>
+<div class="live-chat" style="">
+  <a href="#" onclick="window.open('https://home-c36.nice-incontact.com/incontact/chatclient/chatclient.aspx?poc=dc67484b-eff7-48cc-8578-273be6d59bcc&bu=4600881', 
+       'icPatronChatWin', 'location=no,height=630,menubar=no,status-no,width=410'); 
+        return false;">
+    <p>Live Chat</p>
+    <img src="https://cdn11.bigcommerce.com/s-zhes1fqjuz/images/stencil/original/image-manager/chat-icon.png" alt="Apex Chat">
+  </a>
+</div>

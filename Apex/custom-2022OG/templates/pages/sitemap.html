@@ -1,0 +1,45 @@
+{{#partial "page"}}
+	<main id="main-content">
+		<section style="padding-top: 8rem">
+			<div class="container-inner">
+				<div class="row grid-gutter-vertical">
+					<div class="col-md-12 center">
+						<h1>Sitemap</h1>
+					</div>
+					<div class="content-container col-lg-12">
+						<ul>
+							{{#each sitemap}}
+								{{#if label '!==' 'Brands'}}
+									<li>
+										<h3>{{label}}</h3>
+										<ul>
+											{{#each body}}
+												<li>
+													<a href="{{url}}">{{label}}</a>
+													{{#if children}}
+														<ul>
+															{{#each children}}
+																{{> components/sitemap/links}}
+															{{/each}}
+														</ul>
+													{{/if}}
+												</li>
+											{{/each}}
+											{{#if show_all_link}}
+												<li>
+													<a href="{{subsection_url}}">{{lang 'sitemap.show_all_link'}}</a>
+												</li>
+											{{/if}}
+										</ul>
+									</li>
+								{{/if}}
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	{{> components/common/email-signup}}
+{{/partial}}
+{{> layout/base}}

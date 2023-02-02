@@ -1,0 +1,19 @@
+<article class="blog-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <meta itemprop="mainEntityOfPage" content="{{url}}">
+    <div class="blog-body" style="font-size: 14pt;">
+        {{#if post.body}}
+        {{{post.body}}}
+        {{else}}
+        {{post.summary}}
+        {{#if post.show_read_more}}
+        &hellip;
+        {{/if}}
+        {{/if}}
+    </div>
+    {{#if post.show_read_more}}
+    <div class="blog-read-more">
+        <a href="{{url}}">Read More</a>
+    </div>
+    {{/if}}
+    <p>< Back to <a href="/blog/">Blogs</a></p>
+</article>

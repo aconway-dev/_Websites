@@ -1,0 +1,17 @@
+<section id="copy">
+    <div class="container-inner">
+        <div class="row">
+            <div class="col-md-12">
+                {{> components/footer/payment-icons}}
+                <p>Copyright &copy; <span id="copyright_year">{{moment format="YYYY"}}</span> {{settings.store_name}} All Rights Reserved. | 4825 East Ingram Street Mesa, Arizona 85205-3212, USA | <a href="tel:{{settings.phone_number }}">{{lang 'footer.call_us' phone_number=settings.phone_number}}</a></p>
+                <p class="disclaimer">The purpose of this website is to promote broad consumer understanding and knowledge of various health conditions. This website is not intended to diagnose, treat, cure or prevent any disease nor should statements be construed as medical advice. Please consult your healthcare provider should you have specific questions regarding the diagnosis or treatment of any medical condition.</p>
+                
+                 <p class="disclaimer">Apex Foot strives to make our website accessible. We are committed to diversity, inclusion, and meeting the needs of all of our customers, including those with disabilities.  We are continually improving the accessibility of our website to conform with Guidance from the United States Department of Justice, including existing technical standards such as WCAG 2.1 Levels A and AA.  Further accessibility efforts are under way and we continue to update our website to improve accessibility. In the meantime, if the format of any material on our web pages interferes with your ability to access the information, please contact us to request assistance or if you have questions or comments about our web site’s accessibility.  Please call <a href="tel:{{settings.phone_number }}">{{settings.phone_number }}</a>, e-mail <a href="myorder@apexfoot.com">myorder@apexfoot.com</a>, or submit an inquiry <a href="https://www.apexfoot.com/contact-us/">www.apexfoot.com</a>. </p>
+                
+                
+                {{> components/common/social-links}}
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</section>

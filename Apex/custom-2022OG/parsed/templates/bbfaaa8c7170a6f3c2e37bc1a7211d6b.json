@@ -1,0 +1,1 @@
+{"components/header/customer":"<a href=\"{{urls.account.index}}\" class=\"customer\" title=\"Account\">\r\n    <div class=\"icon-wrap\">\r\n        <i class=\"sprite sprite-user-icon-black\"></i>\r\n    </div>\r\n    {{#if customer}}\r\n    <span class=\"words\">Hello {{first (split customer.name \" \") }}</span>\r\n    {{/if}}\r\n</a>\r\n"}

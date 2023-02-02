@@ -1,7 +1,9 @@
-<h5 class="footer-info-heading">{{lang 'newsletter.subscribe'}}</h5>
-<p>{{lang 'newsletter.subscribe_intro'}}</p>
-
-<form class="form" action="{{urls.subscribe.action}}" method="post">
+ 
+ 
+ 
+<h3 class="footer-info-heading contact-form">SUSCRIBE TO OUR NEWSLETTER</h3>
+<p>Be the first to know about future sales, trends and new finishes and products!</p>
+ <form class="form" action="{{urls.subscribe.action}}" method="post">
     <fieldset class="form-fieldset">
         <input type="hidden" name="action" value="subscribe">
         <input type="hidden" name="nl_first_name" value="bc">
@@ -9,9 +11,93 @@
         <div class="form-field">
             <label class="form-label is-srOnly" for="nl_email">{{lang 'common.email_address'}}</label>
             <div class="form-prefixPostfix wrap">
-                <input class="form-input" id="nl_email" name="nl_email" type="email" value="{{customer.email}}" placeholder="{{lang 'newsletter.email_placeholder'}}">
-                <input class="button button--primary form-prefixPostfix-button--postfix" type="submit" value="{{lang 'newsletter.subscribe_submit'}}">
+                <input class="form-input"
+                       id="nl_email"
+                       name="nl_email"
+                       type="email"
+                       value="{{customer.email}}"
+                       placeholder="{{lang 'newsletter.email_placeholder'}}"
+                       aria-describedby="nl_email"
+                       aria-required="true"
+                       aria-label="email"
+                       required
+                >
+                <input class="button button--primary form-prefixPostfix-button--postfix"
+                       type="submit"
+                       value="{{lang 'newsletter.subscribe_submit'}}"
+                >
             </div>
+            {{#if settings.show_newsletter_summary }}
+                <div class="footer-newsletter-summary">{{settings.newsletter_summary}}</div>
+            {{/if}}
         </div>
     </fieldset>
 </form>
+
+ 
+ 
+ <!-- <script>
+  document.forms['contact-form'].addEventListener('submit', function(event) {
+    // Do something with the form's data here
+    this.style['display'] = 'none';
+    event.preventDefault();
+  }); 
+   function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  
+ <div id="thanks" class="thanks" style="display:none">
+			<h3>Thanks for signing up to receive special promotions and discounts from Apex Foot Health. </h3>
+			<p>As a special thank you here's a discount on your next purchase!</p>
+			<p>Enter Promo Code <strong>THANKYOU22</strong> at checkout to receive 15% off your entire purchase.</p>
+</div>
+
+<div class="contact-form">
+<h3 class="footer-info-heading contact-form">SUSCRIBE TO OUR NEWSLETTER</h3>
+<p>Be the first to know about future sales, trends and new finishes and products!</p>
+<form action=https://cl.s11.exct.net/DEManager.aspx name="subscribeForm" method="post">
+<input type="hidden" name="_clientID" value="514003026" />
+<input type="hidden" name="_deExternalKey" value="F305B460-C460-4CE0-B70D-D9725093612E" />
+<input type="hidden" name="_action" value="add" />
+<input type="hidden" name="_returnXML" value="0" />
+<input type="hidden" name="_successURL" value="https://apex-2022.mybigcommerce.com/https://apex-2022.mybigcommerce.com/#thanks" />
+<input type="hidden" name="_errorURL" value="https://apex-2022.mybigcommerce.com/#error" />
+    <fieldset class="form-fieldset">
+        <input type="hidden" name="action" value="subscribe">
+        <input type="hidden" name="nl_first_name" value="bc">
+        <input type="hidden" name="check" value="1">
+        <div class="form-field">
+            <label class="form-label is-srOnly" for="nl_email">{{lang 'common.email_address'}}</label>
+            <div class="form-prefixPostfix wrap">
+                <input class="form-input"
+                       id="inf_field_Email"
+                       name="Email Address"
+                       type="email"
+                       value="{{customer.email}}"
+                       placeholder="{{lang 'newsletter.email_placeholder'}}"
+                       aria-describedby="alertBox-message-text"
+                       aria-required="true"
+                       required
+                >
+                <p>&nbsp;</p>
+                    
+                <input class="button button--primary form-prefixPostfix-button--postfix"
+                       type="submit"
+                       value="{{lang 'newsletter.subscribe_submit'}}"
+               aria-label="Sign-Up for Newlettter">
+            </div>
+            {{#if settings.show_newsletter_summary }}
+                <div class="footer-newsletter-summary">{{settings.newsletter_summary}}</div>
+            {{/if}}
+        </div>
+    </fieldset>
+</form>
+</div> -->
+
+

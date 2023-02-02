@@ -63,7 +63,7 @@ echo "
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstoci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Check Item Availability</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxordei1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>Order Status</a>
                             <a href='return-policy.php'>Return Policy</a>
-                            <a href='https://b2b.apexfoot.com/pdfs/Apex_Return_Authorization_Form_Final.pdf' target='_blank'>Return Authorization Form</a>
+                            <a href='http://b2b.apexfoot.com/pdfs/Apex_Return_Authorization_Form_Final.pdf' target='_blank'>Return Authorization Form</a>
 
                             <!-- <a href='//api.ohi.net/FedEx?unit=APEX&src=2' target='_blank'>Shoe Return Shipping Labels (US)</a>
                             <a href='//api.ohi.net/FedEx?unit=APEX&src=4' target='_blank'>CDI Shipping Labels (US)</a>   -->
@@ -82,8 +82,12 @@ echo "
                             <h2>My Account</h2>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxinvci1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank'>View Invoice</a>
                             <a href='http://b2b.apexfoot.com:6394/wa/r/apex/oxstmtr1?OutputMap=DUA_AJAX&".$_SERVER['QUERY_STRING']."' target='_blank' >View Statement</a>
+                            <p>&nbsp;</p>
+                            <p><a target='_blank' class='external' href='https://go.pardot.com/l/847503/2022-08-04/2bhkvb'><img class='flex-img' src='images/NewToApexGraphic.jpg' alt='Apex Resource Library' /></a></p>
+
                         </div>
                     </div>
+                    
                     <div class='col-md-4 main-menu'>
                         <div>
                             <h2>Products &amp; Resources</h2>

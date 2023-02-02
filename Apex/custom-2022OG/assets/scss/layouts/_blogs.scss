@@ -1,0 +1,130 @@
+// =============================================================================
+// BLOG
+// =============================================================================
+.blog {
+    .tags {
+        text-align: center;
+    }
+
+    .socialLinks {
+        text-align: center;
+    }
+
+}
+
+.blog-title {
+    a {
+        text-decoration: none;
+    }
+}
+.blog-date {
+    text-align: center;
+    color: $white;
+}
+.posts {
+    padding-top: 2rem;
+}
+.blog-post {
+        display: inline-block;
+    text-align: left;
+    margin-bottom: 2rem;
+    .post-image {
+        height: 20vh !important;
+        background: $teal;
+        margin-bottom: 1rem;
+        background-size: cover;
+        background-position: center center;
+    }
+    .blog-body {
+        margin-bottom: 1rem;
+        color: $darkgrey;
+    }
+}
+
+.single-post {
+    .blog-post {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 750px;
+        @media screen and (max-width: 969px) {
+        width: 100%;
+        }
+    }
+}
+aside {
+    padding-top: 2rem;
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .blog-post {
+        flex: 100% 0 0 !important;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 1rem;
+        padding: 1rem;
+        border: 2px solid $lightgrey;
+        .post-image {
+            height: 100px;
+            width: 200px;
+            float: left;
+            margin-right: 1rem;
+        }
+        .blog-title {
+            margin: 0;
+        }
+        .blog-info {
+            margin: 0 0 .5rem;
+            time {
+                border: 1px solid $darkgrey;
+                padding: .25rem;
+                font-size: .8em;
+            }
+        }
+        &.active {
+            display: none;
+        }
+        .blog-body {
+            font-size: .9em;
+        }
+    }
+}
+.blog-tags {
+    display: inline-block;
+    background-color: $grey;
+    color: $white;
+    text-align: center ;
+    width: 250px ;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 50px ;
+    margin: 13px;
+    justify-content: center;
+}
+.blog-category {
+    text-align: center;
+    font-size: 14pt;
+}
+.blog-headline
+{
+color: #134e67;
+text-transform: uppercase;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.blogheader{
+@media only screen and (min-width: 768px) { 
+            background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/banner-134e67.png?t=1650321683');
+}            
+@media only screen and (max-width: 767px) {
+            background-image: url('//cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/banner-134e67-mobi.png?t=1650321683');
+}}
+

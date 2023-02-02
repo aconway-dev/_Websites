@@ -1,0 +1,87 @@
+---
+blog:
+    recent_posts:
+        limit: 25
+        pages: 3
+        summary: 200
+---
+
+{{#partial "page"}}
+<section class="page-hero" style="background-image: url('https://cdn11.bigcommerce.com/s-dhod3a8/product_images/uploaded_images/hpbannerblue1.jpg?t=1650922446);">
+    <span class="blog-meta blog-meta-date blog-date">{{blog.post.date_published}}</span>
+    <h1>{{blog.post.title}}</h1>
+    <div class="blog-info">
+        {{#if blog.post.author}}
+        <span class="blog-meta blog-meta-author">{{lang 'blog.posted_by' name=blog.post.author}}</span>
+        {{/if}}
+        {{#if show_tags}}
+        {{#if blog.post.tags}}
+        <span class="blog-meta blog-meta-category"> In {{#each blog.post.tags}}{{#if @first}}<a
+                href="{{url}}"> {{name}}</a>{{else}}<a href="{{url}}">,
+                {{name}}</a>{{/if}}{{/each}}</span>
+        {{/if}}
+        {{/if}}
+    </div>
+</section>
+<main id="main-content" class="single-post">
+    <div class="container-inner">
+        <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+                {{> components/blog/post post=blog.post show_tags=false}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-8"><hr style="width:100%;text-align:center;"></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>      
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"><h2 class="blog-headline">BLOG CATEGORIES</h2></div>
+            <div class="col-md-2"></div>
+        </div>   
+        <div class="row">&nbsp;</div>  
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/APEX%20Shoes">APEX Shoes</a></div> 
+            <div class="col blog-category"><a href="/blog/tag/Shoe%20Insoles">Shoe Insoles</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Socks%20and%20Compression">Socks and Compression</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Style%20Guides">Style Guides</a></div>  
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/Shoe%20Sizing">Shoe Sizing</a></div>
+            <div class="col blog-category"><a href="/blog/tag/How%20to%20Shop%20for%20Shoes">How to Shop for Shoes</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Healthy%20Living">Healthy Living</a></div>
+            <div class="col blog-category"><a href="/blog/tag/Exercise%20and%20Fitness">Exercise and Fitness</a></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+        <div class="row">&nbsp;</div>        
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col blog-category"><a href="/blog/tag/Foot%20Health">Foot Health</a></div>
+            <div class="col blog-category"><a href="/blog/tag/Tips%20on%20Living%20with%20Diabetesnews">Tips on Living with Diabetes</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Work%20Shoe%20Tips">Work Shoe Tips</a></div>  
+            <div class="col blog-category"><a href="/blog/tag/Seasonal%20Activities">Seasonal Activities</a></div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>   
+        
+        <div class="row">&nbsp;</div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">{{> components/common/email-signup-blog-bottom}}</div>
+            <div class="col-md-2"></div>
+        </div> 
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="text-align: right;"><a href="https://twitter.com/ApexFootHealth" class="fa fa-twitter" target="_blank"></a> <a href="https://www.facebook.com/apexfoot" class="fa fa-facebook" target="_blank"></a>  <a href="https://www.instagram.com/apexfoothealth" class="fa fa-instagram" target="_blank"></a>  <a href="https://www.pinterest.com/ApexFoot/" class="fa fa-pinterest" target="_blank"></a></div>
+            <div class="col-md-2"></div>
+        </div>          
+    </div>
+</main>
+
+{{/partial}}
+{{> layout/base}}

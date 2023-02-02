@@ -1,0 +1,20 @@
+<div class="product-grid-item{{#or price.non_sale_price_with_tax price.non_sale_price_without_tax}} on-sale{{/or}} featured">
+    {{#or price.non_sale_price_with_tax price.non_sale_price_without_tax}}{{#if price.saved}}<div class="sale-tag"><span>Sale</span></div>{{/if}}{{/or}}
+    <div class="product-image">
+        <a href="{{url}}" class="cat-link">
+            {{#each (limit images 2)}}
+            <img class="lazyload" src="{{cdn 'webdav:/theme/loading.svg'}}" data-sizes="auto" data-src="{{getImage this 'productgallery_size' (cdn theme_settings.default_image_product)}}" alt="{{this.alt}}"
+            title="{{this.alt}}" width="264" height="264">
+            {{/each}}          
+        </a>
+    </div>
+    <div class="product-details">
+        <a class="product-title" href="{{url}}" data-name="{{name}}">{{name}}</a>
+        {{> components/products/price price=price customer=customer}}
+        <span class="product-review-icons-container yotpo bottomLine"data-product-id="{{id}}" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating"></span>
+        <p style="display: none">{{{this.sku}}}</p>
+        <p style="display: none">{{{this.id}}}</p>
+        <p style="display: none">{{{this.category}}}</p>
+        <p style="display: none">{{{this.summary}}}</p>
+    </div>
+</div>

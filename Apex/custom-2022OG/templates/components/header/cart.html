@@ -1,0 +1,9 @@
+<a href="{{urls.cart}}" class="top-cart {{#if cart.quantity}}active{{/if}}" title="Cart">
+    <div class="icon-wrap">
+        <i class="sprite sprite-white-shopping-cart"></i>
+    </div>
+    {{#if cart.quantity}}
+    <span class="text quickcart-items-count cart-quantity">{{cart.quantity}}</span>
+    <span class="words">item{{#if cart.quantity ">=" "2"}}s{{/if}}</span>
+    {{/if}}
+</a>
